@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceContact" />
+  <version value="2.4" />
+  <name value="ROR_HealthCareServiceContact" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="HealthcareService" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:name">
+      <path value="Extension.extension" />
+      <sliceName value="name" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="name" />
+    </element>
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="HumanName" />
+      </type>
+    </element>
+    <element id="Extension.extension:fonctionContact">
+      <path value="Extension.extension" />
+      <sliceName value="fonctionContact" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:fonctionContact.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="fonctionContact" />
+    </element>
+    <element id="Extension.extension:fonctionContact.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J220-FonctionContact-ROR/FHIR/JDV-J220-FonctionContact-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.extension:purpose">
+      <path value="Extension.extension" />
+      <sliceName value="purpose" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:purpose.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="purpose" />
+    </element>
+    <element id="Extension.extension:purpose.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.extension:description">
+      <path value="Extension.extension" />
+      <sliceName value="description" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="description" />
+    </element>
+    <element id="Extension.extension:description.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:confidentialityLevel">
+      <path value="Extension.extension" />
+      <sliceName value="confidentialityLevel" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:confidentialityLevel.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="confidentialityLevel" />
+    </element>
+    <element id="Extension.extension:confidentialityLevel.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.extension:telecom">
+      <path value="Extension.extension" />
+      <sliceName value="telecom" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:telecom.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="telecom" />
+    </element>
+    <element id="Extension.extension:telecom.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="ContactPoint" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceContact" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceLocation" />
+  <version value="2.4" />
+  <name value="ROR_HealthCareServiceLocation" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="HealthcareService.location" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:name">
+      <path value="Extension.extension" />
+      <sliceName value="name" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="name" />
+    </element>
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:description">
+      <path value="Extension.extension" />
+      <sliceName value="description" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="description" />
+    </element>
+    <element id="Extension.extension:description.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:status">
+      <path value="Extension.extension" />
+      <sliceName value="status" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:status.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="status" />
+    </element>
+    <element id="Extension.extension:status.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceLocation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
