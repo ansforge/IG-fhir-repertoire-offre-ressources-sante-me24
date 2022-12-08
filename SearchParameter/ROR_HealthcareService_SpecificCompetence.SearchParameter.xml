@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_SpecificCompetence" />
+  <version value="1.0" />
+  <name value="ROR_HealthcareService_SpecificCompetence" />
+  <status value="active" />
+  <date value="2022-08-04T00:00:00+02:00" />
+  <publisher value="ANS" />
+  <description value="Paramètre de recherche permettant de pointer sur la compétence spécifique" />
+  <code value="specificCompetence" />
+  <base value="HealthcareService" />
+  <type value="token" />
+  <expression value="HealthcareService.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceCompetenceRessource').extension.where(url='specificCompetence').value" />
+</SearchParameter>
