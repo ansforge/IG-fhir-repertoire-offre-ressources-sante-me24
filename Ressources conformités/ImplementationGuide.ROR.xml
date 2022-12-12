@@ -1,0 +1,100 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="ROR"></id>
+   <url value="http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/ROR"></url>
+   <version value="2.4"></version>
+   <name value="ROR"></name>
+   <status value="active"></status>
+   <experimental value="false"></experimental>
+   <date value="2022-12-08T11:21:09+01:00"></date>
+   <publisher value="ANS"></publisher>
+   <description value="Il s'agit du guide d'implémentation du ROR."></description>
+   <packageId value="ROR.fhir"></packageId>
+   <fhirVersion value="4.0.1"></fhirVersion>
+   <definition>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR-Organization"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_supportedPatientType"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ageRange_low"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ageRange_high"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/HealthcareService-organization"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-category"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_psychiatricSector"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ReceptionMode"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-type"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_Profession"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_OrdinalSpeciality"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_SpecificCompetence"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_equipmentType"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/HealthcareService-specialty"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_Organization_DropZone"></reference>
+         </reference>
+      </resource>
+   </definition>
+</ImplementationGuide>
