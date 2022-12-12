@@ -9,5 +9,5 @@
   <code value="psychiatricSector" />
   <base value="HealthcareService" />
   <type value="string" />
-  <expression value="HealthcareService.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PsychiatricSector').value" />
+  <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PsychiatricSector').value" />
 </SearchParameter>
