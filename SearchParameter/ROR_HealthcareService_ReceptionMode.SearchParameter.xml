@@ -10,5 +10,5 @@
   <code value="receptionMode" />
   <base value="HealthcareService" />
   <type value="token" />
-  <expression value="HealthcareService.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareService_ReceptionMode').value" />
+  <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareService_ReceptionMode').value" />
 </SearchParameter>

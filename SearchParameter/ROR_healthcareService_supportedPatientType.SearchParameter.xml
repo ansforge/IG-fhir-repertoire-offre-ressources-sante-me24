@@ -9,5 +9,5 @@
   <code value="supportedPatientType" />
   <base value="HealthcareService" />
   <type value="token" />
-  <expression value="HealthcareService.extension.where(&quot;http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PatientType&quot;).where(url='supportedPatientType').value" />
+  <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PatientType').extension('supportedPatientInfo').value" />
 </SearchParameter>

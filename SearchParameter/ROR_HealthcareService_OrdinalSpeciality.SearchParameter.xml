@@ -9,5 +9,5 @@
   <code value="OrdinalSpeciality" />
   <base value="HealthcareService" />
   <type value="token" />
-  <expression value="HealthcareService.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceCompetenceRessource').extension.where(url='ordinalSpeciality').value" />
+  <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceCompetenceRessource').extension('ordinalSpeciality').value" />
 </SearchParameter>

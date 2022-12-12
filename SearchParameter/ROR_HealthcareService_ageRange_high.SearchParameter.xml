@@ -9,5 +9,5 @@
   <code value="ageRange-high" />
   <base value="HealthcareService" />
   <type value="quantity" />
-  <expression value="HealthcareService.extension.where(url='http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PatientType').value" />
+  <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PatientType').extension('ageRange').valueRange.high" />
 </SearchParameter>
