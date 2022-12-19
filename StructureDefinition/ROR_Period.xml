@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2022-12-16T09:08:32.8922067+00:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1" />
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/ROR_organization-period" />
+  <version value="2.4" />
+  <name value="ROR_OrganizationPeriod" />
+  <title value="Period" />
+  <status value="active" />
+  <date value="2021-03-25T16:52:52.2657+00:00" />
+  <publisher value="Health Level Seven, Inc. - FHIR WG" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="HL7" />
+    </telecom>
+  </contact>
+  <description value="The date range that this organization should be considered available." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Organization" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <definition value="The date range that this organization should be considered available." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:period">
+      <path value="Extension.extension" />
+      <sliceName value="period" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:period.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="period" />
+    </element>
+    <element id="Extension.extension:period.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Extension.extension:closingType">
+      <path value="Extension.extension" />
+      <sliceName value="closingType" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:closingType.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="closingType" />
+    </element>
+    <element id="Extension.extension:closingType.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J201-TypeFermeture-ROR/FHIR/JDV-J201-TypeFermeture-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.extension:reopeningDate">
+      <path value="Extension.extension" />
+      <sliceName value="reopeningDate" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reopeningDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="reopeningDate" />
+    </element>
+    <element id="Extension.extension:reopeningDate.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="date" />
+      </type>
+    </element>
+    <element id="Extension.extension:temporalityClosing">
+      <path value="Extension.extension" />
+      <sliceName value="temporalityClosing" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:temporalityClosing.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="temporalityClosing" />
+    </element>
+    <element id="Extension.extension:temporalityClosing.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J185-typeFermeture-ROR/FHIR/JDV-J185-typeFermeture-ROR/" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/ROR_organization-period" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <max value="0" />
+    </element>
+    <element id="Extension.value[x]:valuePeriod">
+      <path value="Extension.value[x]" />
+      <sliceName value="valuePeriod" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J201-TypeFermeture-ROR/FHIR/JDV-J201-TypeFermeture-ROR/" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

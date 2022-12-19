@@ -160,6 +160,9 @@
       <path value="HealthcareService.category" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-category" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR" />
       </binding>
@@ -168,6 +171,9 @@
       <path value="HealthcareService.type" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-type" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J20-ChampActivite-ROR/FHIR/JDV-J20-ChampActivite-ROR" />
       </binding>
@@ -201,6 +207,9 @@
       <min value="1" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-specialty" />
+        </extension>
         <strength value="required" />
         <description value="An operational activity that a healthcare service may provide." />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J17-ActiviteOperationnelle-ROR/FHIR/JDV-J17-ActiviteOperationnelle-ROR" />
@@ -217,6 +226,9 @@
       <definition value="Collection of operational activity families, except Serafin." />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="service-specialty" />
+        </extension>
         <strength value="required" />
         <description value="A family of operationnal activities that a healthcare service may provide." />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J51-FamilleActiviteOperationnelle-ROR/FHIR/JDV-J51-FamilleActiviteOperationnelle-ROR" />
@@ -270,6 +282,9 @@
     <element id="HealthcareService.telecom.system">
       <path value="HealthcareService.telecom.system" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactPointSystem" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR/" />
       </binding>
@@ -291,6 +306,9 @@
       <min value="1" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J222-NiveauConfidentialite-ROR/FHIR/JDV-J222-NiveauConfidentialite-ROR/" />
       </binding>
@@ -303,6 +321,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="receptionModality" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J226-ModaliteAccueil-ROR/FHIR/JDV-J226-ModaliteAccueil-ROR/" />
       </binding>
@@ -311,6 +332,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="managementType" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J26-ModeGestion-ROR/FHIR/JDV-J26-ModeGestion-ROR" />
       </binding>
@@ -324,6 +348,9 @@
       <sliceName value="receptionType" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J30-TemporaliteAccueil-ROR/FHIR/JDV-J30-TemporaliteAccueil-ROR" />
       </binding>
@@ -336,6 +363,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="takingCareSpeciality" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J35-SpecialisationDePriseEnCharge-ROR/FHIR/JDV-J35-SpecialisationDePriseEnCharge-ROR" />
       </binding>
@@ -349,6 +379,9 @@
       <sliceName value="annualOpening" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J28-OuvertureAnnuelle-ROR/FHIR/JDV-J28-OuvertureAnnuelle-ROR" />
       </binding>
@@ -361,6 +394,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="specificAct" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J16-ActeSpecifique-ROR/FHIR/JDV-J16-ActeSpecifique-ROR" />
       </binding>
@@ -373,6 +409,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="ressourceProfession" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J186-ProfessionRessource-ROR/FHIR/JDV_J186-ProfessionRessource-ROR" />
       </binding>
@@ -381,6 +420,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="specificCompetence" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J33-CompetenceSpecifique-ROR/FHIR/JDV-J33-CompetenceSpecifique-ROR" />
       </binding>
@@ -393,6 +435,9 @@
       <path value="HealthcareService.characteristic" />
       <sliceName value="expertiseLevel" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J227-NiveauExpertise-ROR/FHIR/JDV-J227-NiveauExpertise-ROR/" />
       </binding>
@@ -416,6 +461,9 @@
       <sliceName value="maternityLevel" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ServiceCharacteristic" />
+        </extension>
         <strength value="required" />
         <valueSet value="https://mos.esante.gouv.fr/NOS/JDV_J42-TypeMaternite-ROR/FHIR/JDV-J42-TypeMaternite-ROR/" />
       </binding>

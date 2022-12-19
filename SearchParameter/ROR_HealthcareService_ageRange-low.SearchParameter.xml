@@ -10,4 +10,13 @@
   <base value="HealthcareService" />
   <type value="quantity" />
   <expression value="HealthcareService.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService_PatientType').extension('ageRange').valueRange.low" />
+  <comparator value="eq" />
+  <comparator value="ne" />
+  <comparator value="gt" />
+  <comparator value="lt" />
+  <comparator value="ge" />
+  <comparator value="le" />
+  <comparator value="sa" />
+  <comparator value="eb" />
+  <comparator value="ap" />
 </SearchParameter>

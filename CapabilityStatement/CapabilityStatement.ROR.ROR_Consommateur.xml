@@ -1,13 +1,13 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <url value="http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/ROR"></url>
+   <url value="http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/ROR_Consommateur"></url>
    <version value="2.4"></version>
-   <name value="ROR_National"></name>
-   <title value="CI-SIS ROR - ROR_National"></title>
+   <name value="ROR_Consommateur"></name>
+   <title value="CI-SIS ROR - ROR_Consommateur"></title>
    <status value="active"></status>
    <experimental value="false"></experimental>
-   <date value="2022-12-08T11:21:07+01:00"></date>
+   <date value="2022-12-15T15:29:22+01:00"></date>
    <publisher value="ANS"></publisher>
-   <description value="Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national."></description>
+   <description value="Système qui est autorisé à consommer les données du ROR. "></description>
    <kind value="requirements"></kind>
    <fhirVersion value="4.0.1"></fhirVersion>
    <format value="application/fhir+xml"></format>
@@ -130,6 +130,74 @@ d’information de santé (CI-SIS)"></description>
             <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_Organization_DropZone"></definition>
             <type value="token"></type>
             <documentation value="Cet indicateur précise l’existence d’une zone de poser pour hélicoptère sur le site concerné."></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"></definition>
+            <type value="token"></type>
+            <documentation value="parametre de recherche pour Identification nationale de l'Entité Géographique définie dans le CI-SIS.et Numéro FINESS de l'entité géographique."></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="name"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/Organization-name"></definition>
+            <type value="string"></type>
+            <documentation value="Nom de l'organisation interne."></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="type"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/Organization-type"></definition>
+            <type value="token"></type>
+            <documentation value="Nom de l'organisation interne."></documentation>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="PractitionerRole"></type>
+         <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_PractitionerRole"></profile>
+         <interaction>
+            <code value="search-type"></code>
+         </interaction>
+         <interaction>
+            <code value="read"></code>
+         </interaction>
+         <searchParam>
+            <name value="service"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-service"></definition>
+            <type value="reference"></type>
+            <documentation value="Reference pour la recherche vers le HealthcareService"></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="practitioner"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"></definition>
+            <type value="reference"></type>
+            <documentation value="Reference pour la recherche vers le PractitionerRole"></documentation>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="Location"></type>
+         <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_Location"></profile>
+         <interaction>
+            <code value="search-type"></code>
+         </interaction>
+         <interaction>
+            <code value="read"></code>
+         </interaction>
+         <searchParam>
+            <name value="near"></name>
+            <definition value="http://hl7.org/fhir/SearchParameter/Location-near"></definition>
+            <type value="special"></type>
+            <documentation value="Lieux proches du lieu de réalisation de l'offre"></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="nearINSEECode"></name>
+            <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/Location-nearINSEECode"></definition>
+            <type value="special"></type>
+            <documentation value="Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"></documentation>
+         </searchParam>
+         <searchParam>
+            <name value="code-region"></name>
+            <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR-Location-code-region"></definition>
+            <type value="token"></type>
+            <documentation value="Code région"></documentation>
          </searchParam>
       </resource>
    </rest>

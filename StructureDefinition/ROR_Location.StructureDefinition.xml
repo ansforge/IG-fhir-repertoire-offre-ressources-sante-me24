@@ -50,10 +50,20 @@
       <path value="Location.extension" />
       <sliceName value="ResidentialCapacity" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthCareServiceResidentialCapacity" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Location.extension:CodeRegion">
+      <path value="Location.extension" />
+      <sliceName value="CodeRegion" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR-CodeRegion" />
       </type>
       <isModifier value="false" />
     </element>

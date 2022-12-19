@@ -5,7 +5,7 @@
    <name value="ROR"></name>
    <status value="active"></status>
    <experimental value="false"></experimental>
-   <date value="2022-12-08T11:21:09+01:00"></date>
+   <date value="2022-12-15T15:29:23+01:00"></date>
    <publisher value="ANS"></publisher>
    <description value="Il s'agit du guide d'implémentation du ROR."></description>
    <packageId value="ROR.fhir"></packageId>
@@ -19,6 +19,16 @@
       <resource>
          <reference>
             <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR-Organization"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_PractitionerRole"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_Location"></reference>
          </reference>
       </resource>
       <resource>
@@ -94,6 +104,46 @@
       <resource>
          <reference>
             <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_Organization_DropZone"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/Organization-identifier"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/Organization-name"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/Organization-type"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/PractitionerRole-service"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://hl7.org/fhir/SearchParameter/Location-near"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/Location-nearINSEECode"></reference>
+         </reference>
+      </resource>
+      <resource>
+         <reference>
+            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR-Location-code-region"></reference>
          </reference>
       </resource>
    </definition>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR-Location-code-region" />
+  <name value="ROR_Location_code_region" />
+  <status value="active" />
+  <date value="2022-08-04T00:00:00+02:00" />
+  <publisher value="ANS" />
+  <description value="Paramètre de recherche permettant de pointer sur la spécialité ordinale" />
+  <code value="code-region" />
+  <base value="Location" />
+  <type value="token" />
+  <expression value="Location.extension('http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR-CodeRegion').value" />
+</SearchParameter>
