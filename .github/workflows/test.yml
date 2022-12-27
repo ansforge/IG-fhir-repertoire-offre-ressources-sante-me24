@@ -21,7 +21,7 @@ jobs:
       - name: 🍣 Run SUSHI
         run: |
           npm install -g fsh-sushi
-          sushi /ig
+          #sushi /ig
 
       - name: 📥 Download test tools
         run: |
