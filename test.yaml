@@ -8,6 +8,6 @@ tests:
   - fileMatch:
       - ./Ressources conformités/**
       - ./SearchParameter/**
-      - ./StructureDefinition/**
+      #- ./StructureDefinition/**
       - "!../fsh-generated/resources/ImplementationGuide-*"
     tags: ig
