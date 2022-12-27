@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/navikt/fhir-validator-junit-engine/main/test-specification.schema.json
+---
+validator:
+  version: '4.0'
+tests:
+
+ # . Test has multiple file-matches and will generate multiple tests, non of which expects any errors.
+  - fileMatch:
+      - ./Ressources conformités/**
+      - ./SearchParameter/**
+      - ./StructureDefinition/**
+      - "!../fsh-generated/resources/ImplementationGuide-*"
+    tags: ig
