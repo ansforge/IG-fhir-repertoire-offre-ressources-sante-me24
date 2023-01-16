@@ -1,0 +1,9 @@
+{
+  "updated": "2023-01-11T14:09:55.7446204+01:00",
+  "dependencies": {
+    "ANS.annuaire.fhir.r4": "0.2.0",
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.fr.core": "1.1.0"
+  },
+  "missing": {}
+}

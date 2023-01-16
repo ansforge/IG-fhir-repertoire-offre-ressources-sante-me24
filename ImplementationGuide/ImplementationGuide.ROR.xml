@@ -1,11 +1,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
    <id value="ROR"></id>
-   <url value="http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/ROR"></url>
+   <url value="http://esante.gouv.fr/fhir/ror/ImplementationGuide/ROR"></url>
    <version value="2.4"></version>
    <name value="ROR"></name>
    <status value="active"></status>
    <experimental value="false"></experimental>
-   <date value="2022-12-15T15:29:23+01:00"></date>
+   <date value="2023-01-12T14:27:53+01:00"></date>
    <publisher value="ANS"></publisher>
    <description value="Il s'agit du guide d'implémentation du ROR."></description>
    <packageId value="ROR.fhir"></packageId>
@@ -13,37 +13,37 @@
    <definition>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_HealthcareService"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR-Organization"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-organization"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_PractitionerRole"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-practitionerrole"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ROR_Location"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_supportedPatientType"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-patient-type"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ageRange_low"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-low"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ageRange_high"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ageRange-high"></reference>
          </reference>
       </resource>
       <resource>
@@ -63,12 +63,12 @@
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_psychiatricSector"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_ReceptionMode"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode"></reference>
          </reference>
       </resource>
       <resource>
@@ -78,22 +78,22 @@
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_Profession"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-profession"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_OrdinalSpeciality"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ordinal-speciality"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_SpecificCompetence"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-specific-competence"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_HealthcareService_equipmentType"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type"></reference>
          </reference>
       </resource>
       <resource>
@@ -103,7 +103,7 @@
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR_Organization_DropZone"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-Organization_DropZone"></reference>
          </reference>
       </resource>
       <resource>
@@ -138,12 +138,12 @@
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/Location-nearINSEECode"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-code"></reference>
          </reference>
       </resource>
       <resource>
          <reference>
-            <reference value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ROR-Location-code-region"></reference>
+            <reference value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-code-region"></reference>
          </reference>
       </resource>
    </definition>

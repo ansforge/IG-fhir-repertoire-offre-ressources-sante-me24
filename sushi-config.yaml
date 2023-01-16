@@ -1,0 +1,8 @@
+canonical: http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/ROR
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: ROR
+name: ROR
+status: active
+version: "2.4"

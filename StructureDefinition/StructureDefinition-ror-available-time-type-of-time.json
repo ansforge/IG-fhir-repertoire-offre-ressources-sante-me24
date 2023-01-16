@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-available-time-type-of-time",
+  "url": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-available-time-type-of-time",
+  "version": "2.4",
+  "name": "RORAvailableTimeTypeOfTime",
+  "status": "active",
+  "date": "2022-06-30",
+  "publisher": "ANS",
+  "description": "Extension créée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService.availableTime"
+    },
+    {
+      "type": "element",
+      "expression": "PractitionerRole.availableTime"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-available-time-type-of-time"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type of time",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J41-TypeHoraire-ROR/FHIR/JDV-J41-TypeHoraire-ROR"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J41-TypeHoraire-ROR/FHIR/JDV-J41-TypeHoraire-ROR"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding.system",
+        "path": "Extension.value[x].coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R252-TypeHoraire/FHIR/TRE-R252-TypeHoraire"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-code-region",
+  "url": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-code-region",
+  "name": "RORCodeRegion",
+  "status": "active",
+  "publisher": "ANS",
+  "description": "Extension créée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-code-region"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV_J237-RegionOM-ROR"
+      }
+    ]
+  }
+}

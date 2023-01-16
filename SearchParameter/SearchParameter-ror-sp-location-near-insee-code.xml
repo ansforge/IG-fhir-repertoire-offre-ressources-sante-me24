@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="ror-sp-location-near-insee-Code" />
+  <url value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code" />
+  <version value="2.4" />
+  <name value="LocationNearINSEECode" />
+  <status value="active" />
+  <date value="2022-08-04T00:00:00+02:00" />
+  <publisher value="ANS" />
+  <description value="Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique" />
+  <code value="near-insee-code" />
+  <base value="Location" />
+  <type value="special" />
+  <expression value="Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode" />
+</SearchParameter>

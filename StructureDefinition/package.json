@@ -1,0 +1,12 @@
+{
+  "name": "JSON",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "ANS.annuaire.fhir.r4": "0.2.0",
+    "hl7.fhir.fr.core": "1.1.0"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}

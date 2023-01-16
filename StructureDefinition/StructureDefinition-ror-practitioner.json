@@ -1,0 +1,129 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-practitioner",
+  "url": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-practitioner",
+  "name": "RORPractitioner",
+  "status": "active",
+  "publisher": "ANS",
+  "description": "Profil créée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Practitioner.extension:mailBoxMSS",
+        "path": "Practitioner.extension",
+        "sliceName": "mailBoxMSS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.name.suffix",
+        "path": "Practitioner.name.suffix",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition"
+        }
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.telecom.extension",
+        "path": "Practitioner.telecom.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Practitioner.telecom.extension:usage",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "usage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-telecom-usage"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.telecom.extension:ror-confidentiality-level",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "ror-confidentiality-level",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-confidentiality-level"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.telecom.extension:ror-communication-channel",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "ror-communication-channel",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-communication-channel"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

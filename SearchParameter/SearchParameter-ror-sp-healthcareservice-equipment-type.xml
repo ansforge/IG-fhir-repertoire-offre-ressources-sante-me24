@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="ror-healthcareservice-equipment-type" />
+  <url value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type" />
+  <version value="1.0" />
+  <name value="RORHealthcareServiceEquipmentType" />
+  <status value="active" />
+  <date value="2022-06-09T00:00:00+02:00" />
+  <publisher value="ANS" />
+  <description value="Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire" />
+  <code value="equipment-type" />
+  <base value="HealthcareService" />
+  <type value="token" />
+  <expression value="HealthcareService.extension.where(url = 'http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-healthcareservice-equipement').extension(url = 'equipmentType').valueCodeableConcept" />
+</SearchParameter>

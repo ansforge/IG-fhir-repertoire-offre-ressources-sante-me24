@@ -1,0 +1,186 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-location",
+  "url": "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location",
+  "version": "2.4",
+  "name": "RORLocation",
+  "status": "active",
+  "date": "2022-06-30",
+  "publisher": "ANS",
+  "description": "Profil crée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Location.extension:ror-healthcareservice-capacity-reception",
+        "path": "Location.extension",
+        "sliceName": "ror-healthcareservice-capacity-reception",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-capacity-reception"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:ror-healthcareservice-capacity-reception-crisis",
+        "path": "Location.extension",
+        "sliceName": "ror-healthcareservice-capacity-reception-crisis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-capacity-reception-crisis"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:ror-healthcareservice-residential-capacity",
+        "path": "Location.extension",
+        "sliceName": "ror-healthcareservice-residential-capacity",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-residential-capacity"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:ror-code-region",
+        "path": "Location.extension",
+        "sliceName": "ror-code-region",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-code-region"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/fr-address-extended"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.address.line.extension",
+        "path": "Location.address.line.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Location.address.line.extension:ror-organization-address-line-iso-21090-adxp-locality",
+        "path": "Location.address.line.extension",
+        "sliceName": "ror-organization-address-line-iso-21090-adxp-locality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.position.extension",
+        "path": "Location.position.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Location.position.extension:ror-location-geodesic-system",
+        "path": "Location.position.extension",
+        "sliceName": "ror-location-geodesic-system",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location-geodesic-system"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.position.extension:ror-location-reliable-position",
+        "path": "Location.position.extension",
+        "sliceName": "ror-location-reliable-position",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-location-reliable-position"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}
