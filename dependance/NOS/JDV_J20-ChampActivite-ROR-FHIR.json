@@ -1,6 +1,3 @@
-// 20230116164803
-// https://mos.esante.gouv.fr/NOS/JDV_J20-ChampActivite-ROR/FHIR/JDV-J20-ChampActivite-ROR/JDV_J20-ChampActivite-ROR-FHIR.json
-
 {
   "resourceType": "ValueSet",
   "id": "JDV-J20-ChampActivite-ROR",
