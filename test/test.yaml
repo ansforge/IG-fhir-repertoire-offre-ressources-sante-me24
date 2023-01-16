@@ -4,6 +4,7 @@ validator:
   ig:
     - ../dependance/hl7.fhir.fr.core-1.1.0.tgz
     - ../dependance/ans.annuaire.fhir.r4-0.2.0.tgz
+     - ../dependance/NOS
     - ../StructureDefinition
 tests:
   
