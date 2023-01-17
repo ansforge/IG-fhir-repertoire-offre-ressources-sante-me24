@@ -19,11 +19,7 @@ jobs:
           path: |
             ~/.fhir/packages
           key: fhir-packages
-
-      - name: 🍣 Run SUSHI
-        run: |
-          npm install -g fsh-sushi
-          sushi 
+ 
       - name: 📥 Download test tools
         run: |
           wget -q https://github.com/navikt/fhir-validator-junit-engine/releases/latest/download/fhir-validator-junit-engine.jar
