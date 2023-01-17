@@ -14,7 +14,6 @@ tests:
       - ../SearchParameter/**
       - ../Ressources conformités/**      
       - "!../StructureDefinition/package.json*"
-
-
+      - "!../StructureDefinition/fhirpkg.lock.json*"
 
     tags: ig
