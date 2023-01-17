@@ -2,9 +2,9 @@ title: Human readable name of the Test Suite.
 validator:
   version: "4.0"
   ig:
-    - ../dependance/hl7.fhir.fr.core-1.1.0.tgz
-    - ../dependance/ans.annuaire.fhir.r4-0.2.0.tgz
-     - ../dependance/NOS
+    - ../dependency/hl7.fhir.fr.core-1.1.0.tgz
+    - ../dependency/ans.annuaire.fhir.r4-0.2.0.tgz
+     - ../dependency/NOS
     - ../StructureDefinition
 tests:
   
