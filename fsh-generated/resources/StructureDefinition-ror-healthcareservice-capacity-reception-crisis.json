@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-healthcareservice-capacity-reception-crisis",
+  "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-capacity-reception-crisis",
+  "version": "2.4",
+  "name": "RORHealthCareServiceCapacityReceptionCrisis",
+  "status": "active",
+  "date": "2022-07-08",
+  "publisher": "ANS",
+  "description": "Extension créée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    },
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Extension créée dans le cadre du ROR"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:T0CrisisCapacity",
+        "path": "Extension.extension",
+        "sliceName": "T0CrisisCapacity",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:T0CrisisCapacity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:T0CrisisCapacity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "T0CrisisCapacity"
+      },
+      {
+        "id": "Extension.extension:T0CrisisCapacity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:T60CrisisCapacity",
+        "path": "Extension.extension",
+        "sliceName": "T60CrisisCapacity",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:T60CrisisCapacity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:T60CrisisCapacity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "T60CrisisCapacity"
+      },
+      {
+        "id": "Extension.extension:T60CrisisCapacity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-capacity-reception-crisis"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ror-healthcareservice-capacity-reception",
+  "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-capacity-reception",
+  "version": "2.4",
+  "name": "RORHealthCareServiceCapacityReception",
+  "status": "active",
+  "date": "2022-07-08",
+  "publisher": "ANS",
+  "description": "Extension créée dans le cadre du ROR",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    },
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Extension créée dans le cadre du ROR"
+      },
+      {
+        "id": "Extension.extension:placedBedNumber",
+        "path": "Extension.extension",
+        "sliceName": "placedBedNumber",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:placedBedNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:placedBedNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "placedBedNumber"
+      },
+      {
+        "id": "Extension.extension:placedBedNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableBedNumber",
+        "path": "Extension.extension",
+        "sliceName": "availableBedNumber",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:availableBedNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availableBedNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "availableBedNumber"
+      },
+      {
+        "id": "Extension.extension:availableBedNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableBedUpdateDate",
+        "path": "Extension.extension",
+        "sliceName": "availableBedUpdateDate",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:availableBedUpdateDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availableBedUpdateDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "availableBedUpdateDate"
+      },
+      {
+        "id": "Extension.extension:availableBedUpdateDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:placedPlacesNumber",
+        "path": "Extension.extension",
+        "sliceName": "placedPlacesNumber",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:placedPlacesNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:placedPlacesNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "placedPlacesNumber"
+      },
+      {
+        "id": "Extension.extension:placedPlacesNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumber",
+        "path": "Extension.extension",
+        "sliceName": "availablePlacesNumber",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "availablePlacesNumber"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumberUpdateDate",
+        "path": "Extension.extension",
+        "sliceName": "availablePlacesNumberUpdateDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumberUpdateDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumberUpdateDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "availablePlacesNumberUpdateDate"
+      },
+      {
+        "id": "Extension.extension:availablePlacesNumberUpdateDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-capacity-reception"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
