@@ -28,8 +28,10 @@ jobs:
       - name : firely 
         run : dotnet tool install --global Firely.Terminal --version 2.2.0
       - name: Run back
-        run: fhir bake --package de.basisprofil.r4
-        
+        run: fhir bake --package ans.annuaire.fhir.r4#0.2.0
+      - name: Run back2
+        run: fhir bake --package hl7.fhir.fr.core#1.1.0
+ 
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
