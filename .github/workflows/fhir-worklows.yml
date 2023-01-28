@@ -25,7 +25,8 @@ jobs:
         with:
           distribution: 'microsoft'
           java-version: '17'    
-          
+      - name : firely 
+        run : dotnet tool install --global Firely.Terminal --version 2.2.0
       - name: Run back
         run: fhir bake --package de.basisprofil.r4
         
