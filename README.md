@@ -17,6 +17,14 @@ Ce sample IG a été créé à partir du sample-ig fhir : https://github.com/FHI
 
 Après avoir créé les profil et mis à jour sushi-config, il y a une démarche à suivre pour générer la page web de l'IG. Celle-ci est à suivre dans le [wiki de ce repo](https://github.com/ansforge/FIG_ans-ig-sample/wiki).
 
+# CI/CD
+Les pipelines mis de ce repository permettent : 
+* Executer  Sushi
+* Faire les tests avec le validator_cli
+* Publier les pages :  https://ansforge.github.io/ROR_ressource-conformance/ig/
+
+![image](https://user-images.githubusercontent.com/101335975/215342980-61686171-e3f8-40c5-865c-efdfc3dd52b4.png)
+
 
 
 ## Acronymes
