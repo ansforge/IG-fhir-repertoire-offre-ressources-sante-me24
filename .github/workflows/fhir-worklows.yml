@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: patch
-        uses: ./.github/workflows/patch-snapshot.yml
     
       # Install .NET runtime
       - name: Setup .NET Core SDK
