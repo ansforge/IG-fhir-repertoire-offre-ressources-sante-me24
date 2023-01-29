@@ -26,7 +26,7 @@ jobs:
           distribution: 'microsoft'
           java-version: '17'    
       - name : firely 
-        run : dotnet tool install --global Firely.Terminal --version 2.3.0
+        run : dotnet tool install --global Firely.Terminal --version 3.0.0
         
       - name: Check Firely Terminal Version
         run: |
@@ -34,9 +34,9 @@ jobs:
           echo "FIRELY_TERMINAL_VERSION: $CHECK_FIRELY_TERMINAL_VERSION"
         
       - name: Run back
-        run: fhir bake --package ans.annuaire.fhir.r4#0.2.0
+        run: fhir bake --package ans.annuaire.fhir.r4
       - name: Run back2
-        run: fhir bake --package hl7.fhir.fr.core#1.1.0
+        run: fhir bake --package hl7.fhir.fr.core
  
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
