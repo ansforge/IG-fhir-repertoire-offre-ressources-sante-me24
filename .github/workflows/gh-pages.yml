@@ -11,7 +11,7 @@ env:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: docker://hl7fhir/ig-publisher-base:latest
     steps:
       - uses: actions/checkout@v2
 
@@ -68,6 +68,8 @@ jobs:
         
       - name: Install modules
         run: npm install -g fsh-sushi
+        
+        
       # Builds the HTML page for the IG.
       - name: 🏃‍♂️ Run IG Publisher
         run : java -jar publisher.jar publisher -ig .  -publish https://m-priour.github.io/ans-test/
