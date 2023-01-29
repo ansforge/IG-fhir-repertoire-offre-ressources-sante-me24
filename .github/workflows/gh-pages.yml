@@ -11,7 +11,7 @@ env:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
 jobs:
   publish:
-    runs-on: docker://hl7fhir/ig-publisher-base:latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
