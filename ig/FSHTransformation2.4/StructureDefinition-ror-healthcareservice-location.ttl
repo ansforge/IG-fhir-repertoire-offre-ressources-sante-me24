@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "2.4"]; # 
   fhir:StructureDefinition.name [ fhir:value "RORHealthCareServiceLocation"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-01-30T20:26:05+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-01-30T20:52:57+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "ANS"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
