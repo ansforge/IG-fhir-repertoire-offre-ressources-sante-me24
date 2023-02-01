@@ -2,7 +2,7 @@ Extension: ROROrganizationPeriod
 Id: ror-organization-period
 Title: "Period"
 Description: "Extension créée dans le cadre du ROR"
-* ^meta.lastUpdated = "2023-01-10T10:20:51.8119254+00:00"
+* ^meta.lastUpdated = "2023-01-25T13:28:06.120655+00:00"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #pa
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -10,8 +10,6 @@ Description: "Extension créée dans le cadre du ROR"
 * ^version = "2.4"
 * ^date = "2021-03-25T16:52:52.2657+00:00"
 * ^publisher = "ANS"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "HL7"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * . ..1
@@ -30,7 +28,7 @@ Description: "Extension créée dans le cadre du ROR"
 * extension[closingType].value[x] from $JDV-J201-TypeFermeture-ROR (required)
 * extension[reopeningDate].value[x] only date
 * extension[temporalityClosing].value[x] only CodeableConcept
-* extension[temporalityClosing].value[x] from $JDV-J185-typeFermeture-ROR (required)
+* extension[temporalityClosing].value[x] from $JDV-J185-TypeFermeture-ROR (required)
 * url only uri
 //* value[x] ^slicing.discriminator.type = #type
 //* value[x] ^slicing.discriminator.path = "$this"

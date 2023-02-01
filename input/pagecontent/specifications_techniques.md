@@ -1455,7 +1455,7 @@ Gestion des codes retours en FHIR :
 
 ### Jeux de données pour exemple
 
-![Figure 3 - Jeu de données](assets/images/image9.png "Figure 3 - Jeu de données")
+![Figure 3 - Jeu de données](image9.png "Figure 3 - Jeu de données")
 
 
 | **Healthcare service v2\.4**                                                                                  |

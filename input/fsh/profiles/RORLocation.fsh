@@ -19,7 +19,22 @@ Description: "Profil crée dans le cadre du ROR"
 * extension[ror-healthcareservice-residential-capacity] ^min = 0
 * extension[ror-healthcareservice-residential-capacity] ^isModifier = false
 * extension[ror-code-region] ^isModifier = false
+* status from $JDV-J224-StatutLieu-ROR (required)
 * address only $fr-address-extended
+* address.extension ^slicing.discriminator.type = #value
+* address.extension ^slicing.discriminator.path = "url"
+* address.extension ^slicing.rules = #open
+* address.extension ^min = 0
+* address.extension contains
+    RORCommuneCog named ror-commune-cog 0..1 and
+    RORAddressCalculatedDistance named ror-address-calculated-distance 0..1 and
+    RORGeolocation named ror-geolocation 0..
+* address.extension[ror-commune-cog] ^isModifier = false
+* address.extension[ror-address-calculated-distance] ^isModifier = false
+//* address.extension[ror-geolocation] only RORGeolocation
+//* address.extension[ror-geolocation] ^sliceName = "ror-geolocation"
+//* address.extension[ror-geolocation] ^min = 0
+* address.extension[ror-geolocation] ^isModifier = false
 * address.line.extension ^slicing.discriminator.type = #value
 * address.line.extension ^slicing.discriminator.path = "url"
 * address.line.extension ^slicing.rules = #open

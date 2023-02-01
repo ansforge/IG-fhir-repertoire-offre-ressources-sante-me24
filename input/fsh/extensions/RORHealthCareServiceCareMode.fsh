@@ -7,4 +7,4 @@ Description: "Extension créée dans le cadre du ROR"
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
 * value[x] only CodeableConcept
-* value[x] from $JDV_J19-ModePriseEnCharge-ROR (required)
+* value[x] from $JDV-J19-ModePriseEnCharge-ROR (required)

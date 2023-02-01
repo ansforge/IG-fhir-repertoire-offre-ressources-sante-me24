@@ -1,7 +1,6 @@
 Extension: RORGeolocation
 Id: ror-geolocation
 Title: "Geolocation"
-Description: "The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML)."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #fhir
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -9,8 +8,6 @@ Description: "The absolute geographic location of the Location, expressed using 
 * ^version = "2.4"
 * ^date = "2013-12-05"
 * ^publisher = "ANS"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://www.hl7.org/Special/committees/fiwg"
 * ^context.type = #element
 * ^context.expression = "Address"
 * . ..1

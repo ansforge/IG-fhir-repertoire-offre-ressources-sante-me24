@@ -12,4 +12,4 @@ Description: "Extension créée dans le cadre du ROR"
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x].coding from $JDV-J222-NiveauConfidentialite-ROR (required)
-* value[x].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R283-NiveauConfidentialite/TRE_R283-NiveauConfidentialite" (exactly)
+* value[x].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R283-NiveauConfidentialite/TRE-R283-NiveauConfidentialite" (exactly)

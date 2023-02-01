@@ -8,4 +8,4 @@ Description: "Extension créée dans le cadre du ROR"
 * ^context.expression = "Organization"
 * . ..1
 * value[x] only CodeableConcept
-* value[x] from $test (required)
+* value[x] from $JDV-J50-AccessibiliteLieu-ROR (required)

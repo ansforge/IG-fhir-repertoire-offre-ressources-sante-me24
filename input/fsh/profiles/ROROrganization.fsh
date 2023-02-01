@@ -8,7 +8,10 @@ Description: "Profil créé dans le cadre du ROR"
 * extension ^slicing.rules = #open
 * extension ^min = 0
 * extension contains
-    MailboxMSS named mailboxMSS 0.. and
+    //description 0..0 and
+    ROROrganizationPrice named ror-organization-price 0..1 and
+    RORDropZone named ror-drop-zone 0..1 and
+    $mailboxMSS named mailboxMSS 0.. and
     RORHealthcareserviceTerritorial named ror-healthcareservice-territorial 0.. and
     ROROrganizationFinancialHelpType named ror-organization-financial-help-type 0.. and
     ROROrganizationAccomodationFamily named ror-organization-accomodation-family 0.. and
@@ -18,15 +21,7 @@ Description: "Profil créé dans le cadre du ROR"
     RORLevelRecoursORSAN named ror-level-recours-orsan 0.. and
     RORCareWithoutPatientApproval named ror-care-without-patient-approval 0.. and
     ROROrganizationPeriod named ror-organization-period 0.. and
-    RORTypeActivity named ror-type-activity 0.. and
-    //description 0..0 and
-    /*PharmacyLicence named pharmacyLicence 0.. and
-    DigitalCertificate named digitalCertificate 0.. and
-    ROR_organizationPrice named price 0..1 and
-    ROR_typeActivity named typeActivity 0.. and
-    */
-    ROROrganizationPrice named ror-organization-price 0..1 and
-    RORDropZone named ror-drop-zone 0..1
+    RORTypeActivity named ror-type-activity 0..
 //* extension[mailboxMSS] only $mailboxMSS
 //* extension[mailboxMSS] ^sliceName = "mailboxMSS"
 //* extension[mailboxMSS] ^min = 0
@@ -85,20 +80,20 @@ Description: "Profil créé dans le cadre du ROR"
     numSIRET 0..1 and
     identifiantOI 0..1 and
     numADELI 0..1
-* identifier[idNatStruct].type = $TRE_R254-TypeEvenement-FHIR.json#40 (exactly)
-* identifier[idNatStruct].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[numFINESS].type = $#1 (exactly)
-* identifier[numFINESS].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[numSIREN].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[numSIREN].type ^fixedCodeableConcept.coding.system = "https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/"
-* identifier[numRPPS].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[numRPPS].type ^fixedCodeableConcept.coding.system = "https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/"
-* identifier[numSIRET].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[numSIRET].type ^fixedCodeableConcept.coding.system = "https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/"
-* identifier[identifiantOI].type from $JDV_J236-TypeIdentifiant-ROR (required)
-* identifier[identifiantOI].type ^fixedCodeableConcept.coding.system = "https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/"
-* identifier[numADELI].type = $#0 (exactly)
-* identifier[numADELI].type from $JDV_J236-TypeIdentifiant-ROR (required)
+* identifier[idNatStruct].type = $TRE-R254-TypeEvenement-FHIR.json#40 (exactly)
+* identifier[idNatStruct].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[numFINESS].type = $JDV-J236-TypeIdentifiant-ROR#1 (exactly)
+* identifier[numFINESS].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[numSIREN].type = $JDV-J236-TypeIdentifiant-ROR#2 (exactly)
+* identifier[numSIREN].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[numRPPS].type = $JDV-J236-TypeIdentifiant-ROR#4 (exactly)
+* identifier[numRPPS].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[numSIRET].type = $JDV-J236-TypeIdentifiant-ROR#3 (exactly)
+* identifier[numSIRET].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[identifiantOI].type = $JDV-J236-TypeIdentifiant-ROR#42 (exactly)
+* identifier[identifiantOI].type from $JDV-J236-TypeIdentifiant-ROR (required)
+* identifier[numADELI].type = $JDV-J236-TypeIdentifiant-ROR#0 (exactly)
+* identifier[numADELI].type from $JDV-J236-TypeIdentifiant-ROR (required)
 * type[organizationType] from $JDV-J203-TypeOrganisationInterne-ROR (required)
 * type[organizationType] ^sliceName = "organizationType"
 * type[organizationType] ^binding.description = "Binding JDV_J203-TypeOrganisationInterne-ROR"
@@ -111,7 +106,7 @@ Description: "Profil créé dans le cadre du ROR"
     sousEnsembleAgregatStatutJuridique 0..1
 * type[statutJuridiqueINSEE] from $JDV-J199-StatutJuridique-ROR (required)
 * type[statutJuridiqueINSEE] ^binding.description = "Binding JDV_J199-StatutJuridique-ROR"
-* type[categorieEtablissement] from $JDV_J55-CategorieEG-ROR (required)
+* type[categorieEtablissement] from $JDV-J55-CategorieEG-ROR (required)
 * type[categorieEtablissement] ^binding.description = "Binding JDV_J55-CategorieEG-ROR"
 * type[sphParticipation] from $JDV-J202-ESPIC-ROR (required)
 * type[sphParticipation] ^binding.description = "Binding JDV_J202-ESPIC-ROR"

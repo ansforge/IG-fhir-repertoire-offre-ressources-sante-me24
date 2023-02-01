@@ -3,7 +3,7 @@
 Le Répertoire de l’Offre et des Ressources en santé et accompagnement médico-social (ROR) est le référentiel (au sens gisement de données) de description de l’offre de santé des établissements sanitaires, des établissements et services du médico-social et des structures de ville. 
 Les acteurs de santé ont convergé sur une vision commune de l’offre de santé. L’offre de santé est définie par une ou plusieurs activités opérationnelles, réalisée(s) dans le cadre d’un mode de prise en charge et pour une patientèle, et par les ressources qui permettent la réalisation de ces activités opérationnelles sur un lieu donné. Ces ressources concernent principalement les équipements spécifiques, les capacités d’accueil et les compétences que l’on souhaite identifier pour cette offre.
 
-![ROR Modèle d'exposition v2](assets/images/ME_ROR_2.4.png "ROR Modèle d'exposition v2")
+![ROR Modèle d'exposition v2](ME_ROR_2.4.png "ROR Modèle d'exposition v2")
 
 Le ROR, en tant que référentiel de description de l’offre de santé (au sens gisement de données), a une couverture nationale. Il doit permettre à toute application autorisée de rechercher une offre de santé.
 

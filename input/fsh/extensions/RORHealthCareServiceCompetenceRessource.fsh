@@ -16,7 +16,7 @@ Description: "Extension créée dans le cadre du ROR"
     specificCompetence 0..*
 * extension[profession] ^min = 0
 * extension[profession].value[x] only code
-* extension[profession].value[x] from $JDV_J54-Profession-ROR (required)
+* extension[profession].value[x] from $JDV-J54-Profession-ROR (required)
 * extension[ordinalSpeciality] ^min = 0
 * extension[ordinalSpeciality].value[x] only code
 * extension[ordinalSpeciality].value[x] from $JDV-J32-TypeHabitation-ROR (required)

@@ -25,7 +25,7 @@ A ce jour, le webservice répond au cas d'usage suivants :
 
 #### Description du cas d'usage
 
-![Figure 2- Recherche offre modèle expo V2.4](assets/images/image6.png "Figure 2- Recherche offre modèle expo V2.4")
+![Figure 2- Recherche offre modèle expo V2.4](image6.png "Figure 2- Recherche offre modèle expo V2.4")
 Un consommateur cherche des offres opérationnelles à partir de
 critère(s) de recherche.
 

@@ -66,7 +66,7 @@ Description: "Profil créée dans le cadre du ROR"
 * telecom.extension ^slicing.rules = #open
 * telecom.extension contains
     RORTelecomConfidentialityLevel named ror-telecom-confidentiality-level 1..1 and
-    ROR_Telecom_Usage named ror-telecom-usage 0..1
+    RORTelecomUsage named ror-telecom-usage 0..1
 * telecom.extension[ror-telecom-confidentiality-level] ^isModifier = false
 * telecom.extension[ror-telecom-usage] ^isModifier = false
 * telecom.system from $JDV-J221-NatureContact-ROR (required)
@@ -101,7 +101,7 @@ Description: "Profil créée dans le cadre du ROR"
 * characteristic[annualOpening].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R238-OuvertureAnnuelle/FHIR/TRE-R238-OuvertureAnnuelle" (exactly)
 * characteristic[specificAct] from $JDV-J16-ActeSpecifique-ROR (required)
 * characteristic[specificAct].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique" (exactly)
-* characteristic[ressourceProfession] from $JDV_J186-ProfessionRessource-ROR (required)
+* characteristic[ressourceProfession] from $JDV-J186-ProfessionRessource-ROR (required)
 * characteristic[specificCompetence] from $JDV-J33-CompetenceSpecifique-ROR (required)
 * characteristic[specificCompetence].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique" (exactly)
 * characteristic[expertiseLevel] from $JDV-J227-NiveauExpertise-ROR (required)
