@@ -14,7 +14,7 @@
   ]; # 
   fhir:StructureDefinition.url [ fhir:value "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage"]; # 
   fhir:StructureDefinition.version [ fhir:value "2.4"]; # 
-  fhir:StructureDefinition.name [ fhir:value "ROR_Telecom_Usage"]; # 
+  fhir:StructureDefinition.name [ fhir:value "RORTelecomUsage"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
   fhir:StructureDefinition.date [ fhir:value "2022-07-08"^^xsd:date]; # 
   fhir:StructureDefinition.publisher [ fhir:value "ANS"]; # 

@@ -10,7 +10,7 @@
   "name" : "ROR",
   "title" : "ROR",
   "status" : "active",
-  "date" : "2023-02-02T13:13:30+00:00",
+  "date" : "2023-02-02T17:32:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -880,7 +880,6 @@
         "reference" : "StructureDefinition/ror-geolocation"
       },
       "name" : "Geolocation",
-      "description" : "The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML).",
       "exampleBoolean" : false
     },
     {
@@ -1345,6 +1344,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ror-telecom-usage"
+      },
+      "name" : "RORTelecomUsage",
+      "description" : "Extension créée dans le cadre du ROR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ror-type-activity"
       },
       "name" : "RORTypeActivity",
@@ -1360,18 +1371,6 @@
         "reference" : "StructureDefinition/ror-unit-exercise-mode"
       },
       "name" : "RORUnitExerciseMode",
-      "description" : "Extension créée dans le cadre du ROR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ror-telecom-usage"
-      },
-      "name" : "ROR_Telecom_Usage",
       "description" : "Extension créée dans le cadre du ROR",
       "exampleBoolean" : false
     },
@@ -1409,6 +1408,18 @@
       },
       "name" : "ror-code-region",
       "description" : "Paramètre de recherche permettant de pointer sur la spécialité ordinale",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/ror-consommateur"
+      },
+      "name" : "ror-consommateur",
+      "description" : "Système qui est autorisé à consommer les données du ROR.",
       "exampleBoolean" : false
     },
     {
@@ -1522,6 +1533,150 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/ror-serveur"
+      },
+      "name" : "ror-serveur",
+      "description" : "Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-code-region"
+      },
+      "name" : "ror-sp-code-region",
+      "description" : "Paramètre de recherche permettant de pointer sur la spécialité ordinale",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-age-range-high"
+      },
+      "name" : "ror-sp-healthcareservice-age-range-high",
+      "description" : "Paramètre de recherche décrivant l'age maximum de la patientèle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-age-range-low"
+      },
+      "name" : "ror-sp-healthcareservice-age-range-low",
+      "description" : "Paramètre de recherche décrivant l'age minimum de la patientèle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-equipment-type"
+      },
+      "name" : "ror-sp-healthcareservice-equipment-type",
+      "description" : "Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-ordinal-speciality"
+      },
+      "name" : "ror-sp-healthcareservice-ordinal-speciality",
+      "description" : "Paramètre de recherche permettant de pointer sur la spécialité ordinale",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-patient-type"
+      },
+      "name" : "ror-sp-healthcareservice-patient-type",
+      "description" : "Paramètre de recherche décrivant le public pris en charge",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-profession"
+      },
+      "name" : "ror-sp-healthcareservice-profession",
+      "description" : "Paramètre de recherche permettant de pointer sur la profession",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-psychiatric-sector"
+      },
+      "name" : "ror-sp-healthcareservice-psychiatric-sector",
+      "description" : "Paramètre de recherche décrivrant le secteur psychiatrique de l'unité élémentaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-reception-mode"
+      },
+      "name" : "ror-sp-healthcareservice-reception-mode",
+      "description" : "Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-healthcareservice-specific-competence"
+      },
+      "name" : "ror-sp-healthcareservice-specific-competence",
+      "description" : "Paramètre de recherche permettant de pointer sur la compétence spécifique",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-location-commune-cog"
+      },
+      "name" : "ror-sp-location-commune-cog",
+      "description" : "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
@@ -1529,6 +1684,18 @@
       },
       "name" : "ror-sp-location-near-insee-Code",
       "description" : "Paramètre de recherche similaire au paramètre spécial \"near\", à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/ror-sp-organization-drop-zone"
+      },
+      "name" : "ror-sp-organization-drop-zone",
+      "description" : "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné",
       "exampleBoolean" : false
     }],
     "page" : {

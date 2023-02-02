@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="ror-sp-healthcareservice-equipment-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b><a name="ror-sp-healthcareservice-equipment-type"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter &quot;ror-sp-healthcareservice-equipment-type&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type</code></p><p><b>version</b>: 2.4</p><p><b>name</b>: RORHealthcareServiceEquipmentType</p><p><b>status</b>: active</p><p><b>date</b>: 2022-06-09 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href="https://esante.gouv.fr">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire</p><p><b>code</b>: equipment-type</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: token</p><p><b>expression</b>: HealthcareService.extension.where(url = 'http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-equipement').extension(url = 'equipmentType').valueCodeableConcept</p></div>
+  </text>
+  <url value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type"/>
+  <version value="2.4"/>
+  <name value="RORHealthcareServiceEquipmentType"/>
+  <status value="active"/>
+  <date value="2022-06-09T00:00:00+02:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire"/>
+  <code value="equipment-type"/>
+  <base value="HealthcareService"/>
+  <type value="token"/>
+  <expression value="HealthcareService.extension.where(url = 'http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-equipement').extension(url = 'equipmentType').valueCodeableConcept"/>
+</SearchParameter>

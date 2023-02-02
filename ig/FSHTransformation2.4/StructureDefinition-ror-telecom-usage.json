@@ -7,7 +7,7 @@
   },
   "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage",
   "version" : "2.4",
-  "name" : "ROR_Telecom_Usage",
+  "name" : "RORTelecomUsage",
   "status" : "active",
   "date" : "2022-07-08",
   "publisher" : "ANS",

@@ -27,7 +27,6 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",

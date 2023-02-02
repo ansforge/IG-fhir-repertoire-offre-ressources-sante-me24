@@ -67,7 +67,7 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XPN.5","./part[partType = PFX]","./TitleCode"
 "Practitioner.name.suffix","Practitioner.name.suffix","","","",0,1,"","","Y","string {[]} {[]}
-","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,"required","","http://esante.gouv.fr/ci-sis/fhir/StructureDefinition","",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J207-Civilite-ROR/FHIR/JDV-J207-Civilite-ROR","",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XPN/4","./part[partType = SFX]"
 "Practitioner.name.period","Practitioner.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -81,13 +81,13 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Practitioner.telecom.extension:usage","Practitioner.telecom.extension","usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
+"Practitioner.telecom.extension:ror-telecom-usage","Practitioner.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Practitioner.telecom.extension:ror-confidentiality-level","Practitioner.telecom.extension","ror-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
+"Practitioner.telecom.extension:ror-confidentiality-level","Practitioner.telecom.extension","ror-confidentiality-level","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Practitioner.telecom.extension:ror-communication-channel","Practitioner.telecom.extension","ror-communication-channel","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
+"Practitioner.telecom.extension:ror-communication-channel","Practitioner.telecom.extension","ror-communication-channel","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Practitioner.telecom.system","Practitioner.telecom.system","","","",0,1,"","","Y","code {[]} {[]}

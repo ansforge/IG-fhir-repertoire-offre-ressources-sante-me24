@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ROR"]; # 
   fhir:ImplementationGuide.title [ fhir:value "ROR"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-02T13:13:30+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-02T17:32:40+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1003,7 +1003,6 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-geolocation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Geolocation" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 24;
@@ -1545,10 +1544,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-type-activity>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-type-activity" ]
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-telecom-usage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-usage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTypeActivity" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTelecomUsage" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1559,10 +1558,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-unit-exercise-mode>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-unit-exercise-mode" ]
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-type-activity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-type-activity" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORUnitExerciseMode" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTypeActivity" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1573,10 +1572,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-telecom-usage>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-usage" ]
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/ror-unit-exercise-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-unit-exercise-mode" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROR_Telecom_Usage" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORUnitExerciseMode" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1626,6 +1625,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/CapabilityStatement/ror-consommateur>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-consommateur" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-consommateur" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système qui est autorisé à consommer les données du ROR." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1636,7 +1649,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age maximum de la patientèle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1650,7 +1663,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age minimum de la patientèle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1664,7 +1677,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1678,7 +1691,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la spécialité ordinale" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1692,7 +1705,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le public pris en charge" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1706,7 +1719,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la profession" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1720,7 +1733,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivrant le secteur psychiatrique de l'unité élémentaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1734,7 +1747,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1748,7 +1761,175 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la compétence spécifique" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/CapabilityStatement/ror-serveur>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-serveur" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-serveur" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-code-region>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-code-region" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-code-region" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la spécialité ordinale" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-age-range-high>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-high" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-high" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age maximum de la patientèle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-age-range-low>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-low" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-low" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age minimum de la patientèle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-equipment-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-equipment-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-equipment-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-ordinal-speciality>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-ordinal-speciality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-ordinal-speciality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la spécialité ordinale" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-patient-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-patient-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-patient-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le public pris en charge" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-profession>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-profession" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-profession" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la profession" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-psychiatric-sector" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-psychiatric-sector" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivrant le secteur psychiatrique de l'unité élémentaire" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-reception-mode>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-reception-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-reception-mode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-specific-competence>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-specific-competence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-specific-competence" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la compétence spécifique" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-location-commune-cog>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-location-commune-cog" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-commune-cog" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1760,6 +1941,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-near-insee-Code" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche similaire au paramètre spécial \"near\", à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-organization-drop-zone>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-organization-drop-zone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-organization-drop-zone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

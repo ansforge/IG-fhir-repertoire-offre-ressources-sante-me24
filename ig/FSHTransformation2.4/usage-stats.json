@@ -81,14 +81,7 @@
       "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-code-region",
       "title": "RORCodeRegion",
       "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
+        "Coding"
       ]
     },
     {
@@ -1444,7 +1437,7 @@
     },
     {
       "url": "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage",
-      "title": "ROR_Telecom_Usage",
+      "title": "RORTelecomUsage",
       "types": [
         "string"
       ]
@@ -1505,6 +1498,7 @@
       "Organization"
     ],
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-calculated-distance": [
+      "Location.address",
       "Organization.address"
     ],
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-description": [
@@ -1534,6 +1528,9 @@
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-code-region": [
       "Location"
     ],
+    "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-commune-cog": [
+      "Location.address"
+    ],
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel": [
       "Practitioner.telecom",
       "PractitionerRole.telecom"
@@ -1558,6 +1555,7 @@
       "Organization"
     ],
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-geolocation": [
+      "Location.address",
       "Organization.address"
     ],
     "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-capacity-reception": [

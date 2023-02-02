@@ -45,7 +45,6 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML)."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

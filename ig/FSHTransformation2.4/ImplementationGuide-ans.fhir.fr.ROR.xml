@@ -10,7 +10,7 @@
   <name value="ROR"/>
   <title value="ROR"/>
   <status value="active"/>
-  <date value="2023-02-02T13:13:30+00:00"/>
+  <date value="2023-02-02T17:32:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -702,7 +702,6 @@
         <reference value="StructureDefinition/ror-geolocation"/>
       </reference>
       <name value="Geolocation"/>
-      <description value="The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1128,6 +1127,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ror-telecom-usage"/>
+      </reference>
+      <name value="RORTelecomUsage"/>
+      <description value="Extension créée dans le cadre du ROR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ror-type-activity"/>
       </reference>
       <name value="RORTypeActivity"/>
@@ -1142,17 +1152,6 @@
         <reference value="StructureDefinition/ror-unit-exercise-mode"/>
       </reference>
       <name value="RORUnitExerciseMode"/>
-      <description value="Extension créée dans le cadre du ROR"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ror-telecom-usage"/>
-      </reference>
-      <name value="ROR_Telecom_Usage"/>
       <description value="Extension créée dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1187,6 +1186,17 @@
       </reference>
       <name value="ror-code-region"/>
       <description value="Paramètre de recherche permettant de pointer sur la spécialité ordinale"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ror-consommateur"/>
+      </reference>
+      <name value="ror-consommateur"/>
+      <description value="Système qui est autorisé à consommer les données du ROR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1290,6 +1300,138 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ror-serveur"/>
+      </reference>
+      <name value="ror-serveur"/>
+      <description value="Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-code-region"/>
+      </reference>
+      <name value="ror-sp-code-region"/>
+      <description value="Paramètre de recherche permettant de pointer sur la spécialité ordinale"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-age-range-high"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-age-range-high"/>
+      <description value="Paramètre de recherche décrivant l'age maximum de la patientèle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-age-range-low"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-age-range-low"/>
+      <description value="Paramètre de recherche décrivant l'age minimum de la patientèle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-equipment-type"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-equipment-type"/>
+      <description value="Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-ordinal-speciality"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-ordinal-speciality"/>
+      <description value="Paramètre de recherche permettant de pointer sur la spécialité ordinale"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-patient-type"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-patient-type"/>
+      <description value="Paramètre de recherche décrivant le public pris en charge"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-profession"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-profession"/>
+      <description value="Paramètre de recherche permettant de pointer sur la profession"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-psychiatric-sector"/>
+      <description value="Paramètre de recherche décrivrant le secteur psychiatrique de l'unité élémentaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-reception-mode"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-reception-mode"/>
+      <description value="Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-healthcareservice-specific-competence"/>
+      </reference>
+      <name value="ror-sp-healthcareservice-specific-competence"/>
+      <description value="Paramètre de recherche permettant de pointer sur la compétence spécifique"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-location-commune-cog"/>
+      </reference>
+      <name value="ror-sp-location-commune-cog"/>
+      <description value="Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
@@ -1297,6 +1439,17 @@
       </reference>
       <name value="ror-sp-location-near-insee-Code"/>
       <description value="Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/ror-sp-organization-drop-zone"/>
+      </reference>
+      <name value="ror-sp-organization-drop-zone"/>
+      <description value="Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

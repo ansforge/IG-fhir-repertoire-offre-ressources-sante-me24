@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="ror-serveur"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Serveur national du ROR</p>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>HealthcareService</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur"/>
+  <version value="2.4"/>
+  <name value="RORServeur"/>
+  <title value="ROR-RORServeur"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-12T14:27:51+01:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <implementationGuide value="http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Serveur national du ROR"/>
+    <security>
+      <cors value="false"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S&#xA;) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes&#xA;d’information de santé (CI-SIS)"/>
+    </security>
+    <resource>
+      <type value="HealthcareService"/>
+      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="supported-patient-type"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-patient-type"/>
+        <type value="token"/>
+        <documentation value="Le public pris en charge précise si une unité élémentaire d'un établissement ou d'un service du champ d'activité médico-social accueille des personnes âgées en perte d'autonomie et/ou des personnes en situation de handicap"/>
+      </searchParam>
+      <searchParam>
+        <name value="age-range-low"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-low"/>
+        <type value="quantity"/>
+        <documentation value="Borne minimum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."/>
+      </searchParam>
+      <searchParam>
+        <name value="age-range-high"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-high"/>
+        <type value="quantity"/>
+        <documentation value="Borne maximum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."/>
+      </searchParam>
+      <searchParam>
+        <name value="organization"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-organization"/>
+        <type value="reference"/>
+        <documentation value="Organisation interne fournissant l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="characteristic"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-characteristic"/>
+        <type value="token"/>
+        <documentation value="characteristique de l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="service-category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-category"/>
+        <type value="token"/>
+        <documentation value="La catégorie d'organisation caractérise la nature particulière de l’offre de santé portée par l’UE recherchée, offre qui se distingue par un agrément, un personnel spécialement formé, un environnement particulièrement adapté à l'état de santé des patients"/>
+      </searchParam>
+      <searchParam>
+        <name value="psychiatric-sector"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"/>
+        <type value="string"/>
+        <documentation value="Le secteur de psychiatrie (ou sectorisation) correspond à une aire géographique à laquelle sont rattachées des structures de relais et de soins qui prennent en charge des patients résidants sur ce secteur."/>
+      </searchParam>
+      <searchParam>
+        <name value="reception-mode"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode"/>
+        <type value="token"/>
+        <documentation value="L’indicateur précise si l’UE accepte d’accueillir des personnes en situation de handicap de façon séquentielle c'est à dire sur une partie de la semaine"/>
+      </searchParam>
+      <searchParam>
+        <name value="service-type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-service-type"/>
+        <type value="token"/>
+        <documentation value="Un champ d’activité indique le domaine dans lequel s'inscrit l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="profession"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-profession"/>
+        <type value="token"/>
+        <documentation value="La compétence ressource correspond à une profession exercée par au moins une personne présente dans l’unité."/>
+      </searchParam>
+      <searchParam>
+        <name value="ordinal-speciality"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ordinal-speciality"/>
+        <type value="token"/>
+        <documentation value="La compétence ressource correspond à une spécialité ordinale exercée par au moins une personne présente dans l’unité."/>
+      </searchParam>
+      <searchParam>
+        <name value="specific-competence"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-specific-competence"/>
+        <type value="token"/>
+        <documentation value="La compétence spécifique correspond à une capacité ou connaissance reconnue d’une personne ressource de l’unité."/>
+      </searchParam>
+      <searchParam>
+        <name value="equipment-type"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type"/>
+        <type value="token"/>
+        <documentation value="Un équipement spécifique correspond à une ressource matérielle médicotechnique spécialisée, qui permet la réalisation d’une activité de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="specialty"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/HealthcareService-specialty"/>
+        <type value="token"/>
+        <documentation value="Une activité opérationnelle est un ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"/>
+        <type value="token"/>
+        <documentation value="parametre de recherche pour Identification nationale de l'Entité Géographique définie dans le CI-SIS.et Numéro FINESS de l'entité géographique."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-name"/>
+        <type value="string"/>
+        <documentation value="Nom de l'organisation interne."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-type"/>
+        <type value="token"/>
+        <documentation value="Nom de l'organisation interne."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="service"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-service"/>
+        <type value="reference"/>
+        <documentation value="Reference pour la recherche vers le HealthcareService"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"/>
+        <type value="reference"/>
+        <documentation value="Reference pour la recherche vers le PractitionerRole"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <profile value="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <searchParam>
+        <name value="near"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Location-near"/>
+        <type value="special"/>
+        <documentation value="Lieux proches du lieu de réalisation de l'offre"/>
+      </searchParam>
+      <searchParam>
+        <name value="near-insee-code"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-nearINSEECode"/>
+        <type value="special"/>
+        <documentation value="Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"/>
+      </searchParam>
+      <searchParam>
+        <name value="code-region"/>
+        <definition value="http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region"/>
+        <type value="token"/>
+        <documentation value="Code région"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

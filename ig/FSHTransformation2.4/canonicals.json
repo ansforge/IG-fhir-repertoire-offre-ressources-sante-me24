@@ -445,7 +445,7 @@
     "type" : "StructureDefinition",
     "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage",
     "version" : "2.4",
-    "name" : "ROR_Telecom_Usage"
+    "name" : "RORTelecomUsage"
   },
   {
     "id" : "ror-type-activity",
@@ -462,11 +462,25 @@
     "name" : "RORUnitExerciseMode"
   },
   {
+    "id" : "ror-consommateur",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur",
+    "version" : "2.4",
+    "name" : "RORConsommateur"
+  },
+  {
     "id" : "RORConsommateur",
     "type" : "CapabilityStatement",
     "url" : "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur",
     "version" : "2.4",
     "name" : "RORConsommateur"
+  },
+  {
+    "id" : "ror-serveur",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur",
+    "version" : "2.4",
+    "name" : "RORServeur"
   },
   {
     "id" : "RORServeur",
@@ -476,6 +490,13 @@
     "name" : "RORServeur"
   },
   {
+    "id" : "ror-sp-code-region",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region",
+    "version" : "2.4",
+    "name" : "RORLocationCodeRegion"
+  },
+  {
     "id" : "ror-code-region",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region",
@@ -483,11 +504,25 @@
     "name" : "RORLocationCodeRegion"
   },
   {
+    "id" : "ror-sp-healthcareservice-age-range-high",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-high",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceAgeRangeHigh"
+  },
+  {
     "id" : "ror-healthcareservice-age-range-high",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-high",
     "version" : "2.4",
     "name" : "RORHealthcareServiceAgeRangeHigh"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-age-range-low",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-low",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceAgeRangeLow"
   },
   {
     "id" : "ror-healthcareservice-age-range-low",
@@ -504,11 +539,32 @@
     "name" : "RORHealthcareServiceEquipmentType"
   },
   {
+    "id" : "ror-sp-healthcareservice-equipment-type",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceEquipmentType"
+  },
+  {
     "id" : "ror-healthcareservice-ordinal-speciality",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ordinal-speciality",
     "version" : "2.4",
     "name" : "RORHealthcareServiceOrdinalSpeciality"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-ordinal-speciality",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ordinal-speciality",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceOrdinalSpeciality"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-patient-type",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-patient-type",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceSupportedPatientType"
   },
   {
     "id" : "ror-healthcareservice-patient-type",
@@ -518,11 +574,25 @@
     "name" : "RORHealthcareServiceSupportedPatientType"
   },
   {
+    "id" : "ror-sp-healthcareservice-profession",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-profession",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceProfession"
+  },
+  {
     "id" : "ror-healthcareservice-profession",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-profession",
     "version" : "2.4",
     "name" : "RORHealthcareServiceProfession"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-psychiatric-sector",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector",
+    "version" : "2.4",
+    "name" : "RORHealthcareServicePsychiatricSector"
   },
   {
     "id" : "ror-healthcareservice-psychiatric-sector",
@@ -532,11 +602,25 @@
     "name" : "RORHealthcareServicePsychiatricSector"
   },
   {
+    "id" : "ror-sp-healthcareservice-reception-mode",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceReceptionMode"
+  },
+  {
     "id" : "ror-healthcareservice-reception-mode",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode",
     "version" : "2.4",
     "name" : "RORHealthcareServiceReceptionMode"
+  },
+  {
+    "id" : "ror-sp-healthcareservice-specific-competence",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-specific-competence",
+    "version" : "2.4",
+    "name" : "RORHealthcareServiceSpecificCompetence"
   },
   {
     "id" : "ror-healthcareservice-specific-competence",
@@ -546,10 +630,24 @@
     "name" : "RORHealthcareServiceSpecificCompetence"
   },
   {
+    "id" : "ror-sp-location-commune-cog",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-commune-cog",
+    "version" : "2.4",
+    "name" : "RORSPLocationCommuneCOG"
+  },
+  {
     "id" : "ror-sp-location-near-insee-Code",
     "type" : "SearchParameter",
     "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code",
     "version" : "2.4",
     "name" : "LocationNearINSEECode"
+  },
+  {
+    "id" : "ror-sp-organization-drop-zone",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-organization-drop-zone",
+    "version" : "2.4",
+    "name" : "RORSPOrganizationDropZone"
   }
 ]

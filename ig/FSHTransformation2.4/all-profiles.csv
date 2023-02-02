@@ -25,7 +25,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-accessibility-location","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-accessibility-location""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-accessibility-location","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://test","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J50-AccessibiliteLieu-ROR/FHIR/JDV-J50-AccessibiliteLieu-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice-open-close","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -224,7 +224,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization-period","Extension.extension:temporalityClosing.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""temporalityClosing""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-organization-period","Extension.extension:temporalityClosing.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J185-typeFermeture-ROR/FHIR/JDV-J185-typeFermeture-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J185-TypeFermeture-ROR/FHIR/JDV-J185-TypeFermeture-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization-period","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-period""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
@@ -1095,7 +1095,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice","HealthcareService.characteristic:ressourceProfession","HealthcareService.characteristic","ressourceProfession","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Collection of characteristics (attributes)","Collection of characteristics (attributes).","These could be such things as is wheelchair accessible.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J186-ProfessionRessource-ROR/FHIR/JDV_J186-ProfessionRessource-ROR","",,,,"HealthcareService.characteristic",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Collection of characteristics (attributes)","Collection of characteristics (attributes).","These could be such things as is wheelchair accessible.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J186-ProfessionRessource-ROR/FHIR/JDV-J186-ProfessionRessource-ROR","",,,,"HealthcareService.characteristic",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice","HealthcareService.characteristic:specificCompetence","HealthcareService.characteristic","specificCompetence","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Collection of characteristics (attributes)","Collection of characteristics (attributes).","These could be such things as is wheelchair accessible.","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J33-CompetenceSpecifique-ROR/FHIR/JDV-J33-CompetenceSpecifique-ROR","",,,,"HealthcareService.characteristic",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1474,7 +1474,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-practitionerrole","PractitionerRole.code.coding.system","PractitionerRole.code.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE_G15-ProfessionSante""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-practitionerrole","PractitionerRole.code.coding.version","PractitionerRole.code.coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1582,7 +1582,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-practitionerrole","PractitionerRole.specialty:competenceR39.coding","PractitionerRole.specialty.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J232-Competence-ROR/FHIR/JDV_J232-Competence-ROR","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J232-Competence-ROR/FHIR/JDV-J232-Competence-ROR","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-practitionerrole","PractitionerRole.specialty:competenceR39.coding.id","PractitionerRole.specialty.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -1890,13 +1890,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.telecom.extension:communicationChannel","PractitionerRole.telecom.extension","communicationChannel","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
+"ror-practitionerrole","PractitionerRole.telecom.extension:ror-communication-channel","PractitionerRole.telecom.extension","ror-communication-channel","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.telecom.extension:confidentialityLevel","PractitionerRole.telecom.extension","confidentialityLevel","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
+"ror-practitionerrole","PractitionerRole.telecom.extension:ror-confidentiality-level","PractitionerRole.telecom.extension","ror-confidentiality-level","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.telecom.extension:usage","PractitionerRole.telecom.extension","usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
+"ror-practitionerrole","PractitionerRole.telecom.extension:ror-telecom-usage","PractitionerRole.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-practitionerrole","PractitionerRole.telecom.system","PractitionerRole.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
@@ -1924,15 +1924,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.availableTime.extension:openingClosingDate","PractitionerRole.availableTime.extension","openingClosingDate","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
+"ror-practitionerrole","PractitionerRole.availableTime.extension:ror-available-time-effective-opening-closing-date","PractitionerRole.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.availableTime.extension:numberDaysOfWeek","PractitionerRole.availableTime.extension","numberDaysOfWeek","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
+"ror-practitionerrole","PractitionerRole.availableTime.extension:ror-available-time-number-days-of-week","PractitionerRole.availableTime.extension","ror-available-time-number-days-of-week","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitionerrole","PractitionerRole.availableTime.extension:typeOfTime","PractitionerRole.availableTime.extension","typeOfTime","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-type-of-time]]} {[]}
+"ror-practitionerrole","PractitionerRole.availableTime.extension:ror-available-time-type-of-time","PractitionerRole.availableTime.extension","ror-available-time-type-of-time","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-available-time-type-of-time]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1993,7 +1993,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-healthcareservice-care-mode","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-care-mode""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-healthcareservice-care-mode","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J19-ModePriseEnCharge-ROR/FHIR/JDV_J19-ModePriseEnCharge-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J19-ModePriseEnCharge-ROR/FHIR/JDV-J19-ModePriseEnCharge-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-available-time-effective-opening-closing-date","Extension","Extension","","","",0,1,"","","","null {[]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -2251,6 +2251,14 @@ user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/Str
 ","Optional Extensions Element","The date range that this organization should be considered available.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ror-organization","Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-price]]} {[]}
+","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ror-organization","Organization.extension:ror-drop-zone","Organization.extension","ror-drop-zone","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-drop-zone]]} {[]}
+","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-organization","Organization.extension:mailboxMSS","Organization.extension","mailboxMSS","","",0,*,"","","","Extension {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2292,14 +2300,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-organization","Organization.extension:ror-type-activity","Organization.extension","ror-type-activity","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-type-activity]]} {[]}
-","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-organization","Organization.extension:ror-organization-price","Organization.extension","ror-organization-price","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-organization-price]]} {[]}
-","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-organization","Organization.extension:ror-drop-zone","Organization.extension","ror-drop-zone","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-drop-zone]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -2369,10 +2369,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:idNatStruct.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR.json""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE-R254-TypeEvenement-FHIR.json""/>
     <code value=""40""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:idNatStruct.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2412,10 +2412,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:numFINESS.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
     <code value=""1""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:numFINESS.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2455,9 +2455,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:numSIREN.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <code value=""2""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:numSIREN.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2497,9 +2498,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:numRPPS.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <code value=""4""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:numRPPS.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2539,9 +2541,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:numSIRET.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <code value=""3""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:numSIRET.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2581,9 +2584,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:identifiantOI.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
+    <code value=""42""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:identifiantOI.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2623,10 +2627,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-organization","Organization.identifier:numADELI.type","Organization.identifier.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR/""/>
+    <system value=""https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR""/>
     <code value=""0""/>
   </coding>
-</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV_J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
+</valueCodeableConcept>","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J236-TypeIdentifiant-ROR/FHIR/JDV-J236-TypeIdentifiant-ROR","",,,,"Identifier.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.identifier:numADELI.system","Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -2831,7 +2835,7 @@ We expect that some jurisdictions will profile this optionality to be a single c
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
 
-We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","Binding JDV_J55-CategorieEG-ROR","https://mos.esante.gouv.fr/NOS/JDV_J55-CategorieEG-ROR/FHIR/JDV_J55-CategorieEG-ROR","",,,,"Organization.type",0,*,"ele-1
+We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","Binding JDV_J55-CategorieEG-ROR","https://mos.esante.gouv.fr/NOS/JDV_J55-CategorieEG-ROR/FHIR/JDV-J55-CategorieEG-ROR","",,,,"Organization.type",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-organization","Organization.type:sphParticipation","Organization.type","sphParticipation","","",0,1,"","","Y","CodeableConcept {[]} {[]}
@@ -3403,7 +3407,7 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-practitioner","Practitioner.name.suffix","Practitioner.name.suffix","","","",0,1,"","","Y","string {[]} {[]}
-","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,"required","","http://esante.gouv.fr/ci-sis/fhir/StructureDefinition","",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J207-Civilite-ROR/FHIR/JDV-J207-Civilite-ROR","",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-practitioner","Practitioner.name.period","Practitioner.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -3417,13 +3421,13 @@ middle name","",0,*,"","","Y","string {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitioner","Practitioner.telecom.extension:usage","Practitioner.telecom.extension","usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
+"ror-practitioner","Practitioner.telecom.extension:ror-telecom-usage","Practitioner.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitioner","Practitioner.telecom.extension:ror-confidentiality-level","Practitioner.telecom.extension","ror-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
+"ror-practitioner","Practitioner.telecom.extension:ror-confidentiality-level","Practitioner.telecom.extension","ror-confidentiality-level","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-practitioner","Practitioner.telecom.extension:ror-communication-channel","Practitioner.telecom.extension","ror-communication-channel","","",1,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
+"ror-practitioner","Practitioner.telecom.extension:ror-communication-channel","Practitioner.telecom.extension","ror-communication-channel","","",1,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-communication-channel]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-practitioner","Practitioner.telecom.system","Practitioner.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
@@ -3658,7 +3662,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-healthcareservice-type-activity","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-healthcareservice-type-activity""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-healthcareservice-type-activity","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J20-ChampActivite-ROR/FHIR/JDV_J20-ChampActivite-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J20-ChampActivite-ROR/FHIR/JDV-J20-ChampActivite-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice-residential-capacity","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -3860,29 +3864,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-code-region","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-code-region""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-code-region","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Coding {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"ror-code-region","Extension.value[x].id","Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"ror-code-region","Extension.value[x].extension","Extension.value[x].extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ror-code-region","Extension.value[x].system","Extension.value[x].system","","","",1,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV_J237-RegionOM-ROR""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"ror-code-region","Extension.value[x].version","Extension.value[x].version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"ror-code-region","Extension.value[x].code","Extension.value[x].code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"ror-code-region","Extension.value[x].display","Extension.value[x].display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"ror-code-region","Extension.value[x].userSelected","Extension.value[x].userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice-competence-ressource","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -3906,7 +3888,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-healthcareservice-competence-ressource","Extension.extension:profession.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""profession""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "ror-healthcareservice-competence-ressource","Extension.extension:profession.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J54-Profession-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J54-Profession-ROR/FHIR/JDV-J54-Profession-ROR","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-healthcareservice-competence-ressource","Extension.extension:ordinalSpeciality","Extension.extension","ordinalSpeciality","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4104,7 +4086,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Unique code or number identifying the location to its users","Unique code or number identifying the location to its users.","","Organization label locations in registries, need to keep track of those.","","","","","","","",,,,,"",,,,"Location.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-location","Location.status","Location.status","","","",0,1,"","Y","Y","code {[]} {[]}
-","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","","","","","","","","","",,"required","Indicates whether the location is still in use.","http://hl7.org/fhir/ValueSet/location-status|4.0.1","",,,,"Location.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J224-StatutLieu-ROR/FHIR/JDV-J224-StatutLieu-ROR","",,,,"Location.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-location","Location.operationalStatus","Location.operationalStatus","","","",0,1,"","","Y","Coding {[]} {[]}
 ","The operational status of the location (typically only for a bed/room)","The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.","","","","","","","","","",,"preferred","The operational status if the location (where typically a bed/room).","http://terminology.hl7.org/ValueSet/v2-0116","",,,,"Location.operationalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4154,6 +4136,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ror-location","Location.address.extension:countryCode","Location.address.extension","countryCode","extensions
 user content","",0,1,"","","","Extension {[CanonicalType[https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ror-location","Location.address.extension:ror-commune-cog","Location.address.extension","ror-commune-cog","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-commune-cog]]} {[]}
+","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ror-location","Location.address.extension:ror-address-calculated-distance","Location.address.extension","ror-address-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-address-calculated-distance]]} {[]}
+","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ror-location","Location.address.extension:ror-geolocation","Location.address.extension","ror-geolocation","","",0,*,"","","","Extension {[CanonicalType[http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-geolocation]]} {[]}
+","The absolute geographic location","The absolute geographic location of the Location, expressed using the WGS84 datum (This        is the same co-ordinate system used in KML).","The extension can be further extended to include unique geolocation identifiers, confidence,        altitude, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-location","Location.address.use","Location.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
@@ -4545,7 +4539,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ror-confidentiality-level","Extension.value[x].coding.system","Extension.value[x].coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://mos.esante.gouv.fr/NOS/TRE_R283-NiveauConfidentialite/TRE_R283-NiveauConfidentialite""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://mos.esante.gouv.fr/NOS/TRE_R283-NiveauConfidentialite/TRE-R283-NiveauConfidentialite""/>","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ror-confidentiality-level","Extension.value[x].coding.version","Extension.value[x].coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

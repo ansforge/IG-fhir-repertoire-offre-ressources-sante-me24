@@ -37,7 +37,6 @@
        fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "The absolute geographic location of the Location, expressed using the WGS84 datum (This    is the same co-ordinate system used in KML)."]; # 
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"]; # 
   fhir:StructureDefinition.mapping [
      fhir:index 0;

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "ror-sp-code-region",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-code-region\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-code-region&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region</code></p><p><b>version</b>: 2.4</p><p><b>name</b>: RORLocationCodeRegion</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-04 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche permettant de pointer sur la spécialité ordinale</p><p><b>code</b>: code-region</p><p><b>base</b>: Location</p><p><b>type</b>: token</p><p><b>expression</b>: Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-code-region').valueCoding</p></div>"
+  },
+  "url" : "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region",
+  "version" : "2.4",
+  "name" : "RORLocationCodeRegion",
+  "status" : "active",
+  "date" : "2022-08-04T00:00:00+02:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Paramètre de recherche permettant de pointer sur la spécialité ordinale",
+  "code" : "code-region",
+  "base" : ["Location"],
+  "type" : "token",
+  "expression" : "Location.extension.where(url='http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-code-region').valueCoding"
+}

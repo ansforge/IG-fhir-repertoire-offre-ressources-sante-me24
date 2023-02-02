@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-reception-mode> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ror-sp-healthcareservice-reception-mode"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-healthcareservice-reception-mode\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-healthcareservice-reception-mode&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode</code></p><p><b>version</b>: 2.4</p><p><b>name</b>: RORHealthcareServiceReceptionMode</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-04 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté</p><p><b>code</b>: reception-mode</p><p><b>base</b>: HealthcareService</p><p><b>type</b>: token</p><p><b>expression</b>: HealthcareService.extension.where(url = 'http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-reception-mode').valueBoolean</p></div>"
+  ]; # 
+  fhir:SearchParameter.url [ fhir:value "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode"]; # 
+  fhir:SearchParameter.version [ fhir:value "2.4"]; # 
+  fhir:SearchParameter.name [ fhir:value "RORHealthcareServiceReceptionMode"]; # 
+  fhir:SearchParameter.status [ fhir:value "active"]; # 
+  fhir:SearchParameter.date [ fhir:value "2022-08-04T00:00:00+02:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ANS" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ]; # 
+  fhir:SearchParameter.description [ fhir:value "Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté"]; # 
+  fhir:SearchParameter.code [ fhir:value "reception-mode"]; # 
+  fhir:SearchParameter.base [
+     fhir:value "HealthcareService";
+     fhir:index 0
+  ]; # 
+  fhir:SearchParameter.type [ fhir:value "token"]; # 
+  fhir:SearchParameter.expression [ fhir:value "HealthcareService.extension.where(url = 'http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-reception-mode').valueBoolean"] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-healthcareservice-reception-mode.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

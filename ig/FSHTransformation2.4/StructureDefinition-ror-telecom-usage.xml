@@ -11,7 +11,7 @@
   </text>
   <url value="http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/StructureDefinition/ror-telecom-usage"/>
   <version value="2.4"/>
-  <name value="ROR_Telecom_Usage"/>
+  <name value="RORTelecomUsage"/>
   <status value="active"/>
   <date value="2022-07-08"/>
   <publisher value="ANS"/>
