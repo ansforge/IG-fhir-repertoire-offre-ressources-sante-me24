@@ -1,9 +1,9 @@
 Extension: RORCommuneCog
 Id: ror-commune-cog
 Description: "Extension créée dans le cadre du ROR"
-* ^version = "2.4"
+
 * ^date = "2022-07-08"
-* ^publisher = "ANS"
+
 * ^context.type = #element
 * ^context.expression = "Address"
 * extension ^slicing.discriminator.type = #value

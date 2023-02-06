@@ -1,9 +1,9 @@
 Extension: RORAvailableTimeTypeOfTime
 Id: ror-available-time-type-of-time
 Description: "Extension créée dans le cadre du ROR"
-* ^version = "2.4"
+
 * ^date = "2022-06-30"
-* ^publisher = "ANS"
+
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService.availableTime"
 * ^context[+].type = #element

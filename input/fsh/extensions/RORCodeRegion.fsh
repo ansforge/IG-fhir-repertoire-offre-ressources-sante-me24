@@ -1,7 +1,7 @@
 Extension: RORCodeRegion
 Id: ror-code-region
 Description: "Extension créée dans le cadre du ROR"
-* ^publisher = "ANS"
+
 * ^context.type = #element
 * ^context.expression = "Location"
 * value[x] only Coding

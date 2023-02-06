@@ -1,9 +1,9 @@
 Extension: RORHealthCareServiceResidentialCapacity
 Id: ror-healthcareservice-residential-capacity
 Description: "Extension créée dans le cadre du ROR"
-* ^version = "2.4"
+
 * ^date = "2022-07-08"
-* ^publisher = "ANS"
+
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService"
 * ^context[+].type = #element

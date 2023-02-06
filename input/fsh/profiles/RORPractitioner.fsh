@@ -2,8 +2,8 @@ Profile: RORPractitioner
 Parent: Practitioner
 Id: ror-practitioner
 Description: "Profil créée dans le cadre du ROR"
-* ^status = #active
-* ^publisher = "ANS"
+
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

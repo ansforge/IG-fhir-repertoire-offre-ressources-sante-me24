@@ -2,10 +2,10 @@ Profile: RORLocation
 Parent: Location
 Id: ror-location
 Description: "Profil crée dans le cadre du ROR"
-* ^version = "2.4"
-* ^status = #active
+
+
 * ^date = "2022-06-30"
-* ^publisher = "ANS"
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

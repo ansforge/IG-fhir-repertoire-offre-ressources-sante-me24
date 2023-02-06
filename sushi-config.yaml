@@ -1,7 +1,7 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.ROR
-canonical: http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR
+id: ans.fhir.fr.ror24
+canonical: http://interop.esante.gouv.fr/fhir/ig/ror24
 name: ROR
 title: ROR
 publisher: 

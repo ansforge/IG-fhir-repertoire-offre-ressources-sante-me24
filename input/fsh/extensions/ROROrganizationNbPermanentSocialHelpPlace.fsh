@@ -1,9 +1,9 @@
 Extension: ROROrganizationNbPermanentSocialHelpPlace
 Id: ror-organization-nb-permanent-social-help-place
 Description: "Extension créée dans le cadre du ROR"
-* ^version = "2.4"
+
 * ^date = "2022-06-29"
-* ^publisher = "ANS"
+
 * ^context.type = #element
 * ^context.expression = "Organization"
 * . ..1

@@ -1,9 +1,9 @@
 Extension: RORConfidentialityLevel
 Id: ror-confidentiality-level
 Description: "Extension créée dans le cadre du ROR"
-* ^version = "2.4"
+
 * ^date = "2022-06-28T00:00:00+02:00"
-* ^publisher = "ANS"
+
 * ^context[0].type = #element
 * ^context[=].expression = "ContactPoint"
 * ^context[+].type = #element

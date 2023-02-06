@@ -2,10 +2,7 @@ Profile: RORHealthcareService
 Parent: HealthcareService
 Id: ror-healthcareservice
 Description: "Profil créée dans le cadre du ROR"
-* ^version = "2.4"
-* ^status = #active
 * ^date = "2022-06-30"
-* ^publisher = "ANS"
 * id 1..
 * meta 1..
 * extension ^slicing.discriminator.type = #value
