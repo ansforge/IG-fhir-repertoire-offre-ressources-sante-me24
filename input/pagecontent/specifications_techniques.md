@@ -3,8 +3,9 @@
 #### Caractéristiques de l'API
 
 
+|||
+|-------------------- | ---------------------------- |
 | **Endpoint**        |                            |
-| --------------------- | ---------------------------- |
 | **Header**          | Content-type :=Json + FHIR |
 | **Encodage UTF8**   |                            |
 | **Version FHIR**    | 4.0.1                      |
@@ -14,11 +15,12 @@
 #### Construction de la requête de base
 
 
-| **Interaction FHIR**         | Search[[1]](#_ftn1)                                              |
-| ------------------------------ | ------------------------------------------------------------------ |
-| Méthode http associée | GET                                                              |
-| Ressource recherchée    | HealthcareService                                                |
-| Construction requête de base           | GET[base]/HealthcareService{?[parameters]{&_format=[mime-type]}} |
+|||
+| ----------------------------------- | ------------------------------------------------------------------ |
+| **Interaction FHIR**              | Search                                                           |
+| **Méthode http associée**      | GET                                                              |
+| **Ressource recherchée**         | HealthcareService                                                |
+| **Construction requête de base** | GET[base]/HealthcareService{?[parameters]{&_format=[mime-type]}} |
 
 ---
 
@@ -65,7 +67,6 @@ Plus de précision sur la spécification FHIR :
 #### Critères de recherche applicables à date
 
 ##### StructureDefinition-ror-healthcareservice
-
 
 <table class="table table-bordered">
   <thead>
@@ -120,7 +121,7 @@ Plus de précision sur la spécification FHIR :
       <td>quantity</td>
       <td>Borne maximum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée.
       JDV_J37-UcumUniteTemps issu de la TRE_R247-UcumUniteMesure
-      RG_RECH-08&nbsp;: La borne d’âge max DOIT être supérieure ou égale à la borne d’âge min.
+      RG_RECH-08 : La borne d’âge max DOIT être supérieure ou égale à la borne d’âge min.
       </td>
     </tr>
     <tr>
@@ -277,13 +278,13 @@ location:[NOM
 CRITERE]
 
 
-| Attribut ME 2.4                  | Search parameters  | Natif FHIR | Type FHIR | Description                                                                                                                                    |
-| ---------------------------------- | -------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Recherche positionnelle (coordonnées géographique) [1]         | near               | Oui        | special   | near=Longitude\|Latitude\|Distance\|Unité RG_RECH_05 : La distance de recherche en km DOIT être comprise entre « 0 » (inclus) et « 1000 » (inclus). RG_RECH_12 : Le ROR National DOIT indiquer, pour chaque UE, l’éloignement calculé entre la commune de l’UE et la commune de la recherche. RG_RECH_13 : L’unité de la distance peut être km ou m.  RG_RECH_14 : Si la distance n’est pas renseignée, la distance est interprétée en km. |
-| Recherche positionnelle (code INSEE commune)         | near-insee-code    | Non        | special   |near= INSEECode\|Distance\|Unité RG_RECH_12 : Le ROR National DOIT indiquer, pour chaque UE, l’éloignement calculé entre la commune de l’UE et la commune de la recherche.|
-| N/A                              | code-region        | Non        | token     | Code région                                                                                                                                   |
-| Adresse/codePostal               | address-postalcode | Oui        | string    | Code Postal ou code postal spécifique CEDEX                                                                                                   |
-| communeCog                       | commune-cog        | Non        | token     | Code officiel géographique (COG) de la commune dans laquelle le lieu est situé. JDV_J230-CommuneOM-ROR issu de la TRE_R13-CommuneOM                                                            |
+| Attribut ME 2.4                                          | Search parameters  | Natif FHIR | Type FHIR | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------- | -------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recherche positionnelle (coordonnées géographique) [1] | near               | Oui        | special   | near=Longitude\|Latitude\|Distance\|Unité RG_RECH_05 : La distance de recherche en km DOIT être comprise entre « 0 » (inclus) et « 1000 » (inclus). RG_RECH_12 : Le ROR National DOIT indiquer, pour chaque UE, l’éloignement calculé entre la commune de l’UE et la commune de la recherche. RG_RECH_13 : L’unité de la distance peut être km ou m.  RG_RECH_14 : Si la distance n’est pas renseignée, la distance est interprétée en km. |
+| Recherche positionnelle (code INSEE commune)             | near-insee-code    | Non        | special   | near= INSEECode\|Distance\|Unité RG_RECH_12 : Le ROR National DOIT indiquer, pour chaque UE, l’éloignement calculé entre la commune de l’UE et la commune de la recherche.                                                                                                                                                                                                                                                                             |
+| N/A                                                      | code-region        | Non        | token     | Code région                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Adresse/codePostal                                       | address-postalcode | Oui        | string    | Code Postal ou code postal spécifique CEDEX                                                                                                                                                                                                                                                                                                                                                                                                                |
+| communeCog                                               | commune-cog        | Non        | token     | Code officiel géographique (COG) de la commune dans laquelle le lieu est situé. JDV_J230-CommuneOM-ROR issu de la TRE_R13-CommuneOM                                                                                                                                                                                                                                                                                                                       |
 
 ##### StructureDefinition-ror-organization
 
@@ -294,7 +295,6 @@ recherche sur HealthcareService. [^6]
 Pour faire appel à ces critères de recherche utiliser la syntaxe
 suivante : providedBy:[NOM
 CRITERE]
-
 
 <table class="table table-bordered">
   <thead>
@@ -367,25 +367,24 @@ recherche sur HealthcareService. [^7]
 ##### StructureDefinition-ror-organization
 
 
-| Attribut ME 2.4 | Search parameters | Natif FHIR | Type FHIR | Description                                                  |
-| ----------------- | ------------------- | ------------ | ----------- | -------------------------------------------------------------- |
-| typeFermeture   | period-end        | Non        | token     | Type de fermeture de l'entité juridique  JDV_J201-TypeFermeture-ROR issu de la TRE_R286-TypeFermeture                   |
-| dateFermeture   | closing-type      | Non        | date      | Date de fermeture de l'entité juridique.                    |
+| Attribut ME 2.4 | Search parameters | Natif FHIR | Type FHIR | Description                                                                                            |
+| ----------------- | ------------------- | ------------ | ----------- | -------------------------------------------------------------------------------------------------------- |
+| typeFermeture   | period-end        | Non        | token     | Type de fermeture de l'entité juridique  JDV_J201-TypeFermeture-ROR issu de la TRE_R286-TypeFermeture |
+| dateFermeture   | closing-type      | Non        | date      | Date de fermeture de l'entité juridique.                                                              |
 
 ##### StructureDefinition-ror-healthcareservice
 
 
-| Attribut ME 2.4  | Search parameters | Natif FHIR | Type FHIR | Description                                                                                          |
-| ------------------ | ------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------------------------ |
-| zoneIntervention | intervention-zone | Non        | token     | Zone(s) dans laquelle (lesquelles) intervient la structure lorsque les professionnels se déplacent. JDV_J223-TypeDivisionTerritoriale-ROR issu de la TRE_R201-TypeDivisionTerritoriale  JDV_J230-CommuneOM-ROR issu de la TRE_R13-CommuneOM|
+| Attribut ME 2.4  | Search parameters | Natif FHIR | Type FHIR | Description                                                                                                                                                                                                                                  |
+| ------------------ | ------------------- | ------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| zoneIntervention | intervention-zone | Non        | token     | Zone(s) dans laquelle (lesquelles) intervient la structure lorsque les professionnels se déplacent. JDV_J223-TypeDivisionTerritoriale-ROR issu de la TRE_R201-TypeDivisionTerritoriale  JDV_J230-CommuneOM-ROR issu de la TRE_R13-CommuneOM |
 
 #### Paramètres et modificateurs de requêtes FHIR
-
 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>&nbsp;</th>
+      <th> </th>
       <th>Lien vers spécification</th>
       <th>Description</th>
     </tr>
@@ -406,7 +405,7 @@ recherche sur HealthcareService. [^7]
     </tr>
     <tr>
       <td>:iterate</td>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>Le processus d’inclusion peut être itératif si le modificateur :iterate est ajouté dans la requête.</td>
     </tr>
     <tr>
@@ -439,7 +438,7 @@ recherche sur HealthcareService. [^7]
       <td colspan="3" style="background-color:#e6ebef;">Préfixe de comparaison</td>
     </tr>
     <tr>
-      <td>gt, lt, ge, le, sa &amp; eb</td>
+      <td>gt, lt, ge, le, sa & eb</td>
       <td><a href="https://www.hl7.org/fhir/search.html#date">https://www.hl7.org/fhir/search.html#date </a></td>
       <td>Permet de faire des recherches comparatives</td>
     </tr>
@@ -709,7 +708,6 @@ Gestion des codes retours en FHIR :
 
 Figure 3 - Jeu de données
 
-
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -770,36 +768,36 @@ Figure 3 - Jeu de données
       <td>1045 Coordination de la prise en charge du COVID long</td>
       <td>1045 Coordination de la prise en charge du COVID long</td>
       <td>1045 Coordination de la prise en charge du COVID long</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
       <td>1026 Colposcopie</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>Catégorie organisation</td>
       <td>73 Gestion de cas MAIA</td>
       <td>66 Equipe Relai Handicap rare</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
       <td>43 Unité d’aide par le travail (ESAT)</td>
       <td>80 Centre de Soins, d’Accompagnement et de Prévention en Addictologie (CSAPA)</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>Accueil séquentiel accepté</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
       <td>Oui</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>Date dernière maj</td>
@@ -906,10 +904,10 @@ Figure 3 - Jeu de données
       <td>Zone poser</td>
       <td>non</td>
       <td>oui</td>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>non</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>Date dernière maj</td>
@@ -922,12 +920,12 @@ Figure 3 - Jeu de données
     </tr>
     <tr>
       <td>Catégorie EG</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
       <td>606 DAC</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
