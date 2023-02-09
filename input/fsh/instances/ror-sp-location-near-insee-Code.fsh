@@ -1,4 +1,4 @@
-Instance: ror-sp-location-near-insee-Code
+Instance: ror-sp-location-near-insee-code
 InstanceOf: SearchParameter
 Usage: #definition
 * status = #active

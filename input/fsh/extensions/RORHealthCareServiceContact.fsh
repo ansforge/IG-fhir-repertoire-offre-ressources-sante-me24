@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceContact
+Extension: RORHealthcareServiceContact
 Id: ror-healthcareservice-contact
 Description: "Extension créée dans le cadre du ROR"
 
@@ -29,6 +29,3 @@ Description: "Extension créée dans le cadre du ROR"
 * extension[confidentialityLevel].value[x] from $JDV-J222-NiveauConfidentialite-ROR (required)
 * extension[telecom] ^min = 0
 * extension[telecom].value[x] only ContactPoint
-//* value[x] ^slicing.discriminator.type = #type
-//* value[x] ^slicing.discriminator.path = "$this"
-//* value[x] ^slicing.rules = #open

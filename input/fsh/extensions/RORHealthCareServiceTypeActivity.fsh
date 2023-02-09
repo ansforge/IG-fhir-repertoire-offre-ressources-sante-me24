@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceTypeActivity
+Extension: RORHealthcareServiceTypeActivity
 Id: ror-healthcareservice-type-activity
 Description: "Extension créée dans le cadre du ROR"
 

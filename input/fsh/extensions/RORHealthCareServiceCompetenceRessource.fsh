@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceCompetenceRessource
+Extension: RORHealthcareServiceCompetenceRessource
 Id: ror-healthcareservice-competence-ressource
 Description: "Extension créée dans le cadre du ROR"
 
@@ -23,4 +23,3 @@ Description: "Extension créée dans le cadre du ROR"
 * extension[specificCompetence] ^min = 0
 * extension[specificCompetence].value[x] only code
 * extension[specificCompetence].value[x] from $JDV-J33-CompetenceSpecifique-ROR (required)
-//* value[x] only base64Binary or boolean or canonical or code or date or dateTime or decimal or id or instant or integer or markdown or oid or positiveInt or string or time or unsignedInt or uri or url or uuid or Address or Age or Annotation or Attachment or CodeableConcept or Coding or ContactPoint or Count or Distance or Duration or HumanName or Identifier or Money or Period or Quantity or Range or Ratio or Reference or SampledData or Signature or Timing or ContactDetail or Contributor or DataRequirement or Expression or ParameterDefinition or RelatedArtifact or TriggerDefinition or UsageContext or Dosage

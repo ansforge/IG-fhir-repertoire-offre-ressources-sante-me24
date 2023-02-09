@@ -10,9 +10,9 @@ Description: "Profil crée dans le cadre du ROR"
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    RORHealthCareServiceCapacityReception named ror-healthcareservice-capacity-reception 0..1 and
-    RORHealthCareServiceCapacityReceptionCrisis named ror-healthcareservice-capacity-reception-crisis 1..1 and
-    RORHealthCareServiceResidentialCapacity named ror-healthcareservice-residential-capacity 0..* and
+    RORHealthcareServiceCapacityReception named ror-healthcareservice-capacity-reception 0..1 and
+    RORHealthcareServiceCapacityReceptionCrisis named ror-healthcareservice-capacity-reception-crisis 1..1 and
+    RORHealthcareServiceResidentialCapacity named ror-healthcareservice-residential-capacity 0..* and
     RORCodeRegion named ror-code-region 0..1
 * extension[ror-healthcareservice-capacity-reception] ^isModifier = false
 * extension[ror-healthcareservice-capacity-reception-crisis] ^isModifier = false
@@ -31,9 +31,6 @@ Description: "Profil crée dans le cadre du ROR"
     RORGeolocation named ror-geolocation 0..
 * address.extension[ror-commune-cog] ^isModifier = false
 * address.extension[ror-address-calculated-distance] ^isModifier = false
-//* address.extension[ror-geolocation] only RORGeolocation
-//* address.extension[ror-geolocation] ^sliceName = "ror-geolocation"
-//* address.extension[ror-geolocation] ^min = 0
 * address.extension[ror-geolocation] ^isModifier = false
 * address.line.extension ^slicing.discriminator.type = #value
 * address.line.extension ^slicing.discriminator.path = "url"

@@ -12,13 +12,13 @@ Description: "Profil créée dans le cadre du ROR"
     RORHealthcareServicePatientType named ror-healthcareservice-patient-type 1..* and
     RORHealthcareServicePsychiatricSector named ror-healthcareservice-psychiatric-sector 0..* and
     $mailboxMSS named mailboxMSS 0..* and
-    RORHealthCareServiceCompetenceRessource named ror-healthcareservice-competence-ressource 0..1 and
-    RORHealthCareServiceEquipement named ror-healthcareservice-equipement 0..* and
+    RORHealthcareServiceCompetenceRessource named ror-healthcareservice-competence-ressource 0..1 and
+    RORHealthcareServiceEquipement named ror-healthcareservice-equipement 0..* and
     RORHealthcareServiceInterventionZone named ror-healthcareservice-intervention-zone 0..* and
     RORHealthcareServiceSensitiveUnit named ror-healthcareservice-sensitive-unit 1..* and
-    RORHealthCareServiceOpeningDate named ror-healthcareservice-opening-date 0..1 and
-    RORHealthCareServiceReceptionMode named ror-healthcareservice-reception-mode 0..1 and
-    RORHealthCareServiceContact named ror-healthcareservice-contact 0..1
+    RORHealthcareServiceOpeningDate named ror-healthcareservice-opening-date 0..1 and
+    RORHealthcareServiceReceptionMode named ror-healthcareservice-reception-mode 0..1 and
+    RORHealthcareServiceContact named ror-healthcareservice-contact 0..1
 * extension[ror-healthcareservice-patient-type] ^isModifier = false
 * extension[ror-healthcareservice-psychiatric-sector] ^min = 0
 * extension[ror-healthcareservice-psychiatric-sector] ^isModifier = false
@@ -108,8 +108,8 @@ Description: "Profil créée dans le cadre du ROR"
 * availableTime.extension ^slicing.discriminator.path = "url"
 * availableTime.extension ^slicing.rules = #open
 * availableTime.extension contains
-    RORHealthCareServiceOpenClose named ror-healthcareservice-open-close 1..1 and
-    RORHealthCareServiceDefinitelyClose named ror-healthcareservice-definitely-close 0..1 and
+    RORHealthcareServiceOpenClose named ror-healthcareservice-open-close 1..1 and
+    RORHealthcareServiceDefinitelyClose named ror-healthcareservice-definitely-close 0..1 and
     RORAvailableTimeEffectiveOpeningClosingDate named ror-available-time-effective-opening-closing-date 0..* and
     RORAvailableTimeNumberDaysofWeek named ror-available-time-number-days-of-week 0..* and
     RORAvailableTimeTypeOfTime named ror-available-time-type-of-time 0..*

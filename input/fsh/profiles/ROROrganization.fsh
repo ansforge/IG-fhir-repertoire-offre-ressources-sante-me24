@@ -11,17 +11,18 @@ Description: "Profil créé dans le cadre du ROR"
     //description 0..0 and
     ROROrganizationPrice named ror-organization-price 0..1 and
     RORDropZone named ror-drop-zone 0..1 and
-    $mailboxMSS named mailboxMSS 0.. and
-    RORHealthcareserviceTerritorial named ror-healthcareservice-territorial 0.. and
-    ROROrganizationFinancialHelpType named ror-organization-financial-help-type 0.. and
-    ROROrganizationAccomodationFamily named ror-organization-accomodation-family 0.. and
-    ROROrganizationNbPermanentSocialHelpPlace named ror-organization-nb-permanent-social-help-place 0.. and
-    ROROrganizationNbTemporarySocialHelpPlace named Nror-organization-nb-temporary-social-help-place 0.. and
-    RORAccessibilityLocation named ror-accessibility-location 0.. and
-    RORLevelRecoursORSAN named ror-level-recours-orsan 0.. and
-    RORCareWithoutPatientApproval named ror-care-without-patient-approval 0.. and
-    ROROrganizationPeriod named ror-organization-period 0.. and
-    RORTypeActivity named ror-type-activity 0..
+    $mailboxMSS named mailboxMSS 0..* and
+    RORHealthcareserviceTerritorial named ror-healthcareservice-territorial 0..* and
+    ROROrganizationFinancialHelpType named ror-organization-financial-help-type 0..* and
+    ROROrganizationAccomodationFamily named ror-organization-accomodation-family 0..* and
+    ROROrganizationNbPermanentSocialHelpPlace named ror-organization-nb-permanent-social-help-place 0..* and
+    ROROrganizationNbTemporarySocialHelpPlace named Nror-organization-nb-temporary-social-help-place 0..* and
+    RORAccessibilityLocation named ror-accessibility-location 0..* and
+    RORLevelRecoursORSAN named ror-level-recours-orsan 0..* and
+    RORCareWithoutPatientApproval named ror-care-without-patient-approval 0..* and
+    ROROrganizationClosingType named ror-organization-information-ouverture-fermeture 0..* and
+    RORTypeActivity named ror-type-activity 0..* and
+    $period named period 0..1
 * extension[mailboxMSS] ^isModifier = false
 * extension[ror-healthcareservice-territorial] ^isModifier = false
 * extension[ror-organization-price] ^isModifier = false
@@ -33,8 +34,9 @@ Description: "Profil créé dans le cadre du ROR"
 * extension[ror-accessibility-location] ^isModifier = false
 * extension[ror-level-recours-orsan] ^isModifier = false
 * extension[ror-care-without-patient-approval] ^isModifier = false
-* extension[ror-organization-period] ^isModifier = false
+* extension[ror-organization-closing-type] ^isModifier = false
 * extension[ror-type-activity] ^isModifier = false
+* extension[period] ^isModifier = false
 * identifier ..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
@@ -77,7 +79,6 @@ Description: "Profil créé dans le cadre du ROR"
 * type[sphParticipation] ^binding.description = "Binding JDV_J202-ESPIC-ROR"
 * type[sousEnsembleAgregatStatutJuridique] from $JDV-J200-SousEnsembleAgregatStatutJuridique-ROR (required)
 * alias ..1
-//* address only $fr-address-extended
 * address.extension ^slicing.discriminator.type = #value
 * address.extension ^slicing.discriminator.path = "url"
 * address.extension ^slicing.rules = #open
@@ -90,7 +91,7 @@ Description: "Profil créé dans le cadre du ROR"
     RORAddressName named ror-address-name 0..1 and
     RORAddressDescription named ror-address-description 0..1 and
     RORAddressStatus named ror-address-status 0..1 and
-    RORGeolocation named ror-geolocation 0.. and
+    RORGeolocation named ror-geolocation 0..* and
     RORAddressCalculatedDistance named ror-address-calculated-distance 0..1
 * address.extension[ror-address-name] ^isModifier = false
 * address.extension[ror-address-description] ^isModifier = false
@@ -114,6 +115,13 @@ Description: "Profil créé dans le cadre du ROR"
     $streetNameBase named streetNameBase 0..* and
     $postBox named postBox 0..*
 * address.line.extension[ror-organization-address-line-iso-21090-adxp-locality] ^isModifier = false
+* address.line.extension[careOf] ^isModifier = false
+* address.line.extension[additionalLocator] ^isModifier = false
+* address.line.extension[houseNumber] ^isModifier = false
+* address.line.extension[buildingNumberSuffix] ^isModifier = false
+* address.line.extension[streetNameType] ^isModifier = false
+* address.line.extension[streetNameBase] ^isModifier = false
+* address.line.extension[postBox] ^isModifier = false
 * partOf only Reference($FrOrganization or ROROrganization)
 * contact.extension ^slicing.discriminator.type = #value
 * contact.extension ^slicing.discriminator.path = "url"

@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceCareMode
+Extension: RORHealthcareServiceCareMode
 Id: ror-healthcareservice-care-mode
 Description: "Extension créée dans le cadre du ROR"
 

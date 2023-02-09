@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceOpenClose
+Extension: RORHealthcareServiceOpenClose
 Id: ror-healthcareservice-open-close
 Description: "Extension créée dans le cadre du ROR"
 

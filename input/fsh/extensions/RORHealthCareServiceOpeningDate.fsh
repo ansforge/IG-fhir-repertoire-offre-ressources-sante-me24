@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceOpeningDate
+Extension: RORHealthcareServiceOpeningDate
 Id: ror-healthcareservice-opening-date
 Description: "Extension créée dans le cadre du ROR"
 

@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceLocation
+Extension: RORHealthcareServiceLocation
 Id: ror-healthcareservice-location
 Description: "Extension créée dans le cadre du ROR"
 

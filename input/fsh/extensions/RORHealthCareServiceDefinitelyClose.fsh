@@ -1,4 +1,4 @@
-Extension: RORHealthCareServiceDefinitelyClose
+Extension: RORHealthcareServiceDefinitelyClose
 Id: ror-healthcareservice-definitely-close
 Description: "Extension créée dans le cadre du ROR"
 
