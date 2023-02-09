@@ -1,9 +1,10 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.ROR
-canonical: http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR
-name: ROR
-title: ROR
+id: ans.fhir.fr.ror
+canonical: https://interop.esante.gouv.fr/ig/fhir/ror
+name: ROR ME 2.4
+title: "ROR ME 2.4"
+description: Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR
 publisher: 
   name: ANS
   url: https://esante.gouv.fr
@@ -11,7 +12,7 @@ dependencies:
   ans.annuaire.fhir.r4: 0.2.0
   hl7.fhir.fr.core: 1.1.0
 status: active
-version: " ME 2.4"
+version: "0.1.0"
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build
