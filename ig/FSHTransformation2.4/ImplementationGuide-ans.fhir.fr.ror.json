@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ans.fhir.fr.ROR",
+  "id" : "ans.fhir.fr.ror",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ROR</h2><p>The official URL for this implementation guide is: </p><pre>http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>\n</div></div>"
   },
-  "url" : "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR",
-  "version" : "2.4",
-  "name" : "ROR",
-  "title" : "ROR",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror",
+  "version" : "0.1.0",
+  "name" : "RORME24",
+  "title" : "ROR ME 2.4",
   "status" : "active",
-  "date" : "2023-02-03T18:03:32+00:00",
+  "date" : "2023-02-09T17:07:44+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,7 +19,8 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "packageId" : "ans.fhir.fr.ROR",
+  "description" : "Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR",
+  "packageId" : "ans.fhir.fr.ror",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -162,7 +163,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://esante.gouv.fr/ci-sis/fhir/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/ror/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -437,7 +438,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://esante.gouv.fr/ci-sis/fhir/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/ror/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1592,10 +1593,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "autres_ressources.html"
+          "valueUrl" : "downloads.html"
         }],
-        "nameUrl" : "autres_ressources.html",
-        "title" : "Autres Ressources",
+        "nameUrl" : "downloads.html",
+        "title" : "Téléchargements et usages",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
@@ -1605,16 +1606,16 @@
           "nameUrl" : "securite.html",
           "title" : "Sécurité",
           "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "downloads.html"
-          }],
-          "nameUrl" : "downloads.html",
-          "title" : "Téléchargements et usages",
-          "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "autres_ressources.html"
+        }],
+        "nameUrl" : "autres_ressources.html",
+        "title" : "Autres Ressources",
+        "generation" : "markdown"
       },
       {
         "extension" : [{

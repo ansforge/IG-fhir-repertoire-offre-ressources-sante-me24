@@ -5,15 +5,15 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-location-near-insee-Code> a fhir:SearchParameter;
+<https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code> a fhir:SearchParameter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ror-sp-location-near-insee-Code"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-location-near-insee-Code\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-location-near-insee-Code&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code</code></p><p><b>version</b>: 2.4</p><p><b>name</b>: LocationNearINSEECode</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-04 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p><p><b>code</b>: near-insee-code</p><p><b>base</b>: Location</p><p><b>type</b>: special</p><p><b>expression</b>: Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"ror-sp-location-near-insee-Code\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;ror-sp-location-near-insee-Code&quot; </p></div><p><b>url</b>: <code>http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: LocationNearINSEECode</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-04 00:00:00+0200</p><p><b>publisher</b>: ANS</p><p><b>contact</b>: ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a></p><p><b>description</b>: Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p><p><b>code</b>: near-insee-code</p><p><b>base</b>: Location</p><p><b>type</b>: special</p><p><b>expression</b>: Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode</p></div>"
   ]; # 
   fhir:SearchParameter.url [ fhir:value "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code"]; # 
-  fhir:SearchParameter.version [ fhir:value "2.4"]; # 
+  fhir:SearchParameter.version [ fhir:value "0.1.0"]; # 
   fhir:SearchParameter.name [ fhir:value "LocationNearINSEECode"]; # 
   fhir:SearchParameter.status [ fhir:value "active"]; # 
   fhir:SearchParameter.date [ fhir:value "2022-08-04T00:00:00+02:00"^^xsd:dateTime]; # 
@@ -38,7 +38,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://esante.gouv.fr/ci-sis/fhir/SearchParameter/ror-sp-location-near-insee-Code.ttl> a owl:Ontology;
+<https://interop.esante.gouv.fr/ig/fhir/ror/SearchParameter/ror-sp-location-near-insee-Code.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

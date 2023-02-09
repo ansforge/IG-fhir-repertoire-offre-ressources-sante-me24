@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ans.fhir.fr.ROR"/>
+  <id value="ans.fhir.fr.ror"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ROR</h2><p>The official URL for this implementation guide is: </p><pre>http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>
+</div></div>
   </text>
-  <url value="http://esante.gouv.fr/ci-sis/fhir/ImplementationGuide/ROR/ImplementationGuide/ans.fhir.fr.ROR"/>
-  <version value="2.4"/>
-  <name value="ROR"/>
-  <title value="ROR"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror/ImplementationGuide/ans.fhir.fr.ror"/>
+  <version value="0.1.0"/>
+  <name value="RORME24"/>
+  <title value="ROR ME 2.4"/>
   <status value="active"/>
-  <date value="2023-02-03T18:03:32+00:00"/>
+  <date value="2023-02-09T17:07:44+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -19,7 +20,8 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <packageId value="ans.fhir.fr.ROR"/>
+  <description value="Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR"/>
+  <packageId value="ans.fhir.fr.ror"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -126,7 +128,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://esante.gouv.fr/ci-sis/fhir/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/ror/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -326,7 +328,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://esante.gouv.fr/ci-sis/fhir/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/ror/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1353,10 +1355,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="autres_ressources.html"/>
+          <valueUrl value="downloads.html"/>
         </extension>
-        <nameUrl value="autres_ressources.html"/>
-        <title value="Autres Ressources"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Téléchargements et usages"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -1366,14 +1368,14 @@
           <title value="Sécurité"/>
           <generation value="markdown"/>
         </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="downloads.html"/>
-          </extension>
-          <nameUrl value="downloads.html"/>
-          <title value="Téléchargements et usages"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="autres_ressources.html"/>
+        </extension>
+        <nameUrl value="autres_ressources.html"/>
+        <title value="Autres Ressources"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

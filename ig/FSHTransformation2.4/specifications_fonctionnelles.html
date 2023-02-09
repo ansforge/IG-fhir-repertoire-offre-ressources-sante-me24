@@ -55,9 +55,9 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
+          <p><span style="font-size:12pt;font-weight:bold">ROR ME 2.4</span>
             <br/>
-            <span style="display:inline-block;">2.4 - ci-build
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -87,37 +87,33 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications techniques
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_techniques.html">Spécifications techniques</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_techniques.html">Spécifications techniques</a>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Téléchargements et usage
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
       <li>
         <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
@@ -194,7 +190,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-
 <h3 id="périmètre-du-webservice">Périmètre du Webservice</h3>
 
 <p>A ce jour, le webservice répond au cas d’usage suivants :</p>
@@ -207,22 +202,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>
     <p>Les préconditions sont :</p>
-  </li>
-  <li>
-    <p>Le système consommateur dispose des points d’accès et des moyens
+
+    <ul>
+      <li>Le système consommateur dispose des points d’accès et des moyens
 d’authentification (authentification mTLS avec des certificats
-IGC-Santé) pour accéder aux données du ROR National.</p>
-  </li>
-  <li>
-    <p>Le système consommateur peut uniquement effectuer les recherches
-autorisées par son profil d’accès aux données. [Ref_02]</p>
+IGC-Santé) pour accéder aux données du ROR National.</li>
+      <li>Le système consommateur peut uniquement effectuer les recherches
+autorisées par son profil d’accès aux données. [Ref_02]</li>
+    </ul>
   </li>
   <li>
     <p>Les postconditions sont :</p>
-  </li>
-  <li>
-    <p>L’exécution des transactions ne provoquera aucune modification sur
-les données sources extraites.</p>
+
+    <ul>
+      <li>L’exécution des transactions ne provoquera aucune modification sur
+les données sources extraites.</li>
+    </ul>
   </li>
 </ul>
 
@@ -230,8 +225,7 @@ les données sources extraites.</p>
 
 <h4 id="description-du-cas-dusage">Description du cas d’usage</h4>
 
-<p><img src="image6.png" alt="Figure 2- Recherche offre modèle expo V2.4" title="Figure 2- Recherche offre modèle expo V2.4" />
-Un consommateur cherche des offres opérationnelles à partir de
+<p>Un consommateur cherche des offres opérationnelles à partir de
 critère(s) de recherche.</p>
 
 <p>Le consommateur renseigne son (ses) critère(s) de recherche parmi les
@@ -241,51 +235,58 @@ critères disponibles.</p>
 correspondant aux critères de recherche et toutes les classes liées à
 l’unité élémentaire.</p>
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="image6.png" alt="" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Figure 2- Recherche offre (modèle expo V2.4)</td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="scénarios-non-exhaustifs-couvrant-ce-cas-dusage">Scénarios (non exhaustifs) couvrant ce cas d’usage </h4>
 
 <ul>
   <li>
-    <p>Scenario 1 : Recherche sur un critère en saisissant une valeur</p>
-  </li>
-  <li>
+    <p><strong>Scenario 1 : Recherche sur un critère en saisissant une valeur</strong></p>
+
     <p>Un consommateur cherche les offres (unités) ayant une activité
 opérationnelle qui correspond à l’unique valeur recherchée par le
 consommateur</p>
   </li>
   <li>
-    <p>Scenario 2 : Recherche sur un critère en saisissant une liste de
-valeurs</p>
+    <p><strong>Scenario 2 : Recherche sur un critère en saisissant une liste de valeurs</strong></p>
 
     <p>Un consommateur cherche les offres (unités) ayant à une activité
 opérationnelle qui correspond à l’une des valeurs recherchées par le
 consommateur</p>
   </li>
   <li>
-    <p>Scenario 3 : Recherche multicritères #1 – ET</p>
+    <p><strong>Scenario 3 : Recherche multicritères #1 – ET</strong></p>
+
+    <p>Un consommateur cherche les offres (unités) ayant une catégorie
+d’organisation <strong>ET</strong> un accueil séquentiel</p>
   </li>
   <li>
-    <p>Un consommateur cherche les offres (unités) ayant plusieurs
-activités opérationnelles <strong>[ET]{.underline}</strong> un acte spécifique</p>
-  </li>
-  <li>
-    <p>Scenario 4 : Recherche multicritères #2 – OU</p>
-  </li>
-  <li>
+    <p><strong>Scenario 4 : Recherche multicritères #2 – OU</strong></p>
+
     <p>Un consommateur cherche les offres (unités) ayant à une catégorie
-d'organisation <strong>[OU]{.underline}</strong> une activité opérationnelle</p>
+d'organisation <strong>OU</strong> une activité opérationnelle</p>
   </li>
   <li>
-    <p>Scenario 5 : Recherche multicritères #3 – ET/OU</p>
+    <p><strong>Scenario 5 : Recherche multicritères #3 – ET/OU</strong></p>
+
+    <p>Un consommateur recherche les offres (unités) ayant (une catégorie
+d’établissement <strong>OU</strong> catégorie d’organisation)
+<strong>ET</strong> un acte spécifique</p>
   </li>
   <li>
-    <p>Un consommateur recherche les offres (unités) ayant une catégorie
-d’établissement <strong>[OU]{.underline}</strong> catégorie d’organisation
-<strong>[ET]{.underline}</strong> un acte spécifique</p>
-  </li>
-  <li>
-    <p>Scenario 6 : Recherche à proximité géographique</p>
-  </li>
-  <li>
+    <p><strong>Scenario 6 : Recherche à proximité géographique</strong></p>
+
     <p>Un consommateur cherche les offres (unités) ayant une activité
 opérationnelle, dans un périmètre géographique proche du lieu de
 résidence d'un patient</p>
@@ -339,12 +340,12 @@ résidence d'un patient</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#2.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 3, 2023 18:03+0000">2023-02-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 9, 2023 17:07+0000">2023-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance/issues/new">New Issue</a>
                 
 
           </span>
@@ -378,6 +379,11 @@ anchors.add()</script>
   
 <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
 
 
 

@@ -8,7 +8,7 @@
 </div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>HealthcareService</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href="http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location">http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
   </text>
   <url value="http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur"/>
-  <version value="2.4"/>
+  <version value="0.1.0"/>
   <name value="RORServeur"/>
   <title value="ROR-RORServeur"/>
   <status value="active"/>

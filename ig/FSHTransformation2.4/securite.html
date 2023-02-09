@@ -55,9 +55,9 @@
   </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ROR</span>
+          <p><span style="font-size:12pt;font-weight:bold">ROR ME 2.4</span>
             <br/>
-            <span style="display:inline-block;">2.4 - ci-build
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -87,37 +87,33 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications fonctionnelles
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications techniques
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="specifications_techniques.html">Spécifications techniques</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications_techniques.html">Spécifications techniques</a>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Téléchargements et usage
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Téléchargements</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
       <li>
         <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
@@ -141,15 +137,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='autres_ressources.html'><b>Autres Ressources</b></a></li><li><b>Sécurité</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='downloads.html'><b>Téléchargements et usages</b></a></li><li><b>Sécurité</b></li>
 
           <span style="float:right;">
 
-            <a href="autres_ressources.html">&lt;prev</a> | 
+            <a href="downloads.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="downloads.html">next&gt;</a>
+          | <a href="autres_ressources.html">next&gt;</a>
 
           </span>
 
@@ -190,12 +186,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 id="sécurité">Sécurité</h3>
 
-<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu’il convient de protéger.</p>
-
-<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent à cet Implementation Guidegit status
-. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
+<p>Le système consommateur dispose des points d’accès et des moyens d’authentification (authentification mTLS avec des certificats IGC-Santé) pour accéder aux données du ROR National.
+Le système consommateur peut uniquement effectuer les recherches autorisées par son profil d’accès aux données.   [<a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ANS-ROR_Doctrine-Urbanisation_annexe_Politique%20d%27acc%C3%A8s%20V2.5%20cible.pdf">Ref_02</a>]</p>
 
 <p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
 
@@ -227,7 +220,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="autres_ressources.html">&lt;prev</a>
+                <a href="downloads.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -235,7 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="downloads.html">next&gt;</a>
+                <a href="autres_ressources.html">next&gt;</a>
 
               </td>
             </tr>
@@ -245,12 +238,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ROR#2.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 3, 2023 18:03+0000">2023-02-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.ror#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 9, 2023 17:07+0000">2023-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/ROR_ressource-conformance/issues/new">New Issue</a>
                 
 
           </span>
@@ -284,6 +277,11 @@ anchors.add()</script>
   
 <!-- feedback form - Google forms -->
 <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+  
 
 
 
