@@ -1,0 +1,1943 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ans.fhir.fr.ror24"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ROR</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre></div>"
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "2.4"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "ROR"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "ROR"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "active"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-10T10:54:17+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "ANS"]; # 
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ANS" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "ans.fhir.fr.ror24"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ]; # 
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "ans_annuaire_fhir_r4" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4";
+       fhir:link <http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.annuaire.fhir.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.2.0" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "hl7_fhir_fr_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core";
+       fhir:link <http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.fr.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ]; # 
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "shownav" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2020+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "shownav" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareService" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil crée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil créé dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-accessibility-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-accessibility-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAccessibilityLocation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-calculated-distance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-calculated-distance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressCalculatedDistance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-description>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-description" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressDescription" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-name>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressName" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressStatus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-effective-opening-closing-date>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-effective-opening-closing-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeEffectiveOpeningClosingDate" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-number-days-of-week>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-number-days-of-week" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeNumberDaysofWeek" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-type-of-time>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-type-of-time" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeTypeOfTime" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-care-without-patient-approval>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-care-without-patient-approval" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCareWithoutPatientApproval" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-code-region>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-code-region" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCodeRegion" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-commune-cog>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-commune-cog" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCommuneCog" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-communication-channel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-communication-channel" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCommunicationChannel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-confidentiality-level>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-confidentiality-level" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORConfidentialityLevel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-confidentiality-level>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-confidentiality-level" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactConfidentialityLevel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-description>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-description" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactDescription" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-fonction-contact>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-fonction-contact" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactFonctionContact" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-telecom-usage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-telecom-usage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactTelecomUsage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-drop-zone>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-drop-zone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORDropZone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-geolocation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-geolocation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORGeolocation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-capacity-reception" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCapacityReception" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-capacity-reception-crisis" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCapacityReceptionCrisis" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-care-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-care-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCareMode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-competence-ressource>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-competence-ressource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCompetenceRessource" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-contact>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-contact" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceContact" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-definitely-close>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-definitely-close" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceDefinitelyClose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-equipement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-equipement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceEquipement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-facility-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-facility-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceFacilityType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-intervention-zone>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-intervention-zone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceInterventionZone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceLocation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-open-close>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-open-close" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceOpenClose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-opening-date>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-opening-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceOpeningDate" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-patient-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServicePatientType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-psychiatric-sector>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-psychiatric-sector" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServicePsychiatricSector" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-reception-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-reception-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceReceptionMode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-reception-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-reception-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceReceptionType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-residential-capacity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-residential-capacity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceResidentialCapacity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-sensitive-unit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceSensitiveUnit" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-taking-care-speciality>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-taking-care-speciality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceTakingCareSpeciality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-type-activity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-type-activity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceTypeActivity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-territorial>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-territorial" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareserviceTerritorial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-level-recours-orsan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-level-recours-orsan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLevelRecoursORSAN" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-geodesic-system" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationGeodesicSystem" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-reliable-position>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-reliable-position" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationReliablePosition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationStatus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-management-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-management-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORManagementType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-maternity-hospital-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-maternity-hospital-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORMaternityHospitalType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-accomodation-family>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-accomodation-family" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationAccomodationFamily" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationAddressLineISO21090AdxpLocality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-closing-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-closing-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationClosingType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de fermeture de l'entité juridique, au sens des règles de gestion du SI FINESS (par exemple, fermeture définitive), obligatoire lors de la fermeture de l'entité." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-financial-help-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-financial-help-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationFinancialHelpType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-nb-permanent-social-help-place>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-nb-permanent-social-help-place" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationNbPermanentSocialHelpPlace" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-nb-temporary-social-help-place>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-nb-temporary-social-help-place" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationNbTemporarySocialHelpPlace" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-price>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-price" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationPrice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-period-closing-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-period-closing-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPeriodClosingType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole-home-visit>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole-home-visit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRoleHomeVisit" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole-unit-exercise-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole-unit-exercise-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRoleUnitExerciseMode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-confidentiality-level>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-confidentiality-level" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTelecomConfidentialityLevel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-usage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-usage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTelecomUsage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-type-activity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-type-activity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTypeActivity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-unit-exercise-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ror-unit-exercise-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORUnitExerciseMode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension créée dans le cadre du ROR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-consommateur>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-consommateur" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-consommateur" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système qui est autorisé à consommer les données du ROR." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-serveur>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-serveur" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-serveur" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-code-region>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-code-region" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-code-region" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la spécialité ordinale" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-high" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-high" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age maximum de la patientèle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-low" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-low" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant l'age minimum de la patientèle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-equipment-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-equipment-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-equipment-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le type d'équipement de l'unité élémentaire" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-ordinal-speciality>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-ordinal-speciality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-ordinal-speciality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la spécialité ordinale" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-patient-type>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-patient-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-patient-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivant le public pris en charge" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-profession>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-profession" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-profession" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la profession" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-psychiatric-sector" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-psychiatric-sector" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche décrivrant le secteur psychiatrique de l'unité élémentaire" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-reception-mode>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-reception-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-reception-mode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur l'accueil séquentiel accepté" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-specific-competence>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-specific-competence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-specific-competence" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant de pointer sur la compétence spécifique" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-commune-cog>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-location-commune-cog" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-commune-cog" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-near-insee-code>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-location-near-insee-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-near-insee-code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche similaire au paramètre spécial \"near\", à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-organization-drop-zone>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-organization-drop-zone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-organization-drop-zone" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ];
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Accueil" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "specifications_fonctionnelles.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "specifications_fonctionnelles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Specifications Fonctionnelles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "specifications_techniques.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "specifications_techniques.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Specifications Techniques" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "autres_ressources.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "autres_ressources.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Autres Ressources" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+             fhir:Extension.valueUrl [ fhir:value "securite.html" ]
+           ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "securite.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Sécurité" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+             fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+           ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Téléchargements et usages" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "about.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "about.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "A propos de ce guide" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
