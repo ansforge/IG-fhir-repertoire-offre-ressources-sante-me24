@@ -8,7 +8,6 @@ Description: "Extension créée dans le cadre du ROR"
 * ^context[=].expression = "HealthcareService.availableTime"
 * ^context[+].type = #element
 * ^context[=].expression = "PractitionerRole.availableTime"
-* . ..1
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from $JDV-J41-TypeHoraire-ROR (required)
