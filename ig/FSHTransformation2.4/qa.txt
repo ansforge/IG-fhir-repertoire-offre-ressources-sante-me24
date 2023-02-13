@@ -1,9 +1,9 @@
 ﻿RORME24 : Validation Results
 =========================================
 
-err = 63, warn = 273, info = 25
+err = 59, warn = 273, info = 25
 IG Publisher Version: 1.2.35
-Generated Thu Feb 09 17:22:15 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
+Generated Mon Feb 13 11:10:02 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/ror)
  Build Errors : 1155 / 5 / 0
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/CapabilityStatement-ror-consommateur : 2 / 0 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/CapabilityStatement-ror-serveur : 2 / 0 / 1
@@ -40,7 +40,7 @@ Generated Thu Feb 09 17:22:15 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-contact-telecom-usage : 0 / 1 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-drop-zone : 0 / 1 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-geolocation : 0 / 1 / 1
- /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-healthcareservice : 10 / 37 / 1
+ /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-healthcareservice : 8 / 37 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-healthcareservice-capacity-reception : 0 / 1 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-healthcareservice-capacity-reception-crisis : 0 / 1 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-healthcareservice-care-mode : 0 / 3 / 1
@@ -79,7 +79,7 @@ Generated Thu Feb 09 17:22:15 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.ror#0
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-organization-price : 0 / 19 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-period-closing-type : 0 / 3 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-practitioner : 0 / 3 / 1
- /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-practitionerrole : 10 / 23 / 1
+ /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-practitionerrole : 8 / 23 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-practitionerrole-home-visit : 0 / 1 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-practitionerrole-unit-exercise-mode : 0 / 3 / 1
  /home/runner/work/ROR_ressource-conformance/ROR_ressource-conformance/fsh-generated/resources/StructureDefinition-ror-telecom-confidentiality-level : 0 / 3 / 1
@@ -1371,11 +1371,9 @@ ERROR: RORHealthcareService.extension[[CanonicalType[https://interop.esante.gouv
 WARNING: RORHealthcareService.HealthcareService.telecom.system: Binding https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR could not be located
 ERROR: RORHealthcareService.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-effective-opening-closing-date]]].HealthcareService.availableTime.extension: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: RORHealthcareService.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-number-days-of-week]]].HealthcareService.availableTime.extension: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
-ERROR: RORHealthcareService.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-type-of-time]]].HealthcareService.availableTime.extension: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-healthcareservice: StructureDefinition: Element HealthcareService.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-healthcareservice: StructureDefinition: Element HealthcareService.extension: derived max (*) cannot be greater than base max (1)
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition: Binding https://mos.esante.gouv.fr/NOS/JDV_J221-NatureContact-ROR/FHIR/JDV-J221-NatureContact-ROR could not be located
-ERROR: StructureDefinition/ror-healthcareservice: StructureDefinition: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-healthcareservice: StructureDefinition: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-healthcareservice: StructureDefinition: Element HealthcareService.availableTime.extension: derived max (*) cannot be greater than base max (1)
 WARNING: StructureDefinition/ror-healthcareservice: StructureDefinition.differential.element[15].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J34-CategorieOrganisation-ROR/FHIR/JDV-J34-CategorieOrganisation-ROR on element HealthcareService.category could not be resolved
@@ -1636,10 +1634,8 @@ ERROR: RORPractitionerRole.extension[[CanonicalType[https://interop.esante.gouv.
 ERROR: RORPractitionerRole.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-practitionerrole-home-visit]]].PractitionerRole.extension: Element PractitionerRole.extension: derived max (*) cannot be greater than base max (1)
 ERROR: RORPractitionerRole.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-effective-opening-closing-date]]].PractitionerRole.availableTime.extension: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: RORPractitionerRole.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-number-days-of-week]]].PractitionerRole.availableTime.extension: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
-ERROR: RORPractitionerRole.extension[[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror/StructureDefinition/ror-available-time-type-of-time]]].PractitionerRole.availableTime.extension: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-practitionerrole: StructureDefinition: Element PractitionerRole.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-practitionerrole: StructureDefinition: Element PractitionerRole.extension: derived max (*) cannot be greater than base max (1)
-ERROR: StructureDefinition/ror-practitionerrole: StructureDefinition: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-practitionerrole: StructureDefinition: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
 ERROR: StructureDefinition/ror-practitionerrole: StructureDefinition: Element PractitionerRole.availableTime.extension: derived max (*) cannot be greater than base max (1)
 WARNING: StructureDefinition/ror-practitionerrole: StructureDefinition.differential.element[10].binding: The valueSet reference https://mos.esante.gouv.fr/NOS/JDV_J229-ProfessionSante-ROR/FHIR/JDV-J229-ProfessionSante-ROR on element PractitionerRole.code.coding could not be resolved
