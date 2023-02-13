@@ -6,7 +6,7 @@ Description: "Extension créée dans le cadre du ROR"
 
 * ^context.type = #element
 * ^context.expression = "Location"
-* . ..1
+
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x].coding from $JDV-J224-StatutLieu-ROR (required)

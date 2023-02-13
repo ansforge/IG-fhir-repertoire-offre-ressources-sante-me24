@@ -6,7 +6,6 @@ Description: "Extension créée dans le cadre du ROR"
 
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
-* . ..1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
