@@ -3,7 +3,7 @@
   "id" : "ror-consommateur",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORConsommateur</h2><div><p>Système qui est autorisé à consommer les données du ROR.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des offres</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>HealthcareService</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORConsommateur</h2><div><p>Système qui est autorisé à consommer les données du ROR.</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td><div><p>Recherche et consultation des offres</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>HealthcareService</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   },
   "url" : "http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-consommateur",
   "version" : "2.4",
@@ -35,7 +35,7 @@
     },
     "resource" : [{
       "type" : "HealthcareService",
-      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService",
+      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice",
       "interaction" : [{
         "code" : "search-type"
       },
@@ -129,7 +129,7 @@
     },
     {
       "type" : "Organization",
-      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization",
+      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization",
       "interaction" : [{
         "code" : "search-type"
       },
@@ -157,7 +157,7 @@
     },
     {
       "type" : "PractitionerRole",
-      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole",
+      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole",
       "interaction" : [{
         "code" : "search-type"
       },
@@ -179,7 +179,7 @@
     },
     {
       "type" : "Location",
-      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location",
+      "profile" : "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location",
       "interaction" : [{
         "code" : "search-type"
       },
@@ -194,7 +194,7 @@
       },
       {
         "name" : "near-insee-code",
-        "definition" : "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-nearINSEECode",
+        "definition" : "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-near-insee-code",
         "type" : "special",
         "documentation" : "Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"
       },

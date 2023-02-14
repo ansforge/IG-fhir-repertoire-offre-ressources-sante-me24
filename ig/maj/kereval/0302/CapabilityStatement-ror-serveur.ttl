@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "ror-serveur"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Serveur national du ROR</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>HealthcareService</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORServeur</h2><div><p>Système ROR National Le Répertoire Opérationnel des Ressources (ROR) est le gisement de données qui décrit les offres de santé au niveau national.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Serveur national du ROR</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>HealthcareService</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole</a></td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td><a href=\"http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location\">http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location</a></td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   ]; # 
   fhir:CapabilityStatement.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-serveur"]; # 
   fhir:CapabilityStatement.version [ fhir:value "2.4"]; # 
@@ -56,8 +56,8 @@
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "HealthcareService" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-HealthcareService>
+         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice";
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -197,8 +197,8 @@
        fhir:index 1;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Organization>
+         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization";
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -239,8 +239,8 @@
        fhir:index 2;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-PractitionerRole>
+         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole";
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -272,8 +272,8 @@
        fhir:index 3;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ];
        fhir:CapabilityStatement.rest.resource.profile [
-         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location";
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-Location>
+         fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location";
+         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location>
        ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -295,8 +295,8 @@
          fhir:index 1;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "near-insee-code" ];
          fhir:CapabilityStatement.rest.resource.searchParam.definition [
-           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-nearINSEECode";
-           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-nearINSEECode>
+           fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-near-insee-code";
+           fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-near-insee-code>
          ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
          fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Lieux proches du lieu de réalisation de l'offre via le code COG INSEE" ]
