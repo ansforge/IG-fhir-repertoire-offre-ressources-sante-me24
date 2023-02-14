@@ -2,8 +2,8 @@ Profile: RORHealthcareService
 Parent: HealthcareService
 Id: ror-healthcareservice
 Description: "Profil créée dans le cadre du ROR"
-* id 1..
-* meta 1..
+* id 1..1
+* meta 1..1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -28,10 +28,10 @@ Description: "Profil créée dans le cadre du ROR"
 * extension[ror-healthcareservice-opening-date] ^isModifier = false
 * extension[ror-healthcareservice-reception-mode] ^isModifier = false
 * extension[ror-healthcareservice-contact] ^isModifier = false
-* providedBy 1..
-* category ..1
+* providedBy 1..1
+* category 0..1
 * category from $JDV-J34-CategorieOrganisation-ROR (required)
-* type ..1
+* type 0..1
 * type from $JDV-J20-ChampActivite-ROR (required)
 * type.coding from $JDV-J20-ChampActivite-ROR (required)
 * type.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite" (exactly)
@@ -51,8 +51,8 @@ Description: "Profil créée dans le cadre du ROR"
 * specialty[operationalActivityFamily] ^definition = "Collection of operational activity families, except Serafin."
 * specialty[operationalActivityFamily] ^binding.description = "A family of operationnal activities that a healthcare service may provide."
 * specialty[operationalActivityFamily].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin" (exactly)
-* location ..1
-* name 1..
+* location 0..1
+* name 1..1
 * telecom.extension ^slicing.discriminator.type = #value
 * telecom.extension ^slicing.discriminator.path = "url"
 * telecom.extension ^slicing.rules = #open
@@ -62,7 +62,7 @@ Description: "Profil créée dans le cadre du ROR"
 * telecom.extension[ror-telecom-confidentiality-level] ^isModifier = false
 * telecom.extension[ror-telecom-usage] ^isModifier = false
 * telecom.system from $JDV-J221-NatureContact-ROR (required)
-* characteristic ..1
+* characteristic 0..1
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "coding.system"
 * characteristic ^slicing.rules = #open
