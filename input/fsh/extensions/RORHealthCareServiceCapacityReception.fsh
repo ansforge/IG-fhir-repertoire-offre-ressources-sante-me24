@@ -2,7 +2,6 @@ Extension: RORHealthcareServiceCapacityReception
 Id: ror-healthcareservice-capacity-reception
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-07-08"
 
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService"
@@ -11,7 +10,6 @@ Description: "Extension créée dans le cadre du ROR"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
     placedBedNumber 0..1 and
     availableBedNumber 0..1 and
@@ -24,5 +22,4 @@ Description: "Extension créée dans le cadre du ROR"
 * extension[availableBedUpdateDate].value[x] only date
 * extension[placedPlacesNumber].value[x] only integer
 * extension[availablePlacesNumber].value[x] only integer
-* extension[availablePlacesNumberUpdateDate] ^min = 0
 * extension[availablePlacesNumberUpdateDate].value[x] only date

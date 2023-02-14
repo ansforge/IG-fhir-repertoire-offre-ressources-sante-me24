@@ -6,9 +6,7 @@ Description: "Profil créé dans le cadre du ROR"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains
-    //description 0..0 and
     ROROrganizationPrice named ror-organization-price 0..1 and
     RORDropZone named ror-drop-zone 0..1 and
     $mailboxMSS named mailboxMSS 0..* and
@@ -37,7 +35,6 @@ Description: "Profil créé dans le cadre du ROR"
 * extension[ror-organization-closing-type] ^isModifier = false
 * extension[ror-type-activity] ^isModifier = false
 * extension[period] ^isModifier = false
-* identifier ..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
@@ -78,13 +75,11 @@ Description: "Profil créé dans le cadre du ROR"
 * type[sphParticipation] from $JDV-J202-ESPIC-ROR (required)
 * type[sphParticipation] ^binding.description = "Binding JDV_J202-ESPIC-ROR"
 * type[sousEnsembleAgregatStatutJuridique] from $JDV-J200-SousEnsembleAgregatStatutJuridique-ROR (required)
-* alias ..1
+* alias 0..1 //Contrainte issu du mapping
 * address.extension ^slicing.discriminator.type = #value
 * address.extension ^slicing.discriminator.path = "url"
 * address.extension ^slicing.rules = #open
-* address.extension ^min = 0
 * address.extension[inseeCode] ^sliceName = "inseeCode"
-* address.extension[inseeCode] ^min = 0
 * address.extension[inseeCode].value[x] from $JDV-J230-CommuneOM-ROR (required)
 * address.extension[inseeCode].value[x] ^binding.description = "JDV_J102-1-CommuneOM-ROR"
 * address.extension contains
@@ -99,12 +94,10 @@ Description: "Profil créé dans le cadre du ROR"
 * address.extension[ror-address-calculated-distance] ^isModifier = false
 * address.extension[ror-geolocation] only RORGeolocation
 * address.extension[ror-geolocation] ^sliceName = "ror-geolocation"
-* address.extension[ror-geolocation] ^min = 0
 * address.extension[ror-geolocation] ^isModifier = false
 * address.line.extension ^slicing.discriminator.type = #value
 * address.line.extension ^slicing.discriminator.path = "url"
 * address.line.extension ^slicing.rules = #open
-* address.line.extension ^min = 0
 * address.line.extension contains 
     ROROrganizationAddressLineISO21090AdxpLocality named ror-organization-address-line-iso-21090-adxp-locality 0..1 and
     $careOf named careOf 0..* and
@@ -126,7 +119,6 @@ Description: "Profil créé dans le cadre du ROR"
 * contact.extension ^slicing.discriminator.type = #value
 * contact.extension ^slicing.discriminator.path = "url"
 * contact.extension ^slicing.rules = #open
-* contact.extension ^min = 0
 * contact.extension contains
     RORContactDescription named ror-contact-description 0..1 and
     RORContactFonctionContact named ror-contact-fonction-contact 0..1 and
@@ -138,10 +130,9 @@ Description: "Profil créé dans le cadre du ROR"
 * contact.telecom.extension ^slicing.discriminator.type = #value
 * contact.telecom.extension ^slicing.discriminator.path = "url"
 * contact.telecom.extension ^slicing.rules = #open
-* contact.telecom.extension ^min = 0
 * contact.telecom.extension contains
     RORTelecomConfidentialityLevel named ror-telecom-confidentiality-level 0..1 and
     RORContactTelecomUsage named ror-contact-telecom-usage 0..1
 * contact.telecom.extension[ror-telecom-confidentiality-level] ^isModifier = false
 * contact.telecom.extension[ror-contact-telecom-usage] ^isModifier = false
-* endpoint ..0
+* endpoint 0..0

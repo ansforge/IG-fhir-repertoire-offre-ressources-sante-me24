@@ -21,15 +21,15 @@ Usage: #definition
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchParam[0].name = "supported-patient-type"
-* rest.resource[=].searchParam[=].definition = "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-patient-type"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-patient-type)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Le public pris en charge précise si une unité élémentaire d'un établissement ou d'un service du champ d'activité médico-social accueille des personnes âgées en perte d'autonomie et/ou des personnes en situation de handicap"
 * rest.resource[=].searchParam[+].name = "age-range-low"
-* rest.resource[=].searchParam[=].definition = "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-age-range-low)
 * rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Borne minimum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."
 * rest.resource[=].searchParam[+].name = "age-range-high"
-* rest.resource[=].searchParam[=].definition = "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-age-range-high)
 * rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Borne maximum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."
 * rest.resource[=].searchParam[+].name = "organization"

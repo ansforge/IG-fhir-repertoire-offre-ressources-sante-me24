@@ -2,7 +2,6 @@ Extension: RORTelecomConfidentialityLevel
 Id: ror-telecom-confidentiality-level
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-07-01"
 
 * ^context.type = #element
 * ^context.expression = "Organization.contact.telecom"

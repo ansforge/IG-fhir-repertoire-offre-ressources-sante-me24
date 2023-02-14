@@ -2,7 +2,6 @@ Extension: RORHealthcareServiceCapacityReceptionCrisis
 Id: ror-healthcareservice-capacity-reception-crisis
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-07-08"
 
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService"

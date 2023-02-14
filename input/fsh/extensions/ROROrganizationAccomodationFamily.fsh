@@ -2,7 +2,6 @@ Extension: ROROrganizationAccomodationFamily
 Id: ror-organization-accomodation-family
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-06-29"
 
 * ^context.type = #element
 * ^context.expression = "Organization"

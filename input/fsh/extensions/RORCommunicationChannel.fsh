@@ -2,7 +2,7 @@ Extension: RORCommunicationChannel
 Id: ror-communication-channel
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-06-30"
+
 
 * ^context.type = #element
 * ^context.expression = "ContactPoint"

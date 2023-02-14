@@ -2,7 +2,6 @@ Extension: RORHealthcareserviceTerritorial
 Id: ror-healthcareservice-territorial
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-06-28"
 
 * ^context.type = #element
 * ^context.expression = "Organization"

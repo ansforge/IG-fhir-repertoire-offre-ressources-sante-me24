@@ -1,7 +1,6 @@
 Extension: RORGeolocation
 Parent: $geolocation
 Id: ror-geolocation
-* ^date = "2022-12-05"
 * ^context.type = #element
 * ^context.expression = "Address"
 * extension ^slicing.discriminator.type = #value
@@ -11,5 +10,5 @@ Id: ror-geolocation
     geodicSystem 1..1 and
     reliablePosition 0..*
 * extension[geodicSystem].value[x] only string
-* extension[reliablePosition] ^min = 0
+* extension[geodicSystem].value[x] 1..1
 * extension[reliablePosition].value[x] only boolean

@@ -2,7 +2,6 @@ Extension: RORConfidentialityLevel
 Id: ror-confidentiality-level
 Description: "Extension créée dans le cadre du ROR"
 
-* ^date = "2022-06-28T00:00:00+02:00"
 
 * ^context[0].type = #element
 * ^context[=].expression = "ContactPoint"

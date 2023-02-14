@@ -2,7 +2,6 @@ Profile: RORHealthcareService
 Parent: HealthcareService
 Id: ror-healthcareservice
 Description: "Profil créée dans le cadre du ROR"
-* ^date = "2022-06-30"
 * id 1..
 * meta 1..
 * extension ^slicing.discriminator.type = #value
@@ -20,14 +19,10 @@ Description: "Profil créée dans le cadre du ROR"
     RORHealthcareServiceReceptionMode named ror-healthcareservice-reception-mode 0..1 and
     RORHealthcareServiceContact named ror-healthcareservice-contact 0..1
 * extension[ror-healthcareservice-patient-type] ^isModifier = false
-* extension[ror-healthcareservice-psychiatric-sector] ^min = 0
 * extension[ror-healthcareservice-psychiatric-sector] ^isModifier = false
-* extension[mailboxMSS] ^min = 0
 * extension[mailboxMSS] ^isModifier = false
 * extension[ror-healthcareservice-competence-ressource] ^isModifier = false
-* extension[ror-healthcareservice-equipement] ^min = 0
 * extension[ror-healthcareservice-equipement] ^isModifier = false
-* extension[ror-healthcareservice-intervention-zone] ^min = 0
 * extension[ror-healthcareservice-intervention-zone] ^isModifier = false
 * extension[ror-healthcareservice-sensitive-unit] ^isModifier = false
 * extension[ror-healthcareservice-opening-date] ^isModifier = false
@@ -115,9 +110,6 @@ Description: "Profil créée dans le cadre du ROR"
     RORAvailableTimeTypeOfTime named ror-available-time-type-of-time 0..*
 * availableTime.extension[ror-healthcareservice-open-close] ^isModifier = false
 * availableTime.extension[ror-healthcareservice-definitely-close] ^isModifier = false
-* availableTime.extension[ror-available-time-effective-opening-closing-date] ^min = 0
 * availableTime.extension[ror-available-time-effective-opening-closing-date] ^isModifier = false
-* availableTime.extension[ror-available-time-number-days-of-week] ^min = 0
 * availableTime.extension[ror-available-time-number-days-of-week] ^isModifier = false
-* availableTime.extension[ror-available-time-type-of-time] ^min = 0
 * availableTime.extension[ror-available-time-type-of-time] ^isModifier = false
