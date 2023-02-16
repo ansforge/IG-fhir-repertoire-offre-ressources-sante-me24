@@ -1,8 +1,6 @@
 Extension: ROROrganizationPrice
 Id: ror-organization-price
 Description: "Extension créée dans le cadre du ROR"
-
-
 * ^context.type = #element
 * ^context.expression = "Organization"
 * extension ^slicing.discriminator.type = #value

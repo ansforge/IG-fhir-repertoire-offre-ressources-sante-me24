@@ -2,7 +2,6 @@ Profile: ROROrganization
 Parent: $FrOrganization
 Id: ror-organization
 Description: "Profil créé dans le cadre du ROR"
-
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -10,7 +9,7 @@ Description: "Profil créé dans le cadre du ROR"
     ROROrganizationPrice named ror-organization-price 0..1 and
     RORDropZone named ror-drop-zone 0..1 and
     $mailboxMSS named mailboxMSS 0..* and
-    RORHealthcareserviceTerritorial named ror-healthcareservice-territorial 0..* and
+    ROROrganizationTerritorial named ror-organization-territorial 0..* and
     ROROrganizationFinancialHelpType named ror-organization-financial-help-type 0..* and
     ROROrganizationAccomodationFamily named ror-organization-accomodation-family 0..* and
     ROROrganizationNbPermanentSocialHelpPlace named ror-organization-nb-permanent-social-help-place 0..* and
@@ -22,7 +21,7 @@ Description: "Profil créé dans le cadre du ROR"
     RORTypeActivity named ror-type-activity 0..* and
     $period named period 0..1
 * extension[mailboxMSS] ^isModifier = false
-* extension[ror-healthcareservice-territorial] ^isModifier = false
+* extension[ror-organization-territorial] ^isModifier = false
 * extension[ror-organization-price] ^isModifier = false
 * extension[ror-drop-zone] ^isModifier = false
 * extension[ror-organization-financial-help-type] ^isModifier = false

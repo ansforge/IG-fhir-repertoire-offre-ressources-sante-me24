@@ -1,8 +1,6 @@
 Extension: RORHealthcareServiceLocation
 Id: ror-healthcareservice-location
 Description: "Extension créée dans le cadre du ROR"
-
-
 * ^context.type = #element
 * ^context.expression = "HealthcareService.location"
 * extension ^slicing.discriminator.type = #value

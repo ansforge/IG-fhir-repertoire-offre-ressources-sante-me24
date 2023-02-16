@@ -1,9 +1,6 @@
 Extension: RORAvailableTimeTypeOfTime
 Id: ror-available-time-type-of-time
 Description: "Extension créée dans le cadre du ROR"
-
-
-
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService.availableTime"
 * ^context[+].type = #element

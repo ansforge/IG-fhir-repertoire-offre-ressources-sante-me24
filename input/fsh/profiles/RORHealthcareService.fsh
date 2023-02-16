@@ -2,8 +2,6 @@ Profile: RORHealthcareService
 Parent: HealthcareService
 Id: ror-healthcareservice
 Description: "Profil créée dans le cadre du ROR"
-* id 1..1
-* meta 1..1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

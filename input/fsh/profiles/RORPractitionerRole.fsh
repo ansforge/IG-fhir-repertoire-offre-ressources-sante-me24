@@ -2,10 +2,6 @@ Profile: RORPractitionerRole
 Parent: PractitionerRole
 Id: ror-practitionerrole
 Description: "Profil créée dans le cadre du ROR"
-
-
-
-
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

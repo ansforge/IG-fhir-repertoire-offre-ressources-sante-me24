@@ -1,8 +1,6 @@
 Extension: RORHealthcareServiceCompetenceRessource
 Id: ror-healthcareservice-competence-ressource
 Description: "Extension créée dans le cadre du ROR"
-
-
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
 * extension ^slicing.discriminator.type = #value

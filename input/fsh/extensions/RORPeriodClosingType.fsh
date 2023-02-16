@@ -1,9 +1,6 @@
 Extension: RORPeriodClosingType
 Id: ror-period-closing-type
 Description: "Extension créée dans le cadre du ROR"
-
-
-
 * ^context.type = #element
 * ^context.expression = "Period"
 * value[x] only CodeableConcept

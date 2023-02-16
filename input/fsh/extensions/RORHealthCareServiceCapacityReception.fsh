@@ -1,8 +1,6 @@
 Extension: RORHealthcareServiceCapacityReception
 Id: ror-healthcareservice-capacity-reception
 Description: "Extension créée dans le cadre du ROR"
-
-
 * ^context[0].type = #element
 * ^context[=].expression = "HealthcareService"
 * ^context[+].type = #element

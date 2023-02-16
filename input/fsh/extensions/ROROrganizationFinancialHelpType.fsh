@@ -1,8 +1,6 @@
 Extension: ROROrganizationFinancialHelpType
 Id: ror-organization-financial-help-type
 Description: "Extension créée dans le cadre du ROR"
-
-
 * ^context.type = #element
 * ^context.expression = "Organization"
 * value[x] only CodeableConcept
