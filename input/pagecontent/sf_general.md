@@ -4,10 +4,10 @@ A ce jour, le webservice répond au cas d’usage suivants :
 
 Pour les cas d’usage couverts par ce webservice : 
 -	Les préconditions sont : 
--	Le système consommateur dispose des points d’accès et des moyens d’authentification (authentification mTLS avec des certificats IGC-Santé) pour accéder aux données du ROR National.
--	Le système consommateur peut uniquement effectuer les recherches autorisées par son profil d’accès aux données.   [Ref_02] 
+    -	Le système consommateur dispose des points d’accès et des moyens d’authentification (authentification mTLS avec des certificats IGC-Santé) pour accéder aux données du ROR National.
+    -	Le système consommateur peut uniquement effectuer les recherches autorisées par son profil d’accès aux données.   [Ref_02] 
 -	Les postconditions sont : 
--	L’exécution des transactions ne provoquera aucune modification sur les données sources extraites.
+    -	L’exécution des transactions ne provoquera aucune modification sur les données sources extraites.
 
 ##	Recherche offre sur les principaux critères de recherche
 ###	Description du cas d’usage
