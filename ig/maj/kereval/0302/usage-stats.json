@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.ror24",
-  "version": "2.4",
+  "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -851,64 +851,6 @@
       ]
     },
     {
-      "url": "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-territorial",
-      "title": "RORHealthcareserviceTerritorial",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
       "url": "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-type-activity",
       "title": "RORHealthcareServiceTypeActivity",
       "types": [
@@ -1080,6 +1022,64 @@
         "UsageContext",
         "Dosage",
         "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-territorial",
+      "title": "ROROrganizationTerritorial",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
         "base64Binary",
         "boolean",
         "canonical",
@@ -1432,9 +1432,6 @@
     "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit": [
       "HealthcareService"
     ],
-    "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-territorial": [
-      "Organization"
-    ],
     "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-level-recours-orsan": [
       "Organization"
     ],
@@ -1464,6 +1461,9 @@
       "Organization"
     ],
     "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-price": [
+      "Organization"
+    ],
+    "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-territorial": [
       "Organization"
     ],
     "http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole-home-visit": [

@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORLocationCodeRegion</h2><p>Parameter <code>code-region</code>:<code>token</code></p><div><p>Paramètre de recherche permettant de pointer sur la spécialité ordinale</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/location.html\">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-code-region').valueCoding</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
   ]; # 
   fhir:SearchParameter.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-code-region"]; # 
-  fhir:SearchParameter.version [ fhir:value "2.4"]; # 
+  fhir:SearchParameter.version [ fhir:value "0.1.0"]; # 
   fhir:SearchParameter.name [ fhir:value "RORLocationCodeRegion"]; # 
   fhir:SearchParameter.status [ fhir:value "active"]; # 
   fhir:SearchParameter.date [ fhir:value "2022-08-04T00:00:00+02:00"^^xsd:dateTime]; # 

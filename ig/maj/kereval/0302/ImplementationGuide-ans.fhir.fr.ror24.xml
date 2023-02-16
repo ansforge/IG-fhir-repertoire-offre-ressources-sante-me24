@@ -3,14 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.ror24"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ROR</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>
+</div></div>
   </text>
   <url value="http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24"/>
-  <version value="2.4"/>
-  <name value="ROR"/>
-  <title value="ROR"/>
+  <version value="0.1.0"/>
+  <name value="RORME24"/>
+  <title value="ROR ME 2.4"/>
   <status value="active"/>
-  <date value="2023-02-15T16:52:51+00:00"/>
+  <date value="2023-02-16T17:40:35+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -19,6 +20,7 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
+  <description value="Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR"/>
   <packageId value="ans.fhir.fr.ror24"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -929,17 +931,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ror-healthcareservice-territorial"/>
-      </reference>
-      <name value="RORHealthcareserviceTerritorial"/>
-      <description value="Extension créée dans le cadre du ROR"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ror-level-recours-orsan"/>
       </reference>
       <name value="RORLevelRecoursORSAN"/>
@@ -1075,6 +1066,17 @@
         <reference value="StructureDefinition/ror-organization-price"/>
       </reference>
       <name value="ROROrganizationPrice"/>
+      <description value="Extension créée dans le cadre du ROR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organization-territorial"/>
+      </reference>
+      <name value="ROROrganizationTerritorial"/>
       <description value="Extension créée dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1353,10 +1355,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="autres_ressources.html"/>
+          <valueUrl value="downloads.html"/>
         </extension>
-        <nameUrl value="autres_ressources.html"/>
-        <title value="Autres Ressources"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Téléchargements et usages"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -1366,14 +1368,14 @@
           <title value="Sécurité"/>
           <generation value="markdown"/>
         </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="downloads.html"/>
-          </extension>
-          <nameUrl value="downloads.html"/>
-          <title value="Téléchargements et usages"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="autres_ressources.html"/>
+        </extension>
+        <nameUrl value="autres_ressources.html"/>
+        <title value="Autres Ressources"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
