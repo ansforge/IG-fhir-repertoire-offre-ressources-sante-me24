@@ -3,9 +3,6 @@ InstanceOf: SearchParameter
 Usage: #definition
 * status = #active
 * name = "RORHealthcareServiceOrdinalSpeciality"
-
-* date = "2022-08-04T00:00:00+02:00"
-
 * description = "Paramètre de recherche permettant de pointer sur la spécialité ordinale"
 * code = #ordinal-speciality
 * base = #HealthcareService
