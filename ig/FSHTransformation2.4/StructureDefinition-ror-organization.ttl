@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "ROROrganization"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-17T09:09:31+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-17T09:40:52+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "ANS"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "Profil créé dans le cadre du ROR"]; # 
+  fhir:StructureDefinition.description [ fhir:value "Profil créé à partir de la ressource Organization dans le cadre du ROR"]; # 
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"]; # 
   fhir:StructureDefinition.kind [ fhir:value "resource"]; # 
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean]; # 

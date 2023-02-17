@@ -10,7 +10,7 @@
   "name" : "RORME24",
   "title" : "ROR ME 2.4",
   "status" : "active",
-  "date" : "2023-02-17T09:09:31+00:00",
+  "date" : "2023-02-17T09:40:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -605,7 +605,7 @@
         "reference" : "StructureDefinition/ror-healthcareservice"
       },
       "name" : "RORHealthcareService",
-      "description" : "Profil créée dans le cadre du ROR",
+      "description" : "Profil créé à partir de la ressource HealthcareService dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {
@@ -617,7 +617,7 @@
         "reference" : "StructureDefinition/ror-location"
       },
       "name" : "RORLocation",
-      "description" : "Profil crée dans le cadre du ROR",
+      "description" : "Profil créé à partir de la ressource Location dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {
@@ -629,7 +629,7 @@
         "reference" : "StructureDefinition/ror-organization"
       },
       "name" : "ROROrganization",
-      "description" : "Profil créé dans le cadre du ROR",
+      "description" : "Profil créé à partir de la ressource Organization dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {
@@ -641,7 +641,7 @@
         "reference" : "StructureDefinition/ror-practitioner"
       },
       "name" : "RORPractitioner",
-      "description" : "Profil créée dans le cadre du ROR",
+      "description" : "Profil créé à partir de la ressource Practitioner dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {
@@ -653,7 +653,7 @@
         "reference" : "StructureDefinition/ror-practitionerrole"
       },
       "name" : "RORPractitionerRole",
-      "description" : "Profil créée dans le cadre du ROR",
+      "description" : "Profil créé à partir de la ressource PractitionerRole dans le cadre du ROR",
       "exampleBoolean" : false
     },
     {

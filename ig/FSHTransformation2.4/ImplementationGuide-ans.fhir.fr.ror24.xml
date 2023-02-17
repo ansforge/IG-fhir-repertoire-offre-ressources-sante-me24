@@ -11,7 +11,7 @@
   <name value="RORME24"/>
   <title value="ROR ME 2.4"/>
   <status value="active"/>
-  <date value="2023-02-17T09:09:31+00:00"/>
+  <date value="2023-02-17T09:40:52+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -451,7 +451,7 @@
         <reference value="StructureDefinition/ror-healthcareservice"/>
       </reference>
       <name value="RORHealthcareService"/>
-      <description value="Profil créée dans le cadre du ROR"/>
+      <description value="Profil créé à partir de la ressource HealthcareService dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -462,7 +462,7 @@
         <reference value="StructureDefinition/ror-location"/>
       </reference>
       <name value="RORLocation"/>
-      <description value="Profil crée dans le cadre du ROR"/>
+      <description value="Profil créé à partir de la ressource Location dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -473,7 +473,7 @@
         <reference value="StructureDefinition/ror-organization"/>
       </reference>
       <name value="ROROrganization"/>
-      <description value="Profil créé dans le cadre du ROR"/>
+      <description value="Profil créé à partir de la ressource Organization dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -484,7 +484,7 @@
         <reference value="StructureDefinition/ror-practitioner"/>
       </reference>
       <name value="RORPractitioner"/>
-      <description value="Profil créée dans le cadre du ROR"/>
+      <description value="Profil créé à partir de la ressource Practitioner dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -495,7 +495,7 @@
         <reference value="StructureDefinition/ror-practitionerrole"/>
       </reference>
       <name value="RORPractitionerRole"/>
-      <description value="Profil créée dans le cadre du ROR"/>
+      <description value="Profil créé à partir de la ressource PractitionerRole dans le cadre du ROR"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

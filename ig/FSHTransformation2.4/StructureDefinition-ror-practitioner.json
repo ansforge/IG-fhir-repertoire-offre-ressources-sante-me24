@@ -17,7 +17,7 @@
   "version" : "0.1.0",
   "name" : "RORPractitioner",
   "status" : "active",
-  "date" : "2023-02-17T09:09:31+00:00",
+  "date" : "2023-02-17T09:40:52+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -26,7 +26,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Profil créée dans le cadre du ROR",
+  "description" : "Profil créé à partir de la ressource Practitioner dans le cadre du ROR",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",
