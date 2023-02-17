@@ -1,7 +1,7 @@
 Profile: ROROrganization
 Parent: $FrOrganization
 Id: ror-organization
-Description: "Profil créé dans le cadre du ROR"
+Description: "Profil créé à partir de la ressource Organization dans le cadre du ROR"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
