@@ -1,38 +1,35 @@
 Instance: ror-consommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-consommateur"
-* version = "2.4"
+* status = #active
 * name = "RORConsommateur"
 * title = "ROR-Consommateur"
-* status = #active
 * experimental = false
 * date = "2023-01-12T14:27:51+01:00"
-* publisher = "ANS"
 * description = "Système qui est autorisé à consommer les données du ROR. "
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://esante.gouv.fr/fhir/ror/ImplementationGuide/ror-ig"
+* implementationGuide = "http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ror-ig"
 * rest.mode = #client
 * rest.documentation = "Recherche et consultation des offres"
 * rest.security.cors = false
 * rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
 * rest.resource[0].type = #HealthcareService
-* rest.resource[=].profile = "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-HealthcareService"
+* rest.resource[=].profile = Canonical(ror-healthcareservice)
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchParam[0].name = "supported-patient-type"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-patient-type"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-patient-type)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Le public pris en charge précise si une unité élémentaire d'un établissement ou d'un service du champ d'activité médico-social accueille des personnes âgées en perte d'autonomie et/ou des personnes en situation de handicap"
 * rest.resource[=].searchParam[+].name = "age-range-low"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-low"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-age-range-low)
 * rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Borne minimum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."
 * rest.resource[=].searchParam[+].name = "age-range-high"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-high"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-age-range-high)
 * rest.resource[=].searchParam[=].type = #quantity
 * rest.resource[=].searchParam[=].documentation = "Borne maximum (inclus) de la fourchette d’âge pour laquelle une offre est recherchée."
 * rest.resource[=].searchParam[+].name = "organization"
@@ -48,11 +45,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "La catégorie d'organisation caractérise la nature particulière de l’offre de santé portée par l’UE recherchée, offre qui se distingue par un agrément, un personnel spécialement formé, un environnement particulièrement adapté à l'état de santé des patients"
 * rest.resource[=].searchParam[+].name = "psychiatric-sector"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-psychiatric-sector"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-psychiatric-sector)
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Le secteur de psychiatrie (ou sectorisation) correspond à une aire géographique à laquelle sont rattachées des structures de relais et de soins qui prennent en charge des patients résidants sur ce secteur."
 * rest.resource[=].searchParam[+].name = "reception-mode"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-reception-mode"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-reception-mode)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "L’indicateur précise si l’UE accepte d’accueillir des personnes en situation de handicap de façon séquentielle c'est à dire sur une partie de la semaine"
 * rest.resource[=].searchParam[+].name = "service-type"
@@ -60,19 +57,19 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Un champ d’activité indique le domaine dans lequel s'inscrit l'offre"
 * rest.resource[=].searchParam[+].name = "profession"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-profession"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-profession)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "La compétence ressource correspond à une profession exercée par au moins une personne présente dans l’unité."
 * rest.resource[=].searchParam[+].name = "ordinal-speciality"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-ordinal-speciality"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-ordinal-speciality)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "La compétence ressource correspond à une spécialité ordinale exercée par au moins une personne présente dans l’unité."
 * rest.resource[=].searchParam[+].name = "specific-competence"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-specific-competence"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-specific-competence)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "La compétence spécifique correspond à une capacité ou connaissance reconnue d’une personne ressource de l’unité."
 * rest.resource[=].searchParam[+].name = "equipment-type"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-equipment-type"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-healthcareservice-equipment-type)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Un équipement spécifique correspond à une ressource matérielle médicotechnique spécialisée, qui permet la réalisation d’une activité de soins."
 * rest.resource[=].searchParam[+].name = "specialty"
@@ -80,7 +77,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Une activité opérationnelle est un ensemble cohérent d’actions et de pratiques mises en œuvre pour répondre aux besoins en Santé de la personne"
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Organization"
+* rest.resource[=].profile = Canonical(ror-organization)
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchParam[0].name = "identifier"
@@ -96,7 +93,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Nom de l'organisation interne."
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-PractitionerRole"
+* rest.resource[=].profile = Canonical(ror-practitionerrole)
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchParam[0].name = "service"
@@ -108,7 +105,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Reference pour la recherche vers le PractitionerRole"
 * rest.resource[+].type = #Location
-* rest.resource[=].profile = "http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-Location"
+* rest.resource[=].profile = Canonical(ror-location)
 * rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].searchParam[0].name = "near"
@@ -116,10 +113,10 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Lieux proches du lieu de réalisation de l'offre"
 * rest.resource[=].searchParam[+].name = "near-insee-code"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-location-nearINSEECode"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-location-near-insee-code)
 * rest.resource[=].searchParam[=].type = #special
 * rest.resource[=].searchParam[=].documentation = "Lieux proches du lieu de réalisation de l'offre via le code COG INSEE"
 * rest.resource[=].searchParam[+].name = "code-region"
-* rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-code-region"
+* rest.resource[=].searchParam[=].definition = Canonical(ror-sp-code-region)
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Code région"

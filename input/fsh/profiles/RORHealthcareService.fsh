@@ -2,12 +2,6 @@ Profile: RORHealthcareService
 Parent: HealthcareService
 Id: ror-healthcareservice
 Description: "Profil créée dans le cadre du ROR"
-* ^version = "2.4"
-* ^status = #active
-* ^date = "2022-06-30"
-* ^publisher = "ANS"
-* id 1..
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -15,31 +9,27 @@ Description: "Profil créée dans le cadre du ROR"
     RORHealthcareServicePatientType named ror-healthcareservice-patient-type 1..* and
     RORHealthcareServicePsychiatricSector named ror-healthcareservice-psychiatric-sector 0..* and
     $mailboxMSS named mailboxMSS 0..* and
-    RORHealthCareServiceCompetenceRessource named ror-healthcareservice-competence-ressource 0..1 and
-    RORHealthCareServiceEquipement named ror-healthcareservice-equipement 0..* and
+    RORHealthcareServiceCompetenceRessource named ror-healthcareservice-competence-ressource 0..1 and
+    RORHealthcareServiceEquipement named ror-healthcareservice-equipement 0..* and
     RORHealthcareServiceInterventionZone named ror-healthcareservice-intervention-zone 0..* and
     RORHealthcareServiceSensitiveUnit named ror-healthcareservice-sensitive-unit 1..* and
-    RORHealthCareServiceOpeningDate named ror-healthcareservice-opening-date 0..1 and
-    RORHealthCareServiceReceptionMode named ror-healthcareservice-reception-mode 0..1 and
-    RORHealthCareServiceContact named ror-healthcareservice-contact 0..1
+    RORHealthcareServiceOpeningDate named ror-healthcareservice-opening-date 0..1 and
+    RORHealthcareServiceReceptionMode named ror-healthcareservice-reception-mode 0..1 and
+    RORHealthcareServiceContact named ror-healthcareservice-contact 0..1
 * extension[ror-healthcareservice-patient-type] ^isModifier = false
-* extension[ror-healthcareservice-psychiatric-sector] ^min = 0
 * extension[ror-healthcareservice-psychiatric-sector] ^isModifier = false
-* extension[mailboxMSS] ^min = 0
 * extension[mailboxMSS] ^isModifier = false
 * extension[ror-healthcareservice-competence-ressource] ^isModifier = false
-* extension[ror-healthcareservice-equipement] ^min = 0
 * extension[ror-healthcareservice-equipement] ^isModifier = false
-* extension[ror-healthcareservice-intervention-zone] ^min = 0
 * extension[ror-healthcareservice-intervention-zone] ^isModifier = false
 * extension[ror-healthcareservice-sensitive-unit] ^isModifier = false
 * extension[ror-healthcareservice-opening-date] ^isModifier = false
 * extension[ror-healthcareservice-reception-mode] ^isModifier = false
 * extension[ror-healthcareservice-contact] ^isModifier = false
-* providedBy 1..
-* category ..1
+* providedBy 1..1
+* category 0..1
 * category from $JDV-J34-CategorieOrganisation-ROR (required)
-* type ..1
+* type 0..1
 * type from $JDV-J20-ChampActivite-ROR (required)
 * type.coding from $JDV-J20-ChampActivite-ROR (required)
 * type.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite" (exactly)
@@ -59,8 +49,8 @@ Description: "Profil créée dans le cadre du ROR"
 * specialty[operationalActivityFamily] ^definition = "Collection of operational activity families, except Serafin."
 * specialty[operationalActivityFamily] ^binding.description = "A family of operationnal activities that a healthcare service may provide."
 * specialty[operationalActivityFamily].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin" (exactly)
-* location ..1
-* name 1..
+* location 0..1
+* name 1..1
 * telecom.extension ^slicing.discriminator.type = #value
 * telecom.extension ^slicing.discriminator.path = "url"
 * telecom.extension ^slicing.rules = #open
@@ -70,7 +60,7 @@ Description: "Profil créée dans le cadre du ROR"
 * telecom.extension[ror-telecom-confidentiality-level] ^isModifier = false
 * telecom.extension[ror-telecom-usage] ^isModifier = false
 * telecom.system from $JDV-J221-NatureContact-ROR (required)
-* characteristic ..1
+* characteristic 0..1
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "coding.system"
 * characteristic ^slicing.rules = #open
@@ -111,16 +101,13 @@ Description: "Profil créée dans le cadre du ROR"
 * availableTime.extension ^slicing.discriminator.path = "url"
 * availableTime.extension ^slicing.rules = #open
 * availableTime.extension contains
-    RORHealthCareServiceOpenClose named ror-healthcareservice-open-close 1..1 and
-    RORHealthCareServiceDefinitelyClose named ror-healthcareservice-definitely-close 0..1 and
+    RORHealthcareServiceOpenClose named ror-healthcareservice-open-close 1..1 and
+    RORHealthcareServiceDefinitelyClose named ror-healthcareservice-definitely-close 0..1 and
     RORAvailableTimeEffectiveOpeningClosingDate named ror-available-time-effective-opening-closing-date 0..* and
     RORAvailableTimeNumberDaysofWeek named ror-available-time-number-days-of-week 0..* and
     RORAvailableTimeTypeOfTime named ror-available-time-type-of-time 0..*
 * availableTime.extension[ror-healthcareservice-open-close] ^isModifier = false
 * availableTime.extension[ror-healthcareservice-definitely-close] ^isModifier = false
-* availableTime.extension[ror-available-time-effective-opening-closing-date] ^min = 0
 * availableTime.extension[ror-available-time-effective-opening-closing-date] ^isModifier = false
-* availableTime.extension[ror-available-time-number-days-of-week] ^min = 0
 * availableTime.extension[ror-available-time-number-days-of-week] ^isModifier = false
-* availableTime.extension[ror-available-time-type-of-time] ^min = 0
 * availableTime.extension[ror-available-time-type-of-time] ^isModifier = false

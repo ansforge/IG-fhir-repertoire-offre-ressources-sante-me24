@@ -2,10 +2,6 @@ Profile: RORPractitionerRole
 Parent: PractitionerRole
 Id: ror-practitionerrole
 Description: "Profil créée dans le cadre du ROR"
-* ^version = "2.4"
-* ^status = #active
-* ^date = "2022-06-30"
-* ^publisher = "ANS"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -20,7 +16,6 @@ Description: "Profil créée dans le cadre du ROR"
 * extension[ror-practitionerrole-unit-exercise-mode] ^isModifier = false
 * extension[practitionerRole-vitaleAccepted] ^isModifier = false
 * extension[practitionerRole-hasCAS] ^isModifier = false
-* extension[ror-practitionerrole-home-visit] ^min = 0
 * extension[ror-practitionerrole-home-visit] ^isModifier = false
 * extension[practitionerRole-contracted] ^isModifier = false
 * practitioner 1..
@@ -66,27 +61,19 @@ Description: "Profil créée dans le cadre du ROR"
 * telecom.extension ^slicing.discriminator.path = "url"
 * telecom.extension ^slicing.rules = #open
 * telecom.extension contains 
-    RORCommunicationChannel named ror-communication-channel 1.. and
-    RORConfidentialityLevel named ror-confidentiality-level 1.. and
+    RORCommunicationChannel named ror-communication-channel 1..* and
+    RORConfidentialityLevel named ror-confidentiality-level 1..* and
     RORTelecomUsage named ror-telecom-usage 0..1
-//* telecom.extension[ror-communication-channel] only RORCommunicationChannel
-//* telecom.extension[ror-communication-channel] ^sliceName = "ror-communication-channel"
 * telecom.extension[ror-communication-channel] ^isModifier = false
-//* telecom.extension[ror-confidentiality-level] only RORConfidentialityLevel
-//* telecom.extension[ror-confidentiality-level] ^sliceName = "ror-confidentiality-level"
 * telecom.extension[ror-confidentiality-level] ^isModifier = false
 * telecom.extension[ror-telecom-usage] ^isModifier = false
 * availableTime.extension ^slicing.discriminator.type = #value
 * availableTime.extension ^slicing.discriminator.path = "url"
 * availableTime.extension ^slicing.rules = #open
-* availableTime.extension ^min = 0
 * availableTime.extension contains
     RORAvailableTimeEffectiveOpeningClosingDate named ror-available-time-effective-opening-closing-date 0..* and
     RORAvailableTimeNumberDaysofWeek named ror-available-time-number-days-of-week 0..* and
     RORAvailableTimeTypeOfTime named ror-available-time-type-of-time 0..*
-* availableTime.extension[ror-available-time-effective-opening-closing-date] ^min = 0
 * availableTime.extension[ror-available-time-effective-opening-closing-date] ^isModifier = false
-* availableTime.extension[ror-available-time-number-days-of-week] ^min = 0
 * availableTime.extension[ror-available-time-number-days-of-week] ^isModifier = false
-* availableTime.extension[ror-available-time-type-of-time] ^min = 0
 * availableTime.extension[ror-available-time-type-of-time] ^isModifier = false

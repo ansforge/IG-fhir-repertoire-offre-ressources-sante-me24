@@ -1,17 +1,13 @@
 Instance: ror-sp-healthcareservice-age-range-low
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://esante.gouv.fr/fhir/ror/SearchParameter/ror-sp-healthcareservice-age-range-low"
-* version = "2.4"
-* name = "RORHealthcareServiceAgeRangeLow"
 * status = #active
-* date = "2022-06-09T00:00:00+02:00"
-* publisher = "ANS"
+* name = "RORHealthcareServiceAgeRangeLow"
 * description = "Paramètre de recherche décrivant l'age minimum de la patientèle"
 * code = #age-range-low
 * base = #HealthcareService
 * type = #quantity
-* expression = "HealthcareService.extension.where(url = 'http://esante.gouv.fr/fhir/ror/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.low"
+* expression = "HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.low"
 * comparator[0] = #eq
 * comparator[+] = #ne
 * comparator[+] = #gt
