@@ -14,7 +14,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://esante.gouv.fr/fhir/ror/CapabilityStatement/ror-serveur",
+    "url": "http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-serveur",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -641,7 +641,7 @@
           {
             "name": "near-insee-code",
             "in": "query",
-            "description": "Lieux proches du lieu de réalisation de l\u0027offre via le code COG INSEE",
+            "description": "Paramètre de recherche similaire au paramètre spécial \"near\", à l\u0027exception que celui-ci pointe sur l\u0027adresse et non pas la position géographique",
             "schema": {}
           },
           {
