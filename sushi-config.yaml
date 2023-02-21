@@ -1,0 +1,50 @@
+# Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
+
+id: ans.fhir.fr.ror24
+canonical: http://interop.esante.gouv.fr/fhir/ig/ror24
+name: ROR ME 2.4
+title: "ROR ME 2.4"
+description: Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR
+publisher: 
+  name: ANS
+  url: https://esante.gouv.fr
+dependencies:
+  ans.annuaire.fhir.r4: 0.2.0
+  hl7.fhir.fr.core: 1.1.0
+status: active
+version: "0.1.0"
+fhirVersion: 4.0.1
+copyrightYear: 2020+
+releaseLabel: ci-build
+
+parameters:
+    shownav: 'true'
+
+
+
+pages:
+    index.md:
+       title: Accueil
+    specifications_fonctionnelles.md:
+    specifications_techniques.md:
+    downloads.md:
+        title: Téléchargements et usages
+        securite.md:
+                title: Sécurité
+    autres_ressources.md:
+            title: Autres Ressources
+    about.md:
+        title: A propos de ce guide
+
+menu:
+    Accueil: index.html
+    Spécifications fonctionnelles: specifications_fonctionnelles.html
+    Spécifications techniques: specifications_techniques.html
+    Ressources de conformance: artifacts.html
+    Téléchargements et usage: 
+        Téléchargements: downloads.html
+        Sécurité: securite.html
+    Autres ressources:
+        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
+        "Site de l'ANS ": new-tab https://esante.gouv.fr/
+    A propos de ce guide: about.html
