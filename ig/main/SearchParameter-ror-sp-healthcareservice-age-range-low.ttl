@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ror-sp-healthcareservice-age-range-low"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORHealthcareServiceAgeRangeLow</h2><p>Parameter <code>age-range-low</code>:<code>quantity</code></p><div><p>Paramètre de recherche décrivant l'age minimum de la patientèle</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.low</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
+  ]; # 
+  fhir:SearchParameter.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low"]; # 
+  fhir:SearchParameter.version [ fhir:value "0.1.0"]; # 
+  fhir:SearchParameter.name [ fhir:value "RORHealthcareServiceAgeRangeLow"]; # 
+  fhir:SearchParameter.status [ fhir:value "active"]; # 
+  fhir:SearchParameter.date [ fhir:value "2023-02-21T15:55:07+00:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ANS" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ]; # 
+  fhir:SearchParameter.description [ fhir:value "Paramètre de recherche décrivant l'age minimum de la patientèle"]; # 
+  fhir:SearchParameter.code [ fhir:value "age-range-low"]; # 
+  fhir:SearchParameter.base [
+     fhir:value "HealthcareService";
+     fhir:index 0
+  ]; # 
+  fhir:SearchParameter.type [ fhir:value "quantity"]; # 
+  fhir:SearchParameter.expression [ fhir:value "HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.low"]; # 
+  fhir:SearchParameter.comparator [
+     fhir:value "eq";
+     fhir:index 0
+  ], [
+     fhir:value "ne";
+     fhir:index 1
+  ], [
+     fhir:value "gt";
+     fhir:index 2
+  ], [
+     fhir:value "lt";
+     fhir:index 3
+  ], [
+     fhir:value "ge";
+     fhir:index 4
+  ], [
+     fhir:value "le";
+     fhir:index 5
+  ], [
+     fhir:value "sa";
+     fhir:index 6
+  ], [
+     fhir:value "eb";
+     fhir:index 7
+  ], [
+     fhir:value "ap";
+     fhir:index 8
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
