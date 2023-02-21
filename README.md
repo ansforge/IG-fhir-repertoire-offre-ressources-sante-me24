@@ -3,6 +3,7 @@ Ce projet consite à
 * définir les ressources de conformité FHIR pour le ROR basé sur le modèle d'exposition 2.4
 * contruire l'Implementation Guide et le publier 
 
+<<<<<<< HEAD
 # CI/CD
 Les pipelines mis de ce repository permettent : 
 * Executer  Sushi
@@ -15,3 +16,7 @@ Les pipelines mis de ce repository permettent :
 
 ## Acronymes
 FIG : FHIR Implementation Guide
+=======
+
+Faire la PR sur la branche 2.4 (livraisons 2.4)
+>>>>>>> main
