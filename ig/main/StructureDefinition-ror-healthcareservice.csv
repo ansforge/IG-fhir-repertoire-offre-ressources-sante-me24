@@ -28,11 +28,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-patient-type","HealthcareService.extension","ror-healthcareservice-patient-type","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-patient-type","HealthcareService.extension","ror-healthcareservice-patient-type","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-psychiatric-sector","HealthcareService.extension","ror-healthcareservice-psychiatric-sector","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-psychiatric-sector]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-psychiatric-sector","HealthcareService.extension","ror-healthcareservice-psychiatric-sector","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-psychiatric-sector]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -40,31 +40,31 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"HealthcareService.extension:ror-healthcareservice-competence-ressource","HealthcareService.extension","ror-healthcareservice-competence-ressource","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-competence-ressource]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-competence-ressource","HealthcareService.extension","ror-healthcareservice-competence-ressource","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-equipement","HealthcareService.extension","ror-healthcareservice-equipement","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-equipement]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-equipement","HealthcareService.extension","ror-healthcareservice-equipement","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-equipement]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-intervention-zone","HealthcareService.extension","ror-healthcareservice-intervention-zone","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-intervention-zone]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-intervention-zone","HealthcareService.extension","ror-healthcareservice-intervention-zone","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-intervention-zone]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-sensitive-unit","HealthcareService.extension","ror-healthcareservice-sensitive-unit","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-sensitive-unit","HealthcareService.extension","ror-healthcareservice-sensitive-unit","","",1,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-opening-date","HealthcareService.extension","ror-healthcareservice-opening-date","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-opening-date]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-opening-date","HealthcareService.extension","ror-healthcareservice-opening-date","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-opening-date]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-reception-mode","HealthcareService.extension","ror-healthcareservice-reception-mode","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-reception-mode]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-reception-mode","HealthcareService.extension","ror-healthcareservice-reception-mode","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-reception-mode]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.extension:ror-healthcareservice-contact","HealthcareService.extension","ror-healthcareservice-contact","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-contact]]} {[]}
+"HealthcareService.extension:ror-healthcareservice-contact","HealthcareService.extension","ror-healthcareservice-contact","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-contact]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -274,11 +274,11 @@ cpt-2:A system is required if a value is provided. {value.empty() or system.exis
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.telecom.extension:ror-telecom-confidentiality-level","HealthcareService.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
+"HealthcareService.telecom.extension:ror-telecom-confidentiality-level","HealthcareService.telecom.extension","ror-telecom-confidentiality-level","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-telecom-confidentiality-level]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.telecom.extension:ror-telecom-usage","HealthcareService.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-usage]]} {[]}
+"HealthcareService.telecom.extension:ror-telecom-usage","HealthcareService.telecom.extension","ror-telecom-usage","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-telecom-usage]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -775,23 +775,23 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-healthcareservice-open-close","HealthcareService.availableTime.extension","ror-healthcareservice-open-close","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-open-close]]} {[]}
+"HealthcareService.availableTime.extension:ror-healthcareservice-open-close","HealthcareService.availableTime.extension","ror-healthcareservice-open-close","","",1,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-open-close]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-healthcareservice-definitely-close","HealthcareService.availableTime.extension","ror-healthcareservice-definitely-close","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-definitely-close]]} {[]}
+"HealthcareService.availableTime.extension:ror-healthcareservice-definitely-close","HealthcareService.availableTime.extension","ror-healthcareservice-definitely-close","","",0,1,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-definitely-close]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-available-time-effective-opening-closing-date","HealthcareService.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-effective-opening-closing-date","HealthcareService.availableTime.extension","ror-available-time-effective-opening-closing-date","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-effective-opening-closing-date]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-available-time-number-days-of-week","HealthcareService.availableTime.extension","ror-available-time-number-days-of-week","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-number-days-of-week","HealthcareService.availableTime.extension","ror-available-time-number-days-of-week","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-number-days-of-week]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"HealthcareService.availableTime.extension:ror-available-time-type-of-time","HealthcareService.availableTime.extension","ror-available-time-type-of-time","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-type-of-time]]} {[]}
+"HealthcareService.availableTime.extension:ror-available-time-type-of-time","HealthcareService.availableTime.extension","ror-available-time-type-of-time","","",0,*,"","","","Extension {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-type-of-time]]} {[]}
 ","Extension","Extension créée dans le cadre du ROR","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

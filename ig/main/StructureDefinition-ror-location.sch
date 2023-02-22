@@ -12,10 +12,10 @@
   <sch:pattern>
     <sch:title>f:Location</sch:title>
     <sch:rule context="f:Location">
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-code-region']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-code-region': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-code-region']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-code-region': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -25,8 +25,8 @@
       <sch:assert test="count(f:extension[@url = 'http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code']) &lt;= 1">extension with URL = 'http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department']) &lt;= 1">extension with URL = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code']) &lt;= 1">extension with URL = 'https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-commune-cog']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-commune-cog': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-calculated-distance']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-calculated-distance': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-calculated-distance']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-calculated-distance': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
@@ -42,16 +42,16 @@
     <sch:title>f:Location/f:address/f:line</sch:title>
     <sch:rule context="f:Location/f:address/f:line">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>f:Location/f:position</sch:title>
     <sch:rule context="f:Location/f:position">
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-reliable-position']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-reliable-position': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-geodesic-system']) &gt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-geodesic-system': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-geodesic-system']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-geodesic-system': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-reliable-position']) &lt;= 1">extension with URL = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-reliable-position': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

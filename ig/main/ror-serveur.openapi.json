@@ -14,7 +14,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-serveur",
+    "url": "http://interop.esante.gouv.fr/ig/fhir/ror24/CapabilityStatement/ror-serveur",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

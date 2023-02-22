@@ -1,9 +1,9 @@
 {
-  "url" : "http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24",
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24",
   "name" : "RORME24",
   "package-id" : "ans.fhir.fr.ror24",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 21 Feb, 2023 16:28:41 +0000",
+  "date" : "Wed, 22 Feb, 2023 09:44:01 +0000",
   "errs" : 0,
   "warnings" : 267,
   "hints" : 33,

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24> a fhir:ImplementationGuide;
+<http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ans.fhir.fr.ror24"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>\n</div></div>"
   ]; # 
-  fhir:ImplementationGuide.url [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24"]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24"]; # 
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"]; # 
   fhir:ImplementationGuide.name [ fhir:value "RORME24"]; # 
   fhir:ImplementationGuide.title [ fhir:value "ROR ME 2.4"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-21T16:28:41+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-22T09:44:01+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -198,7 +198,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/ig/fhir/ror24/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -498,7 +498,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/fhir/ig/ror24/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://interop.esante.gouv.fr/ig/fhir/ror24/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -678,7 +678,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareService" ];
@@ -692,7 +692,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocation" ];
@@ -706,7 +706,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganization" ];
@@ -720,7 +720,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitioner>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-practitioner>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitioner" ];
@@ -734,7 +734,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-practitionerrole>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRole" ];
@@ -748,7 +748,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-accessibility-location>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-accessibility-location>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-accessibility-location" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAccessibilityLocation" ];
@@ -762,7 +762,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-calculated-distance>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-calculated-distance>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-calculated-distance" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressCalculatedDistance" ];
@@ -776,7 +776,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-description>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-description>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-description" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressDescription" ];
@@ -790,7 +790,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-name>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-name>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-name" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressName" ];
@@ -804,7 +804,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-address-status>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-status>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-address-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAddressStatus" ];
@@ -818,7 +818,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-effective-opening-closing-date>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-effective-opening-closing-date>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-effective-opening-closing-date" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeEffectiveOpeningClosingDate" ];
@@ -832,7 +832,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-number-days-of-week>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-number-days-of-week>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-number-days-of-week" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeNumberDaysofWeek" ];
@@ -846,7 +846,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-available-time-type-of-time>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-available-time-type-of-time>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-available-time-type-of-time" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORAvailableTimeTypeOfTime" ];
@@ -860,7 +860,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-care-without-patient-approval>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-care-without-patient-approval>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-care-without-patient-approval" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCareWithoutPatientApproval" ];
@@ -874,7 +874,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-code-region>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-code-region>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-code-region" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCodeRegion" ];
@@ -888,7 +888,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-commune-cog>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-commune-cog" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCommuneCog" ];
@@ -902,7 +902,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-communication-channel>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-communication-channel>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-communication-channel" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORCommunicationChannel" ];
@@ -916,7 +916,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-confidentiality-level>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-confidentiality-level>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-confidentiality-level" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORConfidentialityLevel" ];
@@ -930,7 +930,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-confidentiality-level>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-contact-confidentiality-level>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-confidentiality-level" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactConfidentialityLevel" ];
@@ -944,7 +944,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-description>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-contact-description>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-description" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactDescription" ];
@@ -958,7 +958,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-fonction-contact>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-contact-fonction-contact>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-fonction-contact" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactFonctionContact" ];
@@ -972,7 +972,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-contact-telecom-usage>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-contact-telecom-usage>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-contact-telecom-usage" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORContactTelecomUsage" ];
@@ -986,7 +986,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-drop-zone>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-drop-zone>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-drop-zone" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORDropZone" ];
@@ -1000,7 +1000,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-geolocation>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-geolocation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-geolocation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORGeolocation" ];
@@ -1013,7 +1013,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-capacity-reception" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCapacityReception" ];
@@ -1027,7 +1027,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-capacity-reception-crisis>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-capacity-reception-crisis" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCapacityReceptionCrisis" ];
@@ -1041,7 +1041,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-care-mode>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-care-mode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-care-mode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCareMode" ];
@@ -1055,7 +1055,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-competence-ressource>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-competence-ressource" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceCompetenceRessource" ];
@@ -1069,7 +1069,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-contact>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-contact>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-contact" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceContact" ];
@@ -1083,7 +1083,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-definitely-close>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-definitely-close>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-definitely-close" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceDefinitelyClose" ];
@@ -1097,7 +1097,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-equipement>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-equipement>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-equipement" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceEquipement" ];
@@ -1111,7 +1111,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-facility-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-facility-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-facility-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceFacilityType" ];
@@ -1125,7 +1125,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-intervention-zone>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-intervention-zone>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-intervention-zone" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceInterventionZone" ];
@@ -1139,7 +1139,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-location>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-location>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-location" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceLocation" ];
@@ -1153,7 +1153,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-open-close>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-open-close>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-open-close" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceOpenClose" ];
@@ -1167,7 +1167,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-opening-date>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-opening-date>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-opening-date" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceOpeningDate" ];
@@ -1181,7 +1181,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-patient-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-patient-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServicePatientType" ];
@@ -1195,7 +1195,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-psychiatric-sector>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-psychiatric-sector>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-psychiatric-sector" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServicePsychiatricSector" ];
@@ -1209,7 +1209,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-reception-mode>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-reception-mode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-reception-mode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceReceptionMode" ];
@@ -1223,7 +1223,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-reception-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-reception-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-reception-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceReceptionType" ];
@@ -1237,7 +1237,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-residential-capacity>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-residential-capacity>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-residential-capacity" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceResidentialCapacity" ];
@@ -1251,7 +1251,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-sensitive-unit>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-sensitive-unit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceSensitiveUnit" ];
@@ -1265,7 +1265,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-taking-care-speciality>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-taking-care-speciality>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-taking-care-speciality" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceTakingCareSpeciality" ];
@@ -1279,7 +1279,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-healthcareservice-type-activity>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-type-activity>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-healthcareservice-type-activity" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORHealthcareServiceTypeActivity" ];
@@ -1293,7 +1293,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-level-recours-orsan>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-level-recours-orsan>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-level-recours-orsan" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLevelRecoursORSAN" ];
@@ -1307,7 +1307,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-geodesic-system>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-geodesic-system>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-geodesic-system" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationGeodesicSystem" ];
@@ -1321,7 +1321,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-reliable-position>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-reliable-position>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-reliable-position" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationReliablePosition" ];
@@ -1335,7 +1335,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-location-status>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-location-status>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-location-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORLocationStatus" ];
@@ -1349,7 +1349,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-management-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-management-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-management-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORManagementType" ];
@@ -1363,7 +1363,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-maternity-hospital-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-maternity-hospital-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-maternity-hospital-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORMaternityHospitalType" ];
@@ -1377,7 +1377,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-accomodation-family>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-accomodation-family>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-accomodation-family" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationAccomodationFamily" ];
@@ -1391,7 +1391,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-address-line-iso-21090-adxp-locality" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationAddressLineISO21090AdxpLocality" ];
@@ -1405,7 +1405,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-closing-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-closing-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-closing-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationClosingType" ];
@@ -1419,7 +1419,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-financial-help-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-financial-help-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-financial-help-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationFinancialHelpType" ];
@@ -1433,7 +1433,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-nb-permanent-social-help-place>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-nb-permanent-social-help-place>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-nb-permanent-social-help-place" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationNbPermanentSocialHelpPlace" ];
@@ -1447,7 +1447,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-nb-temporary-social-help-place>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-nb-temporary-social-help-place>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-nb-temporary-social-help-place" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationNbTemporarySocialHelpPlace" ];
@@ -1461,7 +1461,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-price>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-price>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-price" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationPrice" ];
@@ -1475,7 +1475,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-organization-territorial>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-organization-territorial>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-organization-territorial" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ROROrganizationTerritorial" ];
@@ -1489,7 +1489,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-period-closing-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-period-closing-type>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-period-closing-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPeriodClosingType" ];
@@ -1503,7 +1503,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole-home-visit>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-practitionerrole-home-visit>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole-home-visit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRoleHomeVisit" ];
@@ -1517,7 +1517,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-practitionerrole-unit-exercise-mode>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-practitionerrole-unit-exercise-mode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-practitionerrole-unit-exercise-mode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORPractitionerRoleUnitExerciseMode" ];
@@ -1531,7 +1531,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-confidentiality-level>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-telecom-confidentiality-level>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-confidentiality-level" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTelecomConfidentialityLevel" ];
@@ -1545,7 +1545,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-telecom-usage>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-telecom-usage>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-telecom-usage" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTelecomUsage" ];
@@ -1559,7 +1559,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-type-activity>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-type-activity>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-type-activity" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORTypeActivity" ];
@@ -1573,7 +1573,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/StructureDefinition/ror-unit-exercise-mode>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-unit-exercise-mode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ror-unit-exercise-mode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RORUnitExerciseMode" ];
@@ -1587,7 +1587,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-consommateur>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/CapabilityStatement/ror-consommateur>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-consommateur" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-consommateur" ];
@@ -1601,7 +1601,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/CapabilityStatement/ror-serveur>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/CapabilityStatement/ror-serveur>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/ror-serveur" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-serveur" ];
@@ -1615,7 +1615,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-code-region>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-code-region>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-code-region" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-code-region" ];
@@ -1629,7 +1629,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-high" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-high" ];
@@ -1643,7 +1643,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-age-range-low>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-age-range-low" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-age-range-low" ];
@@ -1657,7 +1657,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-equipment-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-equipment-type>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-equipment-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-equipment-type" ];
@@ -1671,7 +1671,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-ordinal-speciality>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-ordinal-speciality>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-ordinal-speciality" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-ordinal-speciality" ];
@@ -1685,7 +1685,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-patient-type>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-patient-type>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-patient-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-patient-type" ];
@@ -1699,7 +1699,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-profession>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-profession" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-profession" ];
@@ -1713,7 +1713,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-psychiatric-sector>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-psychiatric-sector" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-psychiatric-sector" ];
@@ -1727,7 +1727,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-reception-mode>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-reception-mode>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-reception-mode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-reception-mode" ];
@@ -1741,7 +1741,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-healthcareservice-specific-competence>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-specific-competence>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-healthcareservice-specific-competence" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-healthcareservice-specific-competence" ];
@@ -1755,7 +1755,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-commune-cog>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-location-commune-cog>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-location-commune-cog" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-commune-cog" ];
@@ -1769,7 +1769,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-location-near-insee-code>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-location-near-insee-code>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-location-near-insee-code" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-location-near-insee-code" ];
@@ -1783,7 +1783,7 @@
          fhir:Extension.valueString [ fhir:value "SearchParameter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://interop.esante.gouv.fr/fhir/ig/ror24/SearchParameter/ror-sp-organization-drop-zone>;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-organization-drop-zone>;
          fhir:Reference.reference [ fhir:value "SearchParameter/ror-sp-organization-drop-zone" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ror-sp-organization-drop-zone" ];
@@ -1937,7 +1937,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ans.fhir.fr.ror24.ttl> a owl:Ontology;
+<http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
