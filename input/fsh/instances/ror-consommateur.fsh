@@ -11,7 +11,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://interop.esante.gouv.fr/fhir/ig/ror24/ImplementationGuide/ror-ig"
+* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ror-ig"
 * rest.mode = #client
 * rest.documentation = "Recherche et consultation des offres"
 * rest.security.cors = false
