@@ -8,7 +8,7 @@ Ce projet consite à
 Les pipelines mis de ce repository permettent : 
 * Executer  Sushi
 * Faire les tests avec le validator_cli
-* Publier les pages :  https://ansforge.github.io/ROR_ressource-conformance/ig/FSHTransformation2.4
+* Publier les pages :  https://ansforge.github.io/FIG_ans.fhir.fr.ror24/ig/FSHTransformation2.4
 
 ![image](https://user-images.githubusercontent.com/101335975/215342980-61686171-e3f8-40c5-865c-efdfc3dd52b4.png)
 
