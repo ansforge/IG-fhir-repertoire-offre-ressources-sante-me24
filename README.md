@@ -18,5 +18,5 @@ Les pipelines mis de ce repository permettent :
 FIG : FHIR Implementation Guide
 =======
 
-Faire la PR sur la branche 2.4 (livraisons 2.4)
->>>>>>> main
+Faire la PR sur la branche main (livraisons 2.4)
+
