@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "RORCommunicationChannel"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-24T16:20:30+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-24T16:22:39+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "ANS"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
