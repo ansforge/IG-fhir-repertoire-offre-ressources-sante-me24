@@ -12,7 +12,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ror-ig"
+* implementationGuide = "https://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ror-ig"
 * rest.mode = #server
 * rest.documentation = "Serveur national du ROR"
 * rest.security.cors = false

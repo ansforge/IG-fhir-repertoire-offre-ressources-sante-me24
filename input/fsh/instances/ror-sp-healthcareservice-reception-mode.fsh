@@ -7,4 +7,4 @@ Usage: #definition
 * code = #reception-mode
 * base = #HealthcareService
 * type = #token
-* expression = "HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-reception-mode').valueBoolean"
+* expression = "HealthcareService.extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-reception-mode').valueBoolean"
