@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="ror-sp-location-near-insee-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>LocationNearINSEECode</h2><p>Parameter <code>near-insee-code</code>:<code>special</code></p><div><p>Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-location-near-insee-code"/>
+  <version value="0.1.0"/>
+  <name value="LocationNearINSEECode"/>
+  <status value="active"/>
+  <date value="2023-02-27T11:06:54+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche similaire au paramètre spécial &quot;near&quot;, à l'exception que celui-ci pointe sur l'adresse et non pas la position géographique"/>
+  <code value="near-insee-code"/>
+  <base value="Location"/>
+  <type value="special"/>
+  <expression value="Location.address.extension.where(url='http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code').valueCode"/>
+</SearchParameter>
