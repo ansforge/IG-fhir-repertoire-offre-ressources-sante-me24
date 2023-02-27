@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.ror24"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORME24</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24</pre><div><p>Ressources de conformité basé sur le modèle d'exposition 2.4 du ROR</p>
 </div></div>
   </text>
-  <url value="http://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror24/ImplementationGuide/ans.fhir.fr.ror24"/>
   <version value="0.1.0"/>
   <name value="RORME24"/>
   <title value="ROR ME 2.4"/>
   <status value="active"/>
-  <date value="2023-02-24T16:23:59+00:00"/>
+  <date value="2023-02-27T11:21:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -128,7 +128,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://interop.esante.gouv.fr/ig/fhir/ror24/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/ror24/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -328,7 +328,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://interop.esante.gouv.fr/ig/fhir/ror24/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/ror24/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

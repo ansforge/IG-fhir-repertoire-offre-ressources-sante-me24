@@ -4,13 +4,13 @@
   <id value="ror-sp-location-commune-cog"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>RORSPLocationCommuneCOG</h2><p>Parameter <code>commune-cog</code>:<code>token</code></p><div><p>Paramètre de recherche permettant d'indiquer s'il y a une zone poser sur le site concerné</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/location.html">Location</a></td></tr><tr><td>Expression</td><td><code>Location.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog').valueCodeableConcept</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
   </text>
-  <url value="http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-location-commune-cog"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-location-commune-cog"/>
   <version value="0.1.0"/>
   <name value="RORSPLocationCommuneCOG"/>
   <status value="active"/>
-  <date value="2023-02-24T16:23:59+00:00"/>
+  <date value="2023-02-27T11:21:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -23,5 +23,5 @@
   <code value="commune-cog"/>
   <base value="Location"/>
   <type value="token"/>
-  <expression value="Location.extension.where(url='http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog').valueCodeableConcept"/>
+  <expression value="Location.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-commune-cog').valueCodeableConcept"/>
 </SearchParameter>

@@ -3,13 +3,13 @@
   "id" : "ror-sp-healthcareservice-age-range-high",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORHealthcareServiceAgeRangeHigh</h2><p>Parameter <code>age-range-high</code>:<code>quantity</code></p><div><p>Paramètre de recherche décrivant l'age maximum de la patientèle</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.high</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORHealthcareServiceAgeRangeHigh</h2><p>Parameter <code>age-range-high</code>:<code>quantity</code></p><div><p>Paramètre de recherche décrivant l'age maximum de la patientèle</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.high</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
   },
-  "url" : "http://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-age-range-high",
   "version" : "0.1.0",
   "name" : "RORHealthcareServiceAgeRangeHigh",
   "status" : "active",
-  "date" : "2023-02-24T16:23:59+00:00",
+  "date" : "2023-02-27T11:21:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -22,7 +22,7 @@
   "code" : "age-range-high",
   "base" : ["HealthcareService"],
   "type" : "quantity",
-  "expression" : "HealthcareService.extension.where(url = 'http://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.high",
+  "expression" : "HealthcareService.extension.where(url = 'https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-patient-type').extension(url = 'ageRange').valueRange.high",
   "comparator" : ["eq",
   "ne",
   "gt",
