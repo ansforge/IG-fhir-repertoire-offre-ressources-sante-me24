@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "RORME24"]; # 
   fhir:ImplementationGuide.title [ fhir:value "ROR ME 2.4"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-27T11:21:32+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-28T09:39:29+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
