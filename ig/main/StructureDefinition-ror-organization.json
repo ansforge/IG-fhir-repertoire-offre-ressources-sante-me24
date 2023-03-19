@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "ROROrganization",
   "status" : "active",
-  "date" : "2023-02-28T09:39:18+00:00",
+  "date" : "2023-03-19T15:21:05+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1588,7 +1588,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -1656,7 +1656,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2097,7 +2097,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2165,7 +2165,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2606,7 +2606,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2674,7 +2674,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3115,7 +3115,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3183,7 +3183,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3624,7 +3624,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3692,7 +3692,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4133,7 +4133,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4201,7 +4201,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4642,7 +4642,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4710,7 +4710,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -5151,7 +5151,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -5219,7 +5219,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -7671,7 +7671,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       },
       {
         "key" : "org-3",
@@ -8154,9 +8154,8 @@
       "id" : "Organization.address.extension:ror-geolocation",
       "path" : "Organization.address.extension",
       "sliceName" : "ror-geolocation",
-      "short" : "The absolute geographic location",
-      "definition" : "The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).",
-      "comment" : "The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc.",
+      "short" : "Extension",
+      "definition" : "An Extension",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -8185,15 +8184,7 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      },
-      {
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "Organization.address.extension:ror-address-calculated-distance",
@@ -9292,7 +9283,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -9358,7 +9349,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -10108,7 +10099,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -10604,7 +10595,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Patient"
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -10725,7 +10716,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
       }],
       "mapping" : [{
         "identity" : "rim",

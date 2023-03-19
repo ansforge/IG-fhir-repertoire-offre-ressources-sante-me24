@@ -707,7 +707,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.address.extension:ror-geolocation","Organization.address.extension","ror-geolocation","","",0,*,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-geolocation]]} {[]}
-","The absolute geographic location","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Organization.address.extension:ror-address-calculated-distance","Organization.address.extension","ror-address-calculated-distance","","",0,1,"","","","Extension {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-address-calculated-distance]]} {[]}

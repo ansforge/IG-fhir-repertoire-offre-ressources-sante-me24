@@ -5,41 +5,31 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession> a fhir:SearchParameter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ror-sp-healthcareservice-profession"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORHealthcareServiceProfession</h2><p>Parameter <code>profession</code>:<code>token</code></p><div><p>Paramètre de recherche permettant de pointer sur la profession</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource').extension(url='profession').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
-  ]; # 
-  fhir:SearchParameter.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession"]; # 
-  fhir:SearchParameter.version [ fhir:value "0.1.0"]; # 
-  fhir:SearchParameter.name [ fhir:value "RORHealthcareServiceProfession"]; # 
-  fhir:SearchParameter.status [ fhir:value "active"]; # 
-  fhir:SearchParameter.date [ fhir:value "2023-02-28T09:39:18+00:00"^^xsd:dateTime]; # 
-  fhir:SearchParameter.publisher [ fhir:value "ANS"]; # 
-  fhir:SearchParameter.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "ANS" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
-     ]
-  ]; # 
-  fhir:SearchParameter.description [ fhir:value "Paramètre de recherche permettant de pointer sur la profession"]; # 
-  fhir:SearchParameter.code [ fhir:value "profession"]; # 
-  fhir:SearchParameter.base [
-     fhir:value "HealthcareService";
-     fhir:index 0
-  ]; # 
-  fhir:SearchParameter.type [ fhir:value "token"]; # 
-  fhir:SearchParameter.expression [ fhir:value "HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource').extension(url='profession').valueCode"] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ror-sp-healthcareservice-profession"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>RORHealthcareServiceProfession</h2><p>Parameter <code>profession</code>:<code>token</code></p><div><p>Paramètre de recherche permettant de pointer sur la profession</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a></td></tr><tr><td>Expression</td><td><code>HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource').extension(url='profession').valueCode</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/ror24/SearchParameter/ror-sp-healthcareservice-profession"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RORHealthcareServiceProfession"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-19T15:21:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Paramètre de recherche permettant de pointer sur la profession"] ; # 
+  fhir:code [ fhir:v "profession"] ; # 
+  fhir:base ( [ fhir:v "HealthcareService"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:expression [ fhir:v "HealthcareService.extension.where(url='https://interop.esante.gouv.fr/ig/fhir/ror24/StructureDefinition/ror-healthcareservice-competence-ressource').extension(url='profession').valueCode"] . # 
 
 # -------------------------------------------------------------------------------------
 
