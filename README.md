@@ -1,3 +1,9 @@
+<div>
+  <b>
+    Attention! Ce repository a été archivé. Les travaux sont maintenant concentrés sur le repository https://github.com/ansforge/IG-fhir-repertoire-offre-ressources-sante pour cibler le nouveau modèle d'exposition du ROR 3.0
+  </b> 
+</div>
+
 # Contexte
 
 ## Contexte métier du projet
@@ -22,7 +28,7 @@ Les ressources profilées pour ce cas d'usage spécifique sont :
 Les pipelines mis de ce repository permettent : 
 * Executer  Sushi
 * Faire les tests avec le validator_cli
-* Publier les pages :  https://ansforge.github.io/FIG_ans.fhir.fr.ror24/ig/main
+* Publier les pages :  https://ansforge.github.io/IG-fhir-repertoire-offre-ressources-sante-me24/ig/main
 
 ![image](https://user-images.githubusercontent.com/101335975/215342980-61686171-e3f8-40c5-865c-efdfc3dd52b4.png)
 
@@ -41,14 +47,4 @@ Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github
 * FIG : FHIR Implementation Guide
 * HL7 : Health Level Seven
 * Publier les pages :  https://ansforge.github.io/FIG_ans.fhir.fr.ror24/ig/main
-
-![image](https://user-images.githubusercontent.com/101335975/215342980-61686171-e3f8-40c5-865c-efdfc3dd52b4.png)
-
-
-
-## Acronymes
-FIG : FHIR Implementation Guide
-=======
-
-Faire la PR sur la branche main (livraisons 2.4)
 
